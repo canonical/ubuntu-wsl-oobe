@@ -24,7 +24,7 @@ log = logging.getLogger('console_conf.controllers.identity')
 def disable_ubuntu_wsl_oobe():
     """ Stop running ubuntu_wsl_oobe and remove the package """
     log.info('disabling ubuntu-wsl-oobe service')
-    run_command(["apt", "remove", "ubuntu-wsl-oobe"])
+    run_command(["apt", "remove", "-y", "ubuntu-wsl-oobe", "subiquitycore-wsl"])
     return
 
 class OverviewController(BaseController):

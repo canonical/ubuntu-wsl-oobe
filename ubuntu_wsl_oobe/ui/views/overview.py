@@ -29,9 +29,9 @@ class OverviewView(BaseView):
 
     def __init__(self, controller):
         self.controller = controller
-        changelog = ("\n - Add features;"
-                     "\n - Fix bugs;"
-                     "\n - add more bugs to fix.")
+        changelog = ("\n - A brand new Onborading Experience;"
+                     "\n - A new commandline tool `ubuntuwslctl` that allows you tweak Ubuntu and WSL settings;"
+                     "\n - Update wslu to 3.2.0.")
         complete_text = "You have complete the setup!\n\n Here is what's new for Ubuntu WSL:\n"
         complete_text += changelog
 
