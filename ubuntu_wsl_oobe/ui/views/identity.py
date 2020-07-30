@@ -42,17 +42,6 @@ REALNAME_MAXLEN = 160
 SSH_IMPORT_MAXLEN = 256 + 3  # account for lp: or gh:
 USERNAME_MAXLEN = 32
 
-class RealnameEditor(StringEditor, WantsToKnowFormField):
-    def valid_char(self, ch):
-        if len(ch) == 1 and ch in ':,=':
-            self.bff.in_error = True
-            self.bff.show_extra(("info_error",
-                                 _("The characters : , and = are not permitted"
-                                   " in this field")))
-            return False
-        else:
-            return super().valid_char(ch)
-
 
 class UsernameEditor(StringEditor, WantsToKnowFormField):
     def __init__(self):
@@ -69,8 +58,6 @@ class UsernameEditor(StringEditor, WantsToKnowFormField):
         else:
             return super().valid_char(ch)
 
-
-RealnameField = simple_field(RealnameEditor)
 UsernameField = simple_field(UsernameEditor)
 PasswordField = simple_field(PasswordEditor)
 
@@ -82,16 +69,9 @@ class IdentityForm(Form):
         self.reserved_usernames = reserved_usernames
         super().__init__(initial=initial)
 
-    realname = RealnameField(_("Your name (optional):"))
     username = UsernameField(_("Pick a username:"), help=("The username does not need to match your Windows username"))
     password = PasswordField(_("Choose a password:"))
     confirm_password = PasswordField(_("Confirm your password:"))
-
-    def validate_realname(self):
-        if len(self.realname.value) > REALNAME_MAXLEN:
-            return _(
-                "Name too long, must be less than {limit}"
-                ).format(limit=REALNAME_MAXLEN)
 
     def validate_username(self):
         username = self.username.value
@@ -156,7 +136,6 @@ class IdentityView(BaseView):
 
         if model.user:
             initial = {
-                'realname': model.user.realname,
                 'username': model.user.username
             }
         else:
@@ -181,7 +160,6 @@ class IdentityView(BaseView):
 
     def done(self, result):
         result = {
-            "realname": self.form.realname.value,
             "username": self.form.username.value,
             "password": self.model.encrypt_password(self.form.password.value),
         }

@@ -25,7 +25,6 @@ log = logging.getLogger('subiquity.models.identity')
 
 @attr.s
 class User(object):
-    realname = attr.ib()
     username = attr.ib()
     password = attr.ib()
 
@@ -39,8 +38,6 @@ class IdentityModel(object):
 
     def add_user(self, result):
         result = result.copy()
-        if not result.get('realname'):
-            result['realname'] = result['username']
         self._user = User(**result)
 
     @property

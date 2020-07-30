@@ -32,7 +32,6 @@ class IdentityController(BaseController):
     autoinstall_schema = {
         'type': 'object',
         'properties': {
-            'realname': {'type': 'string'},
             'username': {'type': 'string'},
             'password': {'type': 'string'},
             },
@@ -55,7 +54,6 @@ class IdentityController(BaseController):
         if all(elem in self.answers for elem in
                ['realname', 'username', 'password']):
             d = {
-                'realname': self.answers['realname'],
                 'username': self.answers['username'],
                 'password': self.answers['password'],
                 }
