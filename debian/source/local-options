@@ -1,0 +1,5 @@
+tar-ignore = .git*
+tar-ignore = .subiquity
+tar-ignore = stage
+tar-ignore = parts
+tar-ignore = prime

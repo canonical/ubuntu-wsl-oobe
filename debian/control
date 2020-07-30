@@ -1,0 +1,52 @@
+Source: ubuntu-wsl-oobe
+Section: admin
+Priority: optional
+Maintainer: Patrick Wu <patrick.wu@canonical.com>
+Build-Depends: debhelper (>= 10),
+               dh-python,
+               git,
+               iso-codes,
+               python3,
+               python3-attr,
+               python3-distutils-extra,
+               python3-setuptools,
+               python3-yaml
+Standards-Version: 4.3.0
+Homepage: https://github.com/canonical/ubuntu-wsl-oobe
+Vcs-Browser: https://github.com/canonical/ubuntu-wsl-oobe
+Vcs-Git: https://github.com/canonical/ubuntu-wsl-oobe.git
+
+Package: subiquitycore-wsl
+Architecture: all
+Depends: probert-network,
+         python3-urwid (>= 1.2.1),
+         python3-attr,
+         python3-yaml,
+         ${misc:Depends},
+         ${python3:Depends}
+Description: Ubuntu Server Installer - core libraries (For WSL Onboarding Experience)
+ SUbiquity is an installer system for servers, embedded devices and desktops
+ or laptops meant to build systems as quickly as possible for users to reach
+ a point where their system is usable.
+ .
+ By default, subiquity provides a "first boot" experience that allows users
+ to do initial system configuration such as adding users and login settings,
+ along with doing basic network configuration. It can also be used to build
+ a new system from the ground up, partitioning and copying a disk image to
+ the storage device selected by the user.
+ .
+ This package provides the installer routines for bootstrapping a system
+ with the Subiquity the server installer UI.
+ .
+ This package is used for providing WSL Onboarding Experience.
+
+
+Package: ubuntu-wsl-oobe
+Architecture: all
+Depends: python3, subiquitycore-wsl, ubuntu-wsl-integration, ${misc:Depends}, ${python3:Depends}
+Description: Ubuntu WSL Onboarding Experience
+ `ubuntu-wsl-oobe` is a WSL Ubuntu Out-of-box configurer to
+ provide a more friendly first-start experience. This is a
+ partial fork of subiquity to better match with Ubuntu
+ Server Installer to provide a more universial installing
+ experience across devices.
