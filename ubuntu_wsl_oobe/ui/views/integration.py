@@ -20,6 +20,7 @@ class IntegrationForm(Form):
 
     gui_integration = BooleanField(_("GUI Integration"), help="This enables Automatic DISPLAY environment set-up. Third-party X server required.")
     audio_integration = BooleanField(_("Audio Integration"), help="This enables Audio server on WSL. PulseAudio on Windows is required.")
+    advanced_detection = BooleanField(_("Advanced Detection"), help="This enables Advanced IP Detection to be used in the Integration.")
 
 
 class IntegrationView(BaseView):
@@ -31,7 +32,8 @@ class IntegrationView(BaseView):
     def __init__(self, controller):
         initial = {
             'gui_integration': False,
-            'audio_integration': False
+            'audio_integration': False,
+            'advanced_detection': False
         }
         self.form = IntegrationForm()
         self.controller = controller
