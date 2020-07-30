@@ -1,2 +1,2 @@
 usr/share/ubuntu-wsl-oobe/subiquitycore
-usr/share/ubuntu-wsl-oobe/subiquity*.egg-info
+usr/share/ubuntu-wsl-oobe/ubuntu_wsl_oobe*.egg-info
