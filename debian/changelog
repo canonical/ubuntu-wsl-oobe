@@ -1,4 +1,11 @@
-ubuntu-wsl-oobe (0.0.1-0ubuntu1) groovy; urgency=medium
+ubuntu-wsl-oobe (0.0.2) groovy; urgency=medium
+
+  * Minor update on the content;
+  * useable user creation.
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Fri, 31 Jul 2020 18:10:38 +0800
+
+ubuntu-wsl-oobe (0.0.1) groovy; urgency=medium
 
   * Initial build.
 
