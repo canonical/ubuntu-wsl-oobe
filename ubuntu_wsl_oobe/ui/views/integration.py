@@ -24,7 +24,7 @@ class IntegrationForm(Form):
 
 
 class IntegrationView(BaseView):
-    title = "Ubuntu WSL - Integration Setup"
+    title = "Ubuntu on WSL - Integration Setup"
     excerpt = (
         "In this page, you can add some integration to your Ubuntu WSL, to make it suit your needs.\n\n"
     )

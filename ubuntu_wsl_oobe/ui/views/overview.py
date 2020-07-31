@@ -25,7 +25,7 @@ log = logging.getLogger("ubuntu_wsl_oobe.ui.views.overview")
 
 
 class OverviewView(BaseView):
-    title = "Ubuntu WSL - Setup Complete"
+    title = "Ubuntu on WSL - Setup Complete"
 
     def __init__(self, controller):
         self.controller = controller

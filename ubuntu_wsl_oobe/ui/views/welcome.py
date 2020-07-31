@@ -28,7 +28,7 @@ log = logging.getLogger("ubuntu_wsl_oobe.views.welcome")
 
 
 class WelcomeView(BaseView):
-    title = "Ubuntu WSL"
+    title = "Ubuntu on WSL"
     excerpt = (
         "Thanks for downloading Ubuntu for WSL!\n"
         "This setup wizard will help you go though several setup:\n\n"

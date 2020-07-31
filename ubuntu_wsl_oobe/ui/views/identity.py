@@ -69,7 +69,7 @@ class IdentityForm(Form):
         self.reserved_usernames = reserved_usernames
         super().__init__(initial=initial)
 
-    username = UsernameField(_("Pick a username:"), help=("The username does not need to match your Windows username"))
+    username = UsernameField(_("Pick a username:"), help=("The username does not need to match your Windows username."))
     password = PasswordField(_("Choose a password:"))
     confirm_password = PasswordField(_("Confirm your password:"))
 
@@ -112,8 +112,8 @@ def setup_password_validation(form, desc):
         form.confirm_password.widget, 'change', _check_password)
 
 class IdentityView(BaseView):
-    title = _("Ubuntu WSL - Profile Setup")
-    excerpt = _("Please create a default UNIX user account. "
+    title = _("Ubuntu on WSL - User Setup")
+    excerpt = _("Please create a default Linux user account. "
                 "For more information visit: https://aka.ms/wslusers")
 
     def __init__(self, model, controller):
