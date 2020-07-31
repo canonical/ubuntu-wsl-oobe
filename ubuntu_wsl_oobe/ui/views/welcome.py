@@ -33,7 +33,7 @@ class WelcomeView(BaseView):
         "Thanks for downloading Ubuntu for WSL!\n"
         "This setup wizard will help you go though several setup:\n\n"
         "- Set up your account;\n"
-        "- Set up Ubuntu WSL/Windows Integration."
+        "- Set up the Ubuntu WSL/Windows Integration."
     )
 
     def __init__(self, controller):
