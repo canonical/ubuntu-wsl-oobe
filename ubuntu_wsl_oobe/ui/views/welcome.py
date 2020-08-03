@@ -19,7 +19,7 @@ Welcome provides user with language selection
 
 """
 import logging
-
+import os
 from urwid import Text
 
 from subiquitycore.ui.buttons import forward_btn, other_btn
@@ -37,19 +37,20 @@ installed system.
 
 
 class WelcomeView(BaseView):
-    title = "Bienvenue! Welcome! Welkom! Bonvenon! 歡迎！こんにちは！"
+    title = "Bienvenue! Welcome! Welkom!"
 
     def __init__(self, model, controller):
         self.model = model
         self.controller = controller
-        self.is_linux_tty = controller.app.is_linux_tty
         s = self.make_language_choices()
         super().__init__(s)
 
     def make_language_choices(self):
         btns = []
         current_index = None
-        langs = self.model.get_languages(self.is_linux_tty)
+        if "WT_PROFILE_ID" in os.environ:
+            self.__class__.title += " 歡迎！こんにちは！"
+        langs = self.model.get_languages("WT_PROFILE_ID" not in os.environ)
         cur = self.model.selected_language
         log.debug("_build_model_inputs selected_language=%s", cur)
         if cur in ["C", None]:
@@ -70,17 +71,6 @@ class WelcomeView(BaseView):
         return screen(
             lb, buttons=None, narrow_rows=True,
             excerpt=_("Use UP, DOWN and ENTER keys to select your language."))
-
-    def enable_rich(self, sender):
-        self.controller.app.toggle_rich()
-        self.title = self.__class__.title
-        self.controller.ui.set_header(self.title)
-        self._w = self.make_language_choices()
-
-    def ssh_help(self, sender, password):
-        menu = self.controller.app.help_menu
-        menu.ssh_password = password
-        menu.ssh_help()
 
     def choose_language(self, sender, code):
         log.debug('WelcomeView %s', code)

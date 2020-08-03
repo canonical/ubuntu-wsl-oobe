@@ -1,8 +1,8 @@
 console:en_US:English
 console:en_GB:English (UK)
-console:zh_HANS:中文(简体)
-console:zh_HANT:中文(繁體)
-console:jp:日本語
+new_console_only:zh_CN:中文(简体)
+new_console_only:zh_TW:中文(繁體)
+new_console_only:jp:日本語
 console:fr:Français
 console:es:Español
-console:bn:বাংলা
+new_console_only:bn:বাংলা

@@ -30,7 +30,7 @@ class LocaleModel(object):
 
     selected_language = None
 
-    def get_languages(self, is_linux_tty):
+    def get_languages(self, is_old_console):
         base = os.environ.get("SNAP", ".")
         lang_path = os.path.join(base, "languagelist")
 
@@ -38,7 +38,7 @@ class LocaleModel(object):
         with open(lang_path) as lang_file:
             for line in lang_file:
                 level, code, name = line.strip().split(':')
-                if is_linux_tty and level != "console":
+                if is_old_console and level == "new_console_only":
                     continue
                 languages.append((code, name))
         languages.sort(key=lambda x: x[1])
