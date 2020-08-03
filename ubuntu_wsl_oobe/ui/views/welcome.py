@@ -27,7 +27,7 @@ from subiquitycore.ui.container import ListBox
 from subiquitycore.ui.utils import button_pile, rewrap, screen
 from subiquitycore.view import BaseView
 
-log = logging.getLogger("subiquity.views.welcome")
+log = logging.getLogger("ubuntu_wsl_oobe.views.welcome")
 
 
 HELP = _("""
@@ -38,18 +38,27 @@ installed system.
 
 class WelcomeView(BaseView):
     title = "Bienvenue! Welcome! Welkom!"
+    extented_title = title + " 歡迎！こんにちは！"
 
     def __init__(self, model, controller):
         self.model = model
         self.controller = controller
+        self.fallback_mode_checked = False
         s = self.make_language_choices()
         super().__init__(s)
 
     def make_language_choices(self):
         btns = []
         current_index = None
-        if "WT_PROFILE_ID" in os.environ:
-            self.__class__.title += " 歡迎！こんにちは！"
+        excerpt_context = _("Use UP, DOWN and ENTER keys to select your language.")
+        extented_excerpt_context =  _("You are using old Windows Console Host, Entering fallback mode. Use Windows Terminal to get more language options.") + "\n\n" + excerpt_context
+        if not self.fallback_mode_checked:
+            if "WT_PROFILE_ID" in os.environ:
+                self.__class__.title = self.__class__.extented_title
+            else:
+                excerpt_context = extented_excerpt_context
+            self.fallback_mode_checked = True
+        
         langs = self.model.get_languages("WT_PROFILE_ID" not in os.environ)
         cur = self.model.selected_language
         log.debug("_build_model_inputs selected_language=%s", cur)
@@ -70,7 +79,7 @@ class WelcomeView(BaseView):
             lb.base_widget.focus_position = current_index
         return screen(
             lb, buttons=None, narrow_rows=True,
-            excerpt=_("Use UP, DOWN and ENTER keys to select your language."))
+            excerpt=excerpt_context)
 
     def choose_language(self, sender, code):
         log.debug('WelcomeView %s', code)
