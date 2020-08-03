@@ -20,32 +20,71 @@ Welcome provides user with language selection
 """
 import logging
 
-from subiquitycore.ui.buttons import done_btn
-from subiquitycore.ui.utils import button_pile, screen
+from urwid import Text
+
+from subiquitycore.ui.buttons import forward_btn, other_btn
+from subiquitycore.ui.container import ListBox
+from subiquitycore.ui.utils import button_pile, rewrap, screen
 from subiquitycore.view import BaseView
 
-log = logging.getLogger("ubuntu_wsl_oobe.views.welcome")
+log = logging.getLogger("subiquity.views.welcome")
+
+
+HELP = _("""
+Select the language to use for the installer and to be configured in the
+installed system.
+""")
 
 
 class WelcomeView(BaseView):
-    title = "Ubuntu WSL"
-    excerpt = (
-        "Thanks for downloading Ubuntu for WSL!\n"
-        "This setup wizard will help you go though several setup:\n\n"
-        "- Set up your account;\n"
-        "- Set up the Ubuntu WSL/Windows Integration."
-    )
+    title = "Bienvenue! Welcome! Welkom! Bonvenon! 歡迎！こんにちは！"
 
-    def __init__(self, controller):
+    def __init__(self, model, controller):
+        self.model = model
         self.controller = controller
-        super().__init__(
-            screen(
-                rows=[],
-                buttons=button_pile([done_btn("OK", on_press=self.confirm)]),
-                focus_buttons=True,
-                excerpt=self.excerpt,
-            )
-        )
+        self.is_linux_tty = controller.app.is_linux_tty
+        s = self.make_language_choices()
+        super().__init__(s)
 
-    def confirm(self, result):
-        self.controller.done()
+    def make_language_choices(self):
+        btns = []
+        current_index = None
+        langs = self.model.get_languages(self.is_linux_tty)
+        cur = self.model.selected_language
+        log.debug("_build_model_inputs selected_language=%s", cur)
+        if cur in ["C", None]:
+            cur = "en_US"
+        for i, (code, native) in enumerate(langs):
+            log.debug("%s", (code, self.model.selected_language))
+            if code == cur:
+                current_index = i
+            btns.append(
+                forward_btn(
+                    label=native,
+                    on_press=self.choose_language,
+                    user_arg=code))
+
+        lb = ListBox(btns)
+        if current_index is not None:
+            lb.base_widget.focus_position = current_index
+        return screen(
+            lb, buttons=None, narrow_rows=True,
+            excerpt=_("Use UP, DOWN and ENTER keys to select your language."))
+
+    def enable_rich(self, sender):
+        self.controller.app.toggle_rich()
+        self.title = self.__class__.title
+        self.controller.ui.set_header(self.title)
+        self._w = self.make_language_choices()
+
+    def ssh_help(self, sender, password):
+        menu = self.controller.app.help_menu
+        menu.ssh_password = password
+        menu.ssh_help()
+
+    def choose_language(self, sender, code):
+        log.debug('WelcomeView %s', code)
+        self.controller.done(code)
+
+    def local_help(self):
+        return _("Help choosing a language"), _(HELP)
