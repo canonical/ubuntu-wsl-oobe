@@ -51,7 +51,7 @@ class WelcomeView(BaseView):
         btns = []
         current_index = None
         excerpt_context = _("Use UP, DOWN and ENTER keys to select your language.")
-        extented_excerpt_context =  _("You are using old Windows Console Host, Entering fallback mode. Use Windows Terminal to get more language options.") + "\n\n" + excerpt_context
+        extented_excerpt_context = _("You are using old Windows Console Host, Entering fallback mode. Use Windows Terminal to get more language options.") + "\n\n" + excerpt_context
         if not self.fallback_mode_checked:
             if "WT_PROFILE_ID" in os.environ:
                 self.__class__.title = self.__class__.extented_title

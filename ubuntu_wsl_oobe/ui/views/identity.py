@@ -63,13 +63,13 @@ PasswordField = simple_field(PasswordEditor)
 
 class IdentityForm(Form):
 
-    cancel_label = "Back"
+    cancel_label = _("Back")
 
     def __init__(self, reserved_usernames, initial):
         self.reserved_usernames = reserved_usernames
         super().__init__(initial=initial)
 
-    username = UsernameField(_("Pick a username:"), help=("The username does not need to match your Windows username"))
+    username = UsernameField(_("Pick a username:"), help=_("The username does not need to match your Windows username"))
     password = PasswordField(_("Choose a password:"))
     confirm_password = PasswordField(_("Confirm your password:"))
 
