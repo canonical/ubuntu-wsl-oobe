@@ -11,7 +11,7 @@ ALL_MODEL_NAMES = [
     "locale"
 ]
 
-class ConsoleConfModel:
+class OOBEModel:
     """The overall model for console-conf."""
 
     def __init__(self):

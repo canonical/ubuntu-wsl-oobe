@@ -17,7 +17,7 @@ import logging
 
 from subiquitycore.core import Application
 
-from ubuntu_wsl_oobe.models.ubuntu_wsl_oobe import ConsoleConfModel
+from ubuntu_wsl_oobe.models.ubuntu_wsl_oobe import OOBEModel
 
 log = logging.getLogger("ubuntu_wsl_oobe.core")
 
@@ -28,7 +28,7 @@ class ConsoleConf(Application):
 
     project = "ubuntu_wsl_oobe"
 
-    make_model = ConsoleConfModel
+    make_model = OOBEModel
 
     controllers = [
         "Welcome",
