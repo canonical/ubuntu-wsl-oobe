@@ -37,7 +37,7 @@ installed system.
 
 
 class WelcomeView(BaseView):
-    title = "Bienvenue! Welcome! Welkom!"
+    title = "Bienvenue! Welcome! Bonvenon!"
     extented_title = title + " 歡迎！こんにちは！"
 
     def __init__(self, model, controller):
@@ -84,6 +84,3 @@ class WelcomeView(BaseView):
     def choose_language(self, sender, code):
         log.debug('WelcomeView %s', code)
         self.controller.done(code)
-
-    def local_help(self):
-        return _("Help choosing a language"), _(HELP)
