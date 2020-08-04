@@ -4,7 +4,7 @@ import asyncio
 from .identity import IdentityModel
 from .locale import LocaleModel
 
-log = logging.getLogger('subiquity.models.subiquity')
+log = logging.getLogger('ubuntu_wsl_oobe.models.ubuntu_wsl_oobe')
 
 ALL_MODEL_NAMES = [
     "identity",

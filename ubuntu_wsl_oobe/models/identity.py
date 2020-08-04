@@ -21,7 +21,7 @@ from subiquitycore.utils import crypt_password
 from subiquitycore.utils import run_command
 
 
-log = logging.getLogger('subiquity.models.identity')
+log = logging.getLogger('ubuntu_wsl_oobe.models.identity')
 
 
 @attr.s

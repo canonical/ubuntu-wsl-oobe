@@ -68,7 +68,7 @@ def main():
     opts = parse_options(sys.argv[1:])
     global LOGDIR
     if opts.dry_run:
-        LOGDIR = ".subiquity"
+        LOGDIR = ".ubuntu_wsl_oobe"
     setup_logger(dir=LOGDIR)
     logger = logging.getLogger('ubuntu_wsl_oobe')
     logger.info("Starting console-conf v{}".format(VERSION))

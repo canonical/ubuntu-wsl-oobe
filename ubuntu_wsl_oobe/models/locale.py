@@ -19,7 +19,7 @@ import os
 from ubuntu_wsl_oobe.helpers import i18n
 
 
-log = logging.getLogger('subiquity.models.locale')
+log = logging.getLogger('ubuntu_wsl_oobe.models.locale')
 
 
 class LocaleModel(object):

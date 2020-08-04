@@ -19,7 +19,7 @@ from subiquitycore.controller import BaseController
 from subiquitycore.utils import run_command
 from ubuntu_wsl_oobe.ui.views import OverviewView
 
-log = logging.getLogger('console_conf.controllers.identity')
+log = logging.getLogger('ubuntu_wsl_oobe.controllers.identity')
 
 def disable_ubuntu_wsl_oobe():
     """ Stop running ubuntu_wsl_oobe and remove the package """

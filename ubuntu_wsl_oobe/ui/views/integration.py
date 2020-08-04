@@ -11,7 +11,7 @@ from subiquitycore.ui.form import (
 )
 from subiquitycore.view import BaseView
 
-log = logging.getLogger("ubuntu_wsl_oobe.views.welcome")
+log = logging.getLogger("ubuntu_wsl_oobe.views.integration")
 
 
 class IntegrationForm(Form):

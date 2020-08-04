@@ -20,7 +20,7 @@ from subiquitycore.controller import BaseController
 from ubuntu_wsl_oobe.ui.views import WelcomeView
 
 
-log = logging.getLogger('subiquity.controllers.welcome')
+log = logging.getLogger('ubuntu_wsl_oobe.controllers.welcome')
 
 
 class WelcomeController(BaseController):
