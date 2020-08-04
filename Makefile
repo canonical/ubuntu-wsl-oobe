@@ -10,10 +10,6 @@ CWD := $(shell pwd)
 CHECK_DIRS := ubuntu_wsl_oobe/ subiquitycore/
 PYTHON := python3
 
-ifneq (,$(MACHINE))
-	MACHARGS=--machine=$(MACHINE)
-endif
-
 .PHONY: submcheck run clean check
 
 all: dryrun
@@ -33,7 +29,7 @@ dryrun: probert i18n
 	$(MAKE) ui-view DRYRUN="--dry-run"
 
 ui-view:
-	$(PYTHON) -m ubuntu_wsl_oobe.cmd.tui $(DRYRUN) $(MACHARGS)
+	$(PYTHON) -m ubuntu_wsl_oobe.cmd.tui $(DRYRUN)
 
 lint: flake8
 
