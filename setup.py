@@ -98,5 +98,6 @@ setup(name='ubuntu_wsl_oobe',
       data_files=[],
       cmdclass={
           'build': build,
+          'build_i18n': build_i18n,
           },
       )

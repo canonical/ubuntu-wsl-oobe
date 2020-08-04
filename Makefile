@@ -25,7 +25,11 @@ install_deps:
 		python3-requests-unixsocket python3-jsonschema python3-curtin python3-apport \
 		python3-bson
 
-dryrun: probert
+i18n:
+	$(PYTHON) setup.py build_i18n
+	cd po; intltool-update -r -g ubuntu_wsl_oobe
+
+dryrun: probert i18n
 	$(MAKE) ui-view DRYRUN="--dry-run"
 
 ui-view:
