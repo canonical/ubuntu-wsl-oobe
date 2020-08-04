@@ -16,7 +16,7 @@
 import logging
 import os
 
-from subiquitycore import i18n
+from ubuntu_wsl_oobe.helpers import i18n
 
 
 log = logging.getLogger('subiquity.models.locale')
