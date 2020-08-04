@@ -53,7 +53,7 @@ class build_i18n(distutils.cmd.Command):
             '--add-comments',
             '--from-code=UTF-8',
             '--keyword=pgettext:1c,2',
-            '--output=subiquity.pot',
+            '--output=ubuntu_wsl_oobe.pot',
             '--files-from=POTFILES.in.tmp',
             ])
         os.chdir('..')
@@ -62,7 +62,7 @@ class build_i18n(distutils.cmd.Command):
         for po_file in glob.glob("po/*.po"):
             lang = os.path.basename(po_file[:-3])
             mo_dir = os.path.join("build", "mo", lang, "LC_MESSAGES")
-            mo_file = os.path.join(mo_dir, "subiquity.mo")
+            mo_file = os.path.join(mo_dir, "ubuntu_wsl_oobe.mo")
             if not os.path.exists(mo_dir):
                 os.makedirs(mo_dir)
             distutils.spawn.spawn(["msgfmt", po_file, "-o", mo_file])
