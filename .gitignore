@@ -63,10 +63,11 @@ logs/*
 venv
 .pybuild
 
-# probert as its pulled externally, ignore top level only.
-/probert/
-
 # installer isos
 *.iso
 
+# Subiquity Logs
 .subiquity
+
+# PyCharm files
+.idea
