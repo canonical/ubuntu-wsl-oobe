@@ -66,8 +66,9 @@ venv
 # installer isos
 *.iso
 
-# Subiquity Logs
+# Logs
 .subiquity
+.ubuntu_wsl_oobe
 
 # PyCharm files
 .idea
