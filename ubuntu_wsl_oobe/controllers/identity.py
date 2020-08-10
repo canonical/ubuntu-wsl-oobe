@@ -25,19 +25,17 @@ from ubuntu_wsl_oobe.ui.views import IdentityView
 log = logging.getLogger('ubuntu_wsl_oobe.controllers.identity')
 
 
-
 class IdentityController(BaseController):
-
     autoinstall_key = model_name = "identity"
     autoinstall_schema = {
         'type': 'object',
         'properties': {
             'username': {'type': 'string'},
             'password': {'type': 'string'},
-            },
+        },
         'required': ['username', 'password'],
         'additionalProperties': False,
-        }
+    }
 
     def load_autoinstall_data(self, data):
         if data is not None:
@@ -56,7 +54,7 @@ class IdentityController(BaseController):
             d = {
                 'username': self.answers['username'],
                 'password': self.answers['password'],
-                }
+            }
             self.done(d)
 
     def cancel(self):
@@ -69,7 +67,7 @@ class IdentityController(BaseController):
             "IdentityController.done next_screen user_spec=%s",
             safe_spec)
         self.model.add_user(user_spec)
-        #self.configured()
+        # self.configured()
         self.app.next_screen()
 
     def make_autoinstall(self):
