@@ -1,4 +1,4 @@
-# Copyright 2015 Canonical, Ltd.
+# Copyright 2020 Canonical, Ltd.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -16,7 +16,6 @@
 import logging
 
 from subiquitycore.core import Application
-
 from ubuntu_wsl_oobe.models.ubuntu_wsl_oobe import OOBEModel
 
 log = logging.getLogger("ubuntu_wsl_oobe.core")

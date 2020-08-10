@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright 2015 Canonical, Ltd.
+# Copyright 2020 Canonical, Ltd.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -20,7 +20,7 @@ import os
 import logging
 from subiquitycore.log import setup_logger
 from subiquitycore import __version__ as VERSION
-from ubuntu_wsl_oobe.core import ConsoleConf#, RecoveryChooser
+from ubuntu_wsl_oobe.core import UbuntuWslOobe
 
 
 class ClickAction(argparse.Action):

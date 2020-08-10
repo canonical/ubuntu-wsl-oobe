@@ -1,4 +1,4 @@
-# Copyright 2015 Canonical, Ltd.
+# Copyright 2020 Canonical, Ltd.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -15,16 +15,16 @@
 
 """ Welcome
 
-Welcome provides user with language selection
+Welcome provides user with language selection.
 
 """
+
 import logging
 import os
-from urwid import Text
 
-from subiquitycore.ui.buttons import forward_btn, other_btn
+from subiquitycore.ui.buttons import forward_btn
 from subiquitycore.ui.container import ListBox
-from subiquitycore.ui.utils import button_pile, rewrap, screen
+from subiquitycore.ui.utils import screen
 from subiquitycore.view import BaseView
 
 log = logging.getLogger("ubuntu_wsl_oobe.views.welcome")

@@ -1,4 +1,4 @@
-# Copyright 2015 Canonical, Ltd.
+# Copyright 2020 Canonical, Ltd.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -15,10 +15,9 @@
 
 import logging
 import os
-import jsonschema
+
 from subiquitycore.controller import BaseController
 from ubuntu_wsl_oobe.ui.views import WelcomeView
-
 
 log = logging.getLogger('ubuntu_wsl_oobe.controllers.welcome')
 

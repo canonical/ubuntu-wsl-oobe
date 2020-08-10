@@ -1,4 +1,4 @@
-# Copyright 2015 Canonical, Ltd.
+# Copyright 2020 Canonical, Ltd.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -12,12 +12,16 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+""" Overview
+
+Overview provides user with the overview of all the current settings.
+
+"""
+
 import logging
 
-from urwid import Text
-
 from subiquitycore.ui.buttons import done_btn
-from subiquitycore.ui.container import ListBox, Pile
 from subiquitycore.ui.utils import button_pile, screen
 from subiquitycore.view import BaseView
 

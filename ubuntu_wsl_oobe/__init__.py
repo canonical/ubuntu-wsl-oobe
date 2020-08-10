@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-""" Console-Conf """
+""" ubuntu-wsl-oobe """
 
 from .helpers import i18n
 __all__ = [
