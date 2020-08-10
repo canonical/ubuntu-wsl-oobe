@@ -65,7 +65,7 @@ class build_i18n(distutils.cmd.Command):
             mo_file = os.path.join(mo_dir, "ubuntu_wsl_oobe.mo")
             if not os.path.exists(mo_dir):
                 os.makedirs(mo_dir)
-            distutils.spawn.spawn(["msgfmt", po_file, "-o", mo_file])
+            distutils.spawn.spawn(["msgfmt", "-o", mo_file, po_file])
             targetpath = os.path.join("share/locale", lang, "LC_MESSAGES")
             data_files.append((targetpath, (mo_file,)))
 
