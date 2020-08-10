@@ -45,7 +45,6 @@ ubuntu_wsl_oobe/controllers/welcome.py
 ubuntu_wsl_oobe/controllers/__init__.py
 ubuntu_wsl_oobe/cmd/__init__.py
 ubuntu_wsl_oobe/cmd/tui.py
-ubuntu_wsl_oobe/cmd/write_login_details.py
 ubuntu_wsl_oobe/models/identity.py
 ubuntu_wsl_oobe/models/locale.py
 ubuntu_wsl_oobe/models/systems.py

@@ -19,7 +19,7 @@ import sys
 import os
 import logging
 from subiquitycore.log import setup_logger
-from subiquitycore import __version__ as VERSION
+from subiquitycore import __version__ as core_version
 from ubuntu_wsl_oobe.core import UbuntuWslOobe
 
 
@@ -31,8 +31,8 @@ class ClickAction(argparse.Action):
 def parse_options(argv):
     parser = argparse.ArgumentParser(
         description=(
-            'console-conf - Pre-Ownership Configuration for Ubuntu Core'),
-        prog='console-conf')
+            'ubuntu-wsl-oobe - Ubuntu WSL Onboarding Experience'),
+        prog='ubuntu-wsl-oobe')
     parser.add_argument('--dry-run', action='store_true',
                         dest='dry_run',
                         help='menu-only, do not call installer function')
@@ -65,7 +65,7 @@ def main():
     opts.run_on_serial = False
     setup_logger(dir=LOGDIR)
     logger = logging.getLogger('ubuntu_wsl_oobe')
-    logger.info("Starting console-conf v{}".format(VERSION))
+    logger.info("Starting ubuntu_wsl_oobe v{}".format("0.04"))
     logger.info("Arguments passed: {}".format(sys.argv))
 
     interface = UbuntuWslOobe(opts)

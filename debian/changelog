@@ -1,3 +1,16 @@
+ubuntu-wsl-oobe (0.0.4) groovy; urgency=medium
+
+  * Update a little mistake in POTFILES.in
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Mon, 10 Aug 2020 15:59:17 +0800
+
+ubuntu-wsl-oobe (0.0.3) groovy; urgency=medium
+
+  * Adding language selection feature;
+  * general code refactoring.
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Mon, 10 Aug 2020 15:28:16 +0800
+
 ubuntu-wsl-oobe (0.0.2) groovy; urgency=medium
 
   * Minor update on the content;
