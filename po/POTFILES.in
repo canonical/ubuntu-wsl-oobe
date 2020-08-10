@@ -43,8 +43,6 @@ ubuntu_wsl_oobe/controllers/integration.py
 ubuntu_wsl_oobe/controllers/overview.py
 ubuntu_wsl_oobe/controllers/welcome.py
 ubuntu_wsl_oobe/controllers/__init__.py
-ubuntu_wsl_oobe/controllers/tests/__init__.py
-ubuntu_wsl_oobe/controllers/tests/test_chooser.py
 ubuntu_wsl_oobe/cmd/__init__.py
 ubuntu_wsl_oobe/cmd/tui.py
 ubuntu_wsl_oobe/cmd/write_login_details.py
@@ -53,8 +51,6 @@ ubuntu_wsl_oobe/models/locale.py
 ubuntu_wsl_oobe/models/systems.py
 ubuntu_wsl_oobe/models/ubuntu_wsl_oobe.py
 ubuntu_wsl_oobe/models/__init__.py
-ubuntu_wsl_oobe/models/tests/test_systems.py
-ubuntu_wsl_oobe/models/tests/__init__.py
 ubuntu_wsl_oobe/core.py
 ubuntu_wsl_oobe/__init__.py
 ubuntu_wsl_oobe/ui/views/identity.py
@@ -62,7 +58,5 @@ ubuntu_wsl_oobe/ui/views/integration.py
 ubuntu_wsl_oobe/ui/views/overview.py
 ubuntu_wsl_oobe/ui/views/welcome.py
 ubuntu_wsl_oobe/ui/views/__init__.py
-ubuntu_wsl_oobe/ui/views/tests/__init__.py
-ubuntu_wsl_oobe/ui/views/tests/test_chooser.py
 ubuntu_wsl_oobe/ui/__init__.py
 setup.py
