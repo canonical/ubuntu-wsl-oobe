@@ -15,7 +15,7 @@
 
 """ Console-Conf """
 
-from subiquitycore import i18n
+from .helpers import i18n
 __all__ = [
     'i18n',
 ]
