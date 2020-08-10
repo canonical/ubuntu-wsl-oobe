@@ -48,13 +48,7 @@ def parse_options(argv):
                         dest='scripts', default=[],
                         help=('Execute SCRIPT in a namespace containing view '
                               'helpers and "ui"'))
-    parser.add_argument('--click', metavar="PAT", action=ClickAction,
-                        help='Synthesize a click on a button matching PAT')
     parser.add_argument('--answers')
-    parser.add_argument('--recovery-chooser-mode', action='store_true',
-                        dest='chooser_systems',
-                        help=('Run as a recovery chooser interacting with the '
-                              'calling process over stdin/stdout streams'))
     return parser.parse_args(argv)
 
 
@@ -66,6 +60,9 @@ def main():
     global LOGDIR
     if opts.dry_run:
         LOGDIR = ".ubuntu_wsl_oobe"
+    # disabling run_on_serial at all time
+    # WSL is always not on serial
+    opts.run_on_serial = False
     setup_logger(dir=LOGDIR)
     logger = logging.getLogger('ubuntu_wsl_oobe')
     logger.info("Starting console-conf v{}".format(VERSION))
