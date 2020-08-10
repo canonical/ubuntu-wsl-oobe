@@ -36,9 +36,6 @@ def parse_options(argv):
     parser.add_argument('--dry-run', action='store_true',
                         dest='dry_run',
                         help='menu-only, do not call installer function')
-    parser.add_argument('--serial', action='store_true',
-                        dest='run_on_serial',
-                        help='Run the installer over serial console.')
     parser.add_argument('--ascii', action='store_true',
                         dest='ascii',
                         help='Run the installer in ascii mode.')
