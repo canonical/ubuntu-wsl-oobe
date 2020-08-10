@@ -68,14 +68,7 @@ def main():
     logger.info("Starting console-conf v{}".format(VERSION))
     logger.info("Arguments passed: {}".format(sys.argv))
 
-    # if opts.chooser_systems:
-    #     # when running as a chooser, the stdin/stdout streams are set up by the
-    #     # process that runs us, attempt to restore the tty in/out by looking at
-    #     # stderr
-    #     chooser_input, chooser_output = restore_std_streams_from(sys.stderr)
-    #     interface = RecoveryChooser(opts, chooser_input, chooser_output)
-    # else:
-    interface = ConsoleConf(opts)
+    interface = UbuntuWslOobe(opts)
 
     interface.run()
 

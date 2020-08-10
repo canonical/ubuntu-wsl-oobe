@@ -21,9 +21,9 @@ from ubuntu_wsl_oobe.models.ubuntu_wsl_oobe import OOBEModel
 log = logging.getLogger("ubuntu_wsl_oobe.core")
 
 
-class ConsoleConf(Application):
+class UbuntuWslOobe(Application):
 
-    from subiquitycore.palette import COLORS, STYLES, STYLES_MONO
+    from ubuntu_wsl_oobe.helpers.palette import COLORS, STYLES, STYLES_MONO
 
     project = "ubuntu_wsl_oobe"
 
