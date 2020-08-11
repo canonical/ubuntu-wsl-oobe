@@ -126,8 +126,10 @@ class IdentityView(BaseView):
         self.controller = controller
         self.signal = controller.signal
 
-        reserved_usernames_path = (
-            os.path.join(os.environ.get("SNAP", "."), "reserved-usernames"))
+        reserved_usernames_path = '/usr/share/ubuntu-wsl-oobe/reserved-usernames'
+        build_reserved_usernames_path = os.path.realpath(__file__ + '/../../../../reserved-usernames')
+        if os.path.isfile(build_reserved_usernames_path):
+            reserved_usernames_path = build_reserved_usernames_path
         reserved_usernames = set()
         if os.path.exists(reserved_usernames_path):
             with open(reserved_usernames_path) as fp:
