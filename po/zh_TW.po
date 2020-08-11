@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-10 21:31+0800\n"
+"POT-Creation-Date: 2020-08-11 13:54+0800\n"
 "PO-Revision-Date: 2020-08-10 21:08+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Asturian <ast@li.org>\n"
@@ -19,19 +19,19 @@ msgstr ""
 
 #: ../subiquitycore/controllers/network.py:297
 msgid "autoconfiguration failed"
-msgstr ""
+msgstr "自動配置失敗"
 
 #: ../subiquitycore/ui/utils.py:340
 msgid "Close"
-msgstr ""
+msgstr "關閉"
 
 #: ../subiquitycore/ui/form.py:365
 msgid ", or "
-msgstr ""
+msgstr "或"
 
 #: ../subiquitycore/ui/form.py:367
 msgid " or "
-msgstr ""
+msgstr "或"
 
 #: ../subiquitycore/ui/form.py:371
 #, python-brace-format
@@ -40,19 +40,19 @@ msgstr ""
 
 #: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:46
 msgid "Done"
-msgstr ""
+msgstr "完成"
 
 #: ../subiquitycore/ui/form.py:452
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "Yes"
-msgstr ""
+msgstr "是"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:54
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
@@ -60,23 +60,23 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:71
 msgid "Back"
-msgstr ""
+msgstr "返回"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
 msgid "Pick a username:"
-msgstr ""
+msgstr "使用者名稱："
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
 msgid "The username does not need to match your Windows username"
-msgstr ""
+msgstr "使用者名稱無需與 Windows 的使用者名稱相同"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:78
 msgid "Choose a password:"
-msgstr ""
+msgstr "選擇密碼："
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:79
 msgid "Confirm your password:"
-msgstr ""
+msgstr "確認密碼："
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:84
 msgid "Username missing"
@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:120
 msgid "Ubuntu WSL - Profile Setup"
-msgstr ""
+msgstr "Ubuntu WSL - 使用者配置"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:121
 msgid ""
@@ -120,7 +120,7 @@ msgid ""
 "https://aka.ms/wslusers"
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:153
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:155
 msgid "passwords"
 msgstr ""
 

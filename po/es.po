@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-10 21:31+0800\n"
+"POT-Creation-Date: 2020-08-11 13:54+0800\n"
 "PO-Revision-Date: 2020-08-10 21:08+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Asturian <ast@li.org>\n"
@@ -120,7 +120,7 @@ msgid ""
 "https://aka.ms/wslusers"
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:153
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:155
 msgid "passwords"
 msgstr ""
 
