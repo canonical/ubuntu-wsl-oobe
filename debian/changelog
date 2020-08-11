@@ -1,3 +1,9 @@
+ubuntu-wsl-oobe (0.0.5) groovy; urgency=medium
+
+  * Update translation structure.
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Mon, 10 Aug 2020 21:39:09 +0800
+
 ubuntu-wsl-oobe (0.0.4) groovy; urgency=medium
 
   * Update a little mistake in POTFILES.in
