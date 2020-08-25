@@ -46,6 +46,7 @@ class IdentityController(BaseController):
         log.debug(
             "IdentityController.done next_screen user_spec=%s",
             safe_spec)
-        self.model.add_user(user_spec)
-        # self.configured()
+        if not self.opts.dry_run:
+            self.model.add_user(user_spec)
+        self.configured()
         self.app.next_screen()
