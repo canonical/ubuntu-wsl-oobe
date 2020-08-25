@@ -14,6 +14,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import logging
+import os
 
 import attr
 
@@ -39,9 +40,22 @@ class IdentityModel(object):
     def add_user(self, result):
         result = result.copy()
         self._user = User(**result)
+
+        usergroups_path = '/usr/share/ubuntu-wsl-oobe/usergroups'
+        build_usergroups_path = os.path.realpath(__file__ + '/../../../usergroups')
+        if os.path.isfile(build_usergroups_path):
+            usergroups_path = build_usergroups_path
+        user_groups = set()
+        if os.path.exists(usergroups_path):
+            with open(usergroups_path) as fp:
+                for line in fp:
+                    line = line.strip()
+                    if line.startswith('#') or not line:
+                        continue
+                    user_groups.add(line)
+        oneline_usergroups = ",".join(user_groups)
         run_command(["/usr/sbin/useradd", "-m", "-s", "/bin/bash", "-p", result['password'], result['username']])
-        run_command(["/usr/sbin/usermod", "-a", "-G", "adm,dialout,cdrom,floppy,sudo,audio,dip,video,plugdev,netdev",
-                     result['username']])
+        run_command(["/usr/sbin/usermod", "-a", "-G", oneline_usergroups, result['username']])
 
     @property
     def user(self):
