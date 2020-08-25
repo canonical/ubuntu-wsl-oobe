@@ -16,9 +16,9 @@
 """ ubuntu-wsl-oobe UI Views """
 
 from .identity import IdentityView
-from .welcome import WelcomeView
 from .integration import IntegrationView
 from .overview import OverviewView
+from .welcome import WelcomeView
 
 __all__ = [
     "IntegrationView",

@@ -30,9 +30,9 @@ class Brand:
 
     def __eq__(self, other):
         return self.ID == other.ID and \
-            self.username == other.username and \
-            self.display_name == other.display_name and \
-            self.validation == other.validation
+               self.username == other.username and \
+               self.display_name == other.display_name and \
+               self.validation == other.validation
 
 
 @attr.s
@@ -43,8 +43,8 @@ class SystemModel:
 
     def __eq__(self, other):
         return self.model == other.model and \
-            self.brand_id == other.brand_id and \
-            self.display_name == other.display_name
+               self.brand_id == other.brand_id and \
+               self.display_name == other.display_name
 
 
 @attr.s
@@ -54,7 +54,7 @@ class SystemAction:
 
     def __eq__(self, other):
         return self.title == other.title and \
-            self.mode == other.mode
+               self.mode == other.mode
 
 
 @attr.s
@@ -64,4 +64,4 @@ class SelectedSystemAction:
 
     def __eq__(self, other):
         return self.system == other.system and \
-            self.action == other.action
+               self.action == other.action

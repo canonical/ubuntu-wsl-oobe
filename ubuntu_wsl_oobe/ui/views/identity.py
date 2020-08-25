@@ -25,22 +25,21 @@ import re
 
 from urwid import (
     connect_signal,
-    )
-from subiquitycore.ui.interactive import (
-    PasswordEditor,
-    StringEditor,
-    )
+)
+
 from subiquitycore.ui.form import (
     Form,
     simple_field,
     WantsToKnowFormField,
-    )
+)
+from subiquitycore.ui.interactive import (
+    PasswordEditor,
+    StringEditor,
+)
 from subiquitycore.ui.utils import screen
 from subiquitycore.view import BaseView
 
-
 log = logging.getLogger("ubuntu_wsl_oobe.views.identity")
-
 
 HOSTNAME_MAXLEN = 64
 REALNAME_MAXLEN = 160
@@ -63,11 +62,12 @@ class UsernameEditor(StringEditor, WantsToKnowFormField):
         else:
             return super().valid_char(ch)
 
+
 UsernameField = simple_field(UsernameEditor)
 PasswordField = simple_field(PasswordEditor)
 
-class IdentityForm(Form):
 
+class IdentityForm(Form):
     cancel_label = _("Back")
 
     def __init__(self, reserved_usernames, initial):
@@ -86,7 +86,7 @@ class IdentityForm(Form):
         if len(username) > USERNAME_MAXLEN:
             return _(
                 "Username too long, must be less than {limit}"
-                ).format(limit=USERNAME_MAXLEN)
+            ).format(limit=USERNAME_MAXLEN)
 
         if not re.match(r'[a-z_][a-z0-9_-]*', username):
             return _("Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*")
@@ -94,7 +94,7 @@ class IdentityForm(Form):
         if username in self.reserved_usernames:
             return _(
                 'The username "{username}" is reserved for use by the system.'
-                ).format(username=username)
+            ).format(username=username)
 
     def validate_password(self):
         if len(self.password.value) < 1:
@@ -103,6 +103,7 @@ class IdentityForm(Form):
     def validate_confirm_password(self):
         if self.password.value != self.confirm_password.value:
             return _("Passwords do not match")
+
 
 def setup_password_validation(form, desc):
     def _check_password(sender, new_text):
@@ -113,8 +114,10 @@ def setup_password_validation(form, desc):
                 ("info_error", _("{desc} do not match").format(desc=desc)))
         else:
             form.confirm_password.show_extra('')
+
     connect_signal(
         form.confirm_password.widget, 'change', _check_password)
+
 
 class IdentityView(BaseView):
     title = _("Ubuntu WSL - Profile Setup")
@@ -151,7 +154,6 @@ class IdentityView(BaseView):
         self.form = IdentityForm(reserved_usernames, initial)
 
         connect_signal(self.form, 'submit', self.done)
-        connect_signal(self.form, 'cancel', self.cancel)
         setup_password_validation(self.form, _("passwords"))
 
         super().__init__(
@@ -160,10 +162,6 @@ class IdentityView(BaseView):
                 [self.form.done_btn, self.form.cancel_btn],
                 excerpt=_(self.excerpt),
                 focus_buttons=False))
-
-
-    def cancel(self, button=None):
-        self.controller.cancel()
 
     def done(self, result):
         result = {

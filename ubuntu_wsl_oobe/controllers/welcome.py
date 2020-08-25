@@ -23,7 +23,6 @@ log = logging.getLogger('ubuntu_wsl_oobe.controllers.welcome')
 
 
 class WelcomeController(BaseController):
-
     model_name = "locale"
     autoinstall_schema = {'type': 'string'}
     autoinstall_default = 'en_US.UTF-8'
@@ -32,7 +31,6 @@ class WelcomeController(BaseController):
         super().__init__(app)
         self.autoinstall_applied = False
         self.context.set('controller', self)
-
 
     def start(self):
         lang = os.environ.get("LANG")

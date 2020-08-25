@@ -15,11 +15,11 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import argparse
-import sys
-import os
 import logging
+import os
+import sys
+
 from subiquitycore.log import setup_logger
-from subiquitycore import __version__ as core_version
 from ubuntu_wsl_oobe.core import UbuntuWslOobe
 
 

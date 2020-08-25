@@ -18,9 +18,10 @@
 # due to the issue that it is made for subiquity
 ###################################################
 
-from subiquitycore import gettext38
 import os
 import syslog
+
+from subiquitycore import gettext38
 
 syslog.syslog('i18n file is ' + __file__)
 localedir = '/usr/share/locale'

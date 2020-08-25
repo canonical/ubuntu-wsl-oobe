@@ -14,14 +14,14 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import logging
-from ubuntu_wsl_oobe.ui.views import IntegrationView
 
 from subiquitycore.controller import BaseController
+from ubuntu_wsl_oobe.ui.views import IntegrationView
 
 log = logging.getLogger('ubuntu_wsl_oobe.controllers.integration')
 
-class IntegrationController(BaseController):
 
+class IntegrationController(BaseController):
     integration_view = IntegrationView
 
     def start_ui(self):

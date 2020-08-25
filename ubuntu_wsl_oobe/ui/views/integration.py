@@ -23,12 +23,13 @@ import logging
 
 from urwid import (
     connect_signal,
-    )
-from subiquitycore.ui.utils import button_pile, screen
+)
+
 from subiquitycore.ui.form import (
     Form,
     BooleanField
 )
+from subiquitycore.ui.utils import screen
 from subiquitycore.view import BaseView
 
 log = logging.getLogger("ubuntu_wsl_oobe.views.integration")
@@ -38,9 +39,12 @@ class IntegrationForm(Form):
     def __init__(self):
         super().__init__()
 
-    gui_integration = BooleanField(_("GUI Integration"), help=_("This enables Automatic DISPLAY environment set-up. Third-party X server required."))
-    audio_integration = BooleanField(_("Audio Integration"), help=_("This enables Audio server on WSL. PulseAudio on Windows is required."))
-    advanced_detection = BooleanField(_("Advanced Detection"), help=_("This enables Advanced IP Detection to be used in the Integration."))
+    gui_integration = BooleanField(_("GUI Integration"), help=_(
+        "This enables Automatic DISPLAY environment set-up. Third-party X server required."))
+    audio_integration = BooleanField(_("Audio Integration"),
+                                     help=_("This enables Audio server on WSL. PulseAudio on Windows is required."))
+    advanced_detection = BooleanField(_("Advanced Detection"),
+                                      help=_("This enables Advanced IP Detection to be used in the Integration."))
 
 
 class IntegrationView(BaseView):

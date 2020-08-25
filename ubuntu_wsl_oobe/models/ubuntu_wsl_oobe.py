@@ -14,8 +14,8 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import logging
 import asyncio
+import logging
 
 from .identity import IdentityModel
 from .locale import LocaleModel
@@ -27,6 +27,7 @@ ALL_MODEL_NAMES = [
     "locale"
 ]
 
+
 class OOBEModel:
     """The overall model for console-conf."""
 
@@ -36,9 +37,8 @@ class OOBEModel:
 
         self._events = {
             name: asyncio.Event() for name in ALL_MODEL_NAMES
-            }
+        }
 
     def configured(self, model_name):
         log.debug("model %s is configured", model_name)
         self._events[model_name].set()
-        

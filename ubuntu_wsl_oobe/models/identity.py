@@ -14,11 +14,11 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import logging
+
 import attr
 
 from subiquitycore.utils import crypt_password
 from subiquitycore.utils import run_command
-
 
 log = logging.getLogger('ubuntu_wsl_oobe.models.identity')
 
@@ -40,7 +40,8 @@ class IdentityModel(object):
         result = result.copy()
         self._user = User(**result)
         run_command(["/usr/sbin/useradd", "-m", "-s", "/bin/bash", "-p", result['password'], result['username']])
-        run_command(["/usr/sbin/usermod", "-a", "-G", "adm,dialout,cdrom,floppy,sudo,audio,dip,video,plugdev,netdev", result['username']])
+        run_command(["/usr/sbin/usermod", "-a", "-G", "adm,dialout,cdrom,floppy,sudo,audio,dip,video,plugdev,netdev",
+                     result['username']])
 
     @property
     def user(self):

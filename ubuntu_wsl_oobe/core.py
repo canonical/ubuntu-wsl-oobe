@@ -22,9 +22,6 @@ log = logging.getLogger("ubuntu_wsl_oobe.core")
 
 
 class UbuntuWslOobe(Application):
-
-    from ubuntu_wsl_oobe.helpers.palette import COLORS, STYLES, STYLES_MONO
-
     project = "ubuntu_wsl_oobe"
 
     make_model = OOBEModel
