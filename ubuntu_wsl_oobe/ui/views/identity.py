@@ -159,7 +159,7 @@ class IdentityView(BaseView):
         super().__init__(
             screen(
                 self.form.as_rows(),
-                [self.form.done_btn, self.form.cancel_btn],
+                [self.form.done_btn],
                 excerpt=_(self.excerpt),
                 focus_buttons=False))
 
