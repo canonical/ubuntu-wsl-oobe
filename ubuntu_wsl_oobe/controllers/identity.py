@@ -25,26 +25,7 @@ log = logging.getLogger('ubuntu_wsl_oobe.controllers.identity')
 
 
 class IdentityController(BaseController):
-    autoinstall_key = model_name = "identity"
-    autoinstall_schema = {
-        'type': 'object',
-        'properties': {
-            'username': {'type': 'string'},
-            'password': {'type': 'string'},
-        },
-        'required': ['username', 'password'],
-        'additionalProperties': False,
-    }
-
-    def load_autoinstall_data(self, data):
-        if data is not None:
-            self.model.add_user(data)
-
-    @with_context()
-    async def apply_autoinstall_config(self, context=None):
-        if not self.model.user:
-            if 'user-data' not in self.app.autoinstall_config:
-                raise Exception("no identity data provided")
+    model_name = "identity"
 
     def start_ui(self):
         self.ui.set_body(IdentityView(self.model, self))
@@ -68,9 +49,3 @@ class IdentityController(BaseController):
         self.model.add_user(user_spec)
         # self.configured()
         self.app.next_screen()
-
-    def make_autoinstall(self):
-        if self.model.user is None:
-            return {}
-        r = attr.asdict(self.model.user)
-        return r
