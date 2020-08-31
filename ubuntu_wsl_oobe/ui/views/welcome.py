@@ -84,23 +84,3 @@ class WelcomeView(BaseView):
     def choose_language(self, sender, code):
         log.debug('WelcomeView %s', code)
         self.controller.done(code)
-
-
-class AlreadyCreatedView(BaseView):
-    title = _("Ubuntu WSL - Already Registered")
-
-    def __init__(self, ):
-        complete_text = _("You have complete the setup!\n\n Here is what's new for Ubuntu WSL:\n")
-
-        super().__init__(
-            screen(
-                rows=[],
-                buttons=button_pile(
-                    [done_btn(_("Done"), on_press=self.confirm), ]),
-                focus_buttons=True,
-                excerpt=complete_text,
-            )
-        )
-
-    def confirm(self):
-        self.app.exit()

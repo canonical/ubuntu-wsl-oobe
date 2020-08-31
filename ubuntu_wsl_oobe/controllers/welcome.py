@@ -83,3 +83,26 @@ class WelcomeController(BaseController):
 
     def make_autoinstall(self):
         return self.model.selected_language
+
+class AlreadyCreatedView(BaseView):
+    title = _("Ubuntu WSL - Already Completed")
+
+    def __init__(self):
+        complete_text = _("You have already completed setup. Aborted.")
+
+        super().__init__(
+            screen(
+                rows=[],
+                buttons=button_pile(
+                    [done_btn(_("Done"), on_press=self.confirm), ]),
+                focus_buttons=True,
+                excerpt=complete_text,
+            )
+        )
+
+    def confirm(self):
+        self.done()
+
+    def done(self):
+        self.app.exit()
+
