@@ -24,8 +24,6 @@ log = logging.getLogger('ubuntu_wsl_oobe.controllers.welcome')
 
 class WelcomeController(BaseController):
     model_name = "locale"
-    autoinstall_schema = {'type': 'string'}
-    autoinstall_default = 'en_US.UTF-8'
 
     def __init__(self, app):
         super().__init__(app)
@@ -46,8 +44,6 @@ class WelcomeController(BaseController):
     def start_ui(self):
         view = WelcomeView(self.model, self)
         self.ui.set_body(view)
-        if 'lang' in self.answers:
-            self.done(self.answers['lang'])
 
     def interactive(self):
         if not self.app.autoinstall_config:
@@ -81,8 +77,6 @@ class WelcomeController(BaseController):
     def deserialize(self, data):
         self.model.switch_language(data)
 
-    def make_autoinstall(self):
-        return self.model.selected_language
 
 class AlreadyCreatedView(BaseView):
     title = _("Ubuntu WSL - Already Completed")

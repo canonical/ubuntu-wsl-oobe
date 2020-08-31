@@ -29,16 +29,9 @@ class IdentityController(BaseController):
 
     def start_ui(self):
         self.ui.set_body(IdentityView(self.model, self))
-        if all(elem in self.answers for elem in
-               ['realname', 'username', 'password']):
-            d = {
-                'username': self.answers['username'],
-                'password': self.answers['password'],
-            }
-            self.done(d)
 
     def cancel(self):
-        self.app.prev_screen()
+        pass
 
     def done(self, user_spec):
         safe_spec = user_spec.copy()

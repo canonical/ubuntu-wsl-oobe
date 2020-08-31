@@ -68,7 +68,6 @@ PasswordField = simple_field(PasswordEditor)
 
 
 class IdentityForm(Form):
-    cancel_label = _("Back")
 
     def __init__(self, reserved_usernames, initial):
         self.reserved_usernames = reserved_usernames
