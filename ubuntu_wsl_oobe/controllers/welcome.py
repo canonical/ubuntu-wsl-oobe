@@ -17,6 +17,10 @@ import logging
 import os
 
 from subiquitycore.controller import BaseController
+from subiquitycore.ui.buttons import done_btn
+from subiquitycore.ui.utils import button_pile, screen
+from subiquitycore.utils import run_command
+from subiquitycore.view import BaseView
 from ubuntu_wsl_oobe.ui.views import WelcomeView
 
 log = logging.getLogger('ubuntu_wsl_oobe.controllers.welcome')
@@ -42,7 +46,12 @@ class WelcomeController(BaseController):
             self.model.selected_language = lang
 
     def start_ui(self):
+        # clean up old account setup if exist (although there is possibly none)
+        if self.opts.dry_run:
+            run_command(["/usr/bin/rm", "-rf", "/tmp/ubuntu-wsl-oobe/created_account"])
         view = WelcomeView(self.model, self)
+        if os.path.exists("/tmp/ubuntu-wsl-oobe/created_account"):
+            view = AlreadyCreatedView()
         self.ui.set_body(view)
 
     def interactive(self):
