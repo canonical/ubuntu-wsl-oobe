@@ -22,9 +22,9 @@ Welcome provides user with language selection.
 import logging
 import os
 
-from subiquitycore.ui.buttons import forward_btn
+from subiquitycore.ui.buttons import forward_btn, done_btn
 from subiquitycore.ui.container import ListBox
-from subiquitycore.ui.utils import screen
+from subiquitycore.ui.utils import screen, button_pile
 from subiquitycore.view import BaseView
 
 log = logging.getLogger("ubuntu_wsl_oobe.views.welcome")
@@ -51,14 +51,14 @@ class WelcomeView(BaseView):
         current_index = None
         excerpt_context = _("Use UP, DOWN and ENTER keys to select your language.")
         extented_excerpt_context = _(
-            "You are using old Windows Console Host, Entering fallback mode. Use Windows Terminal to get more language options.") + "\n\n" + excerpt_context
+            "You are using old Windows Console Host, Entering fallback mode. "
+            "Use Windows Terminal to get more language options.") + "\n\n" + excerpt_context
         if not self.fallback_mode_checked:
             if "WT_PROFILE_ID" in os.environ:
                 self.__class__.title = self.__class__.extented_title
             else:
                 excerpt_context = extented_excerpt_context
             self.fallback_mode_checked = True
-
         langs = self.model.get_languages("WT_PROFILE_ID" not in os.environ)
         cur = self.model.selected_language
         log.debug("_build_model_inputs selected_language=%s", cur)
@@ -84,3 +84,23 @@ class WelcomeView(BaseView):
     def choose_language(self, sender, code):
         log.debug('WelcomeView %s', code)
         self.controller.done(code)
+
+
+class AlreadyCreatedView(BaseView):
+    title = _("Ubuntu WSL - Already Registered")
+
+    def __init__(self, ):
+        complete_text = _("You have complete the setup!\n\n Here is what's new for Ubuntu WSL:\n")
+
+        super().__init__(
+            screen(
+                rows=[],
+                buttons=button_pile(
+                    [done_btn(_("Done"), on_press=self.confirm), ]),
+                focus_buttons=True,
+                excerpt=complete_text,
+            )
+        )
+
+    def confirm(self):
+        self.app.exit()
