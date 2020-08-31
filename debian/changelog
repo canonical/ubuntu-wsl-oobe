@@ -1,3 +1,11 @@
+ubuntu-wsl-oobe (0.1.0) groovy; urgency=medium
+
+  * Update the entire integration page;
+  * Update pre-checking logic;
+  * Update the Overview content.
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Mon, 31 Aug 2020 20:38:07 +0800
+
 ubuntu-wsl-oobe (0.0.5) groovy; urgency=medium
 
   * Update translation structure.
