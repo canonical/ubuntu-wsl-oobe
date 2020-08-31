@@ -37,25 +37,32 @@ class IdentityModel(object):
     def __init__(self):
         self._user = None
 
-    def add_user(self, result):
-        result = result.copy()
-        self._user = User(**result)
+    def add_user(self, result, is_dry_run=False):
+        if is_dry_run:
+            result = {'username': "dry-run-user"}
+        else:
+            result = result.copy()
+            self._user = User(**result)
 
-        usergroups_path = '/usr/share/ubuntu-wsl-oobe/usergroups'
-        build_usergroups_path = os.path.realpath(__file__ + '/../../../usergroups')
-        if os.path.isfile(build_usergroups_path):
-            usergroups_path = build_usergroups_path
-        user_groups = set()
-        if os.path.exists(usergroups_path):
-            with open(usergroups_path) as fp:
-                for line in fp:
-                    line = line.strip()
-                    if line.startswith('#') or not line:
-                        continue
-                    user_groups.add(line)
-        oneline_usergroups = ",".join(user_groups)
-        run_command(["/usr/sbin/useradd", "-m", "-s", "/bin/bash", "-p", result['password'], result['username']])
-        run_command(["/usr/sbin/usermod", "-a", "-G", oneline_usergroups, result['username']])
+            usergroups_path = '/usr/share/ubuntu-wsl-oobe/usergroups'
+            build_usergroups_path = os.path.realpath(__file__ + '/../../../usergroups')
+            if os.path.isfile(build_usergroups_path):
+                usergroups_path = build_usergroups_path
+            user_groups = set()
+            if os.path.exists(usergroups_path):
+                with open(usergroups_path) as fp:
+                    for line in fp:
+                        line = line.strip()
+                        if line.startswith('#') or not line:
+                            continue
+                        user_groups.add(line)
+            oneline_usergroups = ",".join(user_groups)
+            run_command(["/usr/sbin/useradd", "-m", "-s", "/bin/bash", "-p", result['password'], result['username']])
+            run_command(["/usr/sbin/usermod", "-a", "-G", oneline_usergroups, result['username']])
+        # creating location for UWP to read from
+        run_command(["/usr/bin/mkdir", "-p", "/tmp/ubuntu-wsl-oobe/"])
+        with open('/tmp/ubuntu-wsl-oobe/created_account', 'w') as configfile:
+            configfile.write(result['username'])
 
     @property
     def user(self):
