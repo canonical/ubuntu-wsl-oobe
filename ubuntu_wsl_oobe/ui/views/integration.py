@@ -20,6 +20,7 @@ Integration provides user with options to set up integration configurations.
 """
 
 import logging
+import re
 
 from urwid import (
     connect_signal,
@@ -27,54 +28,79 @@ from urwid import (
 
 from subiquitycore.ui.form import (
     Form,
-    BooleanField
+    BooleanField,
+    simple_field,
+    WantsToKnowFormField
 )
+from subiquitycore.ui.interactive import StringEditor
 from subiquitycore.ui.utils import screen
 from subiquitycore.view import BaseView
 
 log = logging.getLogger("ubuntu_wsl_oobe.views.integration")
 
 
-class IntegrationForm(Form):
-    def __init__(self):
-        super().__init__()
+class MountEditor(StringEditor, WantsToKnowFormField):
+    def keypress(self, size, key):
+        ''' restrict what chars we allow for mountpoints '''
 
+        mountpoint = r'[a-zA-Z0-9_/\.\-]'
+        if re.match(mountpoint, key) is None:
+            return False
+
+        return super().keypress(size, key)
+
+
+MountField = simple_field(MountEditor)
+StringField = simple_field(StringEditor)
+
+
+class IntegrationForm(Form):
+    def __init__(self, initial):
+        super().__init__(initial=initial)
+
+    custom_path = MountField(_("Mount Location"), help=_("Location for the automount"))
+    custom_mount_opt = StringField(_("Mount Option"), help=_("mount option passed for the automount"))
+    gen_host = BooleanField(_("Enable Host Generation"), help=_(
+        "Selecting enables /etc/host re-generation at every start"))
+    gen_resolvconf = BooleanField(_("Enable resolv.conf Generation"), help=_(
+        "Selecting enables /etc/resolv.conf re-generation at every start"))
     gui_integration = BooleanField(_("GUI Integration"), help=_(
-        "This enables Automatic DISPLAY environment set-up. Third-party X server required."))
-    audio_integration = BooleanField(_("Audio Integration"),
-                                     help=_("This enables Audio server on WSL. PulseAudio on Windows is required."))
-    advanced_detection = BooleanField(_("Advanced Detection"),
-                                      help=_("This enables Advanced IP Detection to be used in the Integration."))
+        "Selecting enables automatic DISPLAY environment set-up. Third-party X server required."))
 
 
 class IntegrationView(BaseView):
-    title = _("Ubuntu WSL - Integration Setup")
-    excerpt = _(
-        "In this page, you can add some integration to your Ubuntu WSL, to make it suit your needs.\n\n"
+    title = _("Ubuntu WSL - Tweaks")
+    excerpt = _("In this page, you can tweak Ubuntu WSL to your needs. \n"
     )
 
     def __init__(self, controller):
         initial = {
-            'gui_integration': False,
-            'audio_integration': False,
-            'advanced_detection': False
+            'custom_path': "/mnt/",
+            'custom_mount_opt': "",
+            'gen_host': True,
+            'gen_resolvconf': True,
+            'gui_integration': False
         }
-        self.form = IntegrationForm()
+        self.form = IntegrationForm(initial=initial)
         self.controller = controller
 
         connect_signal(self.form, 'submit', self.confirm)
-        connect_signal(self.form, 'cancel', self.cancel)
         super().__init__(
             screen(
                 self.form.as_rows(),
-                [self.form.done_btn, self.form.cancel_btn],
+                [self.form.done_btn],
                 focus_buttons=True,
                 excerpt=self.excerpt,
             )
         )
 
     def confirm(self, result):
-        self.controller.done()
-
-    def cancel(self, button=None):
-        self.controller.cancel()
+        yes_no_converter = lambda x: 'true' if x else 'false'
+        result = {
+            'custom_path': self.form.custom_path.value,
+            'custom_mount_opt': self.form.custom_mount_opt.value,
+            'gen_host': yes_no_converter(self.form.gen_host.value),
+            'gen_resolvconf': yes_no_converter(self.form.gen_resolvconf.value),
+            'gui_integration': yes_no_converter(self.form.gui_integration.value)
+        }
+        self.controller.done(result)
