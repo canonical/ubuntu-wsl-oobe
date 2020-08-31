@@ -33,11 +33,15 @@ class OverviewView(BaseView):
 
     def __init__(self, controller):
         self.controller = controller
-        changelog = _("\n - A brand new Onborading Experience;"
-                      "\n - A new commandline tool `ubuntuwslctl` that allows you tweak Ubuntu and WSL settings;"
-                      "\n - Update wslu to 3.2.0.")
-        complete_text = _("You have complete the setup!\n\n Here is what's new for Ubuntu WSL:\n")
-        complete_text += changelog
+        user_name = ""
+        with open('/tmp/ubuntu-wsl-oobe/created_account', 'r') as f:
+            user_name = f.read()
+        complete_text = _("Hi {username},\n"
+                          "You have complete the setup!\n\n"
+                          "It is suggested to run the following command to update your Ubuntu"
+                          "to the latest version:\n\n\n"
+                          "  $ sudo apt update\n  $ sudo apt upgrade\n\n\n"
+                          "* All settings will take effect after first restart of Ubuntu.").format(username=user_name)
 
         super().__init__(
             screen(
