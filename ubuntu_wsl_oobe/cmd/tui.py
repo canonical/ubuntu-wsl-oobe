@@ -73,18 +73,5 @@ def main():
     interface.run()
 
 
-def restore_std_streams_from(from_file):
-    """
-    Attempt to restore the original sys.std{in,out} streams by inspecting the
-    tty that stderr is hooked up to. Returns the chooser input/output streams.
-    """
-    tty = os.ttyname(from_file.fileno())
-    # we have tty now
-    chooser_input, chooser_output = sys.stdin, sys.stdout
-    sys.stdin = open(tty, 'r')
-    sys.stdout = open(tty, 'w')
-    return chooser_input, chooser_output
-
-
 if __name__ == '__main__':
     sys.exit(main())
