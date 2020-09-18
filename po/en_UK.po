@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../subiquitycore/controllers/network.py:297
 msgid "autoconfiguration failed"
-msgstr ""
+msgstr "autoconfiguration failed"
 
 #: ../subiquitycore/ui/utils.py:340
 msgid "Close"
@@ -27,54 +27,54 @@ msgstr "Close"
 
 #: ../subiquitycore/ui/form.py:365
 msgid ", or "
-msgstr ""
+msgstr ", or "
 
 #: ../subiquitycore/ui/form.py:367
 msgid " or "
-msgstr ""
+msgstr " or "
 
 #: ../subiquitycore/ui/form.py:371
 #, python-brace-format
 msgid "This field must be a {schemes} URL."
-msgstr ""
+msgstr "This field must be a {schemes} URL."
 
 #: ../subiquitycore/ui/form.py:451
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:100
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:50
 msgid "Done"
-msgstr ""
+msgstr "Done"
 
 #: ../subiquitycore/ui/form.py:452
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "Yes"
-msgstr ""
+msgstr "Yes"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:91
 msgid "Ubuntu WSL - Already Completed"
-msgstr ""
+msgstr "Ubuntu WSL - Already Completed"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
 msgid "You have already completed setup. Aborted."
-msgstr ""
+msgstr "You have already completed setup. Aborted."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:53
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
-msgstr ""
+msgstr "The only characters permitted in this field are a-z, 0-9, _ and -"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:76
 msgid "Pick a username:"
-msgstr ""
+msgstr "Pick a username:"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:76
 msgid "The username does not need to match your Windows username"
-msgstr ""
+msgstr "The username does not need to match your Windows username"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
 msgid "Choose a password:"
