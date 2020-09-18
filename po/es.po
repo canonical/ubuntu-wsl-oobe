@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-14 23:45+0800\n"
-"PO-Revision-Date: 2020-09-18 11:28-0400\n"
+"PO-Revision-Date: 2020-09-18 11:36-0400\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -112,11 +112,11 @@ msgstr ""
 "z0-9_-]*"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:95
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
 msgstr ""
-"El nombre de usuario \"{nombre de usuario}\" está reservado para ser usado "
-"por el sistema."
+"El nombre de usuario \"{username}\" está reservado para ser usado por el "
+"sistema."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:100
 #, fuzzy

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-14 23:45+0800\n"
-"PO-Revision-Date: 2020-09-18 10:58-0400\n"
+"PO-Revision-Date: 2020-09-18 11:44-0400\n"
 "Language-Team: \n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -99,9 +99,9 @@ msgid "Username missing"
 msgstr "ユーザー名が見つかりません"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:87
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Username too long, must be less than {limit}"
-msgstr "ユーザ名が長すぎます。"
+msgstr "ユーザー名は以下でなければなりません {limit}"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:91
 #, fuzzy
