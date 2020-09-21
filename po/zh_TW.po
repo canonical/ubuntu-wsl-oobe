@@ -8,14 +8,15 @@ msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-14 23:45+0800\n"
-"PO-Revision-Date: 2020-08-10 21:08+0800\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Asturian <ast@li.org>\n"
-"Language: ast\n"
+"PO-Revision-Date: 2020-09-18 11:12-0400\n"
+"Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../subiquitycore/controllers/network.py:297
 msgid "autoconfiguration failed"
@@ -26,17 +27,19 @@ msgid "Close"
 msgstr "關閉"
 
 #: ../subiquitycore/ui/form.py:365
+#, fuzzy
 msgid ", or "
 msgstr "或"
 
 #: ../subiquitycore/ui/form.py:367
+#, fuzzy
 msgid " or "
 msgstr "或"
 
 #: ../subiquitycore/ui/form.py:371
 #, python-brace-format
 msgid "This field must be a {schemes} URL."
-msgstr ""
+msgstr "此字段必須是{schemes} URL。"
 
 #: ../subiquitycore/ui/form.py:451
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:100
@@ -57,17 +60,16 @@ msgid "No"
 msgstr "否"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:91
-#, fuzzy
 msgid "Ubuntu WSL - Already Completed"
 msgstr "Ubuntu WSL - 使用者配置"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
 msgid "You have already completed setup. Aborted."
-msgstr ""
+msgstr "您已經完成設置。中止了。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:53
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
-msgstr ""
+msgstr "該字段中唯一允許使用的字符是a-z，0-9，_和-"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:76
 msgid "Pick a username:"
@@ -87,35 +89,35 @@ msgstr "確認密碼："
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:83
 msgid "Username missing"
-msgstr ""
+msgstr "用戶名丟失"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:87
 #, python-brace-format
 msgid "Username too long, must be less than {limit}"
-msgstr ""
+msgstr "用戶名太長，必須小於{limit}"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:91
 msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
-msgstr ""
+msgstr "用戶名必須與NAME_REGEX相匹配，即[a-z _] [a-z0-9 _-] *"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:95
 #, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
-msgstr ""
+msgstr "用戶名“ {username}”保留供系統使用。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:100
 msgid "Password must be set"
-msgstr ""
+msgstr "必須設置密碼"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:104
 msgid "Passwords do not match"
-msgstr ""
+msgstr "密碼不相符"
 
 #. desc is "passwords" or "passphrases"
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:113
 #, python-brace-format
 msgid "{desc} do not match"
-msgstr ""
+msgstr "{desc}不匹配"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:122
 msgid "Ubuntu WSL - Profile Setup"
@@ -126,65 +128,65 @@ msgid ""
 "Please create a default UNIX user account. For more information visit: "
 "https://aka.ms/wslusers"
 msgstr ""
+"請創建一個默認的UNIX用戶帳戶。有關更多信息，請訪問：https://aka.ms/wslusers"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:156
 msgid "passwords"
-msgstr ""
+msgstr "密碼"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 msgid "Mount Location"
-msgstr ""
+msgstr "安裝位置"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 msgid "Location for the automount"
-msgstr ""
+msgstr "自動掛載的位置"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 msgid "Mount Option"
-msgstr ""
+msgstr "安裝選項"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 msgid "mount option passed for the automount"
-msgstr ""
+msgstr "為自動掛載傳遞的掛載選項"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
 msgid "Enable Host Generation"
-msgstr ""
+msgstr "啟用主機生成"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:64
 msgid "Selecting enables /etc/host re-generation at every start"
-msgstr ""
+msgstr "選擇該選項可在每次啟動時重新生成 /etc/hosts"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:65
 msgid "Enable resolv.conf Generation"
-msgstr ""
+msgstr "啟用resolv.conf生成"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:66
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
-msgstr ""
+msgstr "選擇該選項可在每次啟動時重新生成/etc/resolv.conf"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:67
 msgid "GUI Integration"
-msgstr ""
+msgstr "GUI整合"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:68
 msgid ""
 "Selecting enables automatic DISPLAY environment set-up. Third-party X server "
 "required."
-msgstr ""
+msgstr "選擇啟用自動DISPLAY環境設置。需要第三方X服務器。"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:72
-#, fuzzy
 msgid "Ubuntu WSL - Tweaks"
 msgstr "Ubuntu WSL - 使用者配置"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:73
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
-msgstr ""
+msgstr "在此頁面中，您可以根據需要調整Ubuntu WSL。\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:32
 msgid "Ubuntu WSL - Setup Complete"
-msgstr ""
+msgstr "Ubuntu WSL-安裝完成"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:39
 #, python-brace-format
@@ -202,23 +204,39 @@ msgid ""
 "\n"
 "* All settings will take effect after first restart of Ubuntu."
 msgstr ""
+"{username}，您好！\n"
+"您已完成設置！\n"
+"\n"
+"建議運行以下命令將您的Ubuntu更新到最新版本：\n"
+"\n"
+"\n"
+"  $ sudo apt更新\n"
+"  $ sudo apt升級\n"
+"\n"
+"\n"
+"*所有設置將在首次重啟Ubuntu後生效。"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:32
+#, fuzzy
 msgid ""
 "\n"
 "Select the language to use for the installer and to be configured in the\n"
 "installed system.\n"
 msgstr ""
+"選擇安裝程序要使用的語言，並在\n"
+"已安裝的系統。\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:52
 msgid "Use UP, DOWN and ENTER keys to select your language."
-msgstr ""
+msgstr "使用UP，DOWN和ENTER鍵選擇您的語言。"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:54
 msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
 msgstr ""
+"您正在使用舊的Windows Console主機，進入後備模式。使用Windows Terminal獲得更多"
+"語言選項。"
 
 #~ msgid "Back"
 #~ msgstr "返回"
