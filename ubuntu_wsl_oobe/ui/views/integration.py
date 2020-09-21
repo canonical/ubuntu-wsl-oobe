@@ -59,7 +59,7 @@ class IntegrationForm(Form):
         super().__init__(initial=initial)
 
     custom_path = MountField(_("Mount Location"), help=_("Location for the automount"))
-    custom_mount_opt = StringField(_("Mount Option"), help=_("mount option passed for the automount"))
+    custom_mount_opt = StringField(_("Mount Option"), help=_("Mount option passed for the automount"))
     gen_host = BooleanField(_("Enable Host Generation"), help=_(
         "Selecting enables /etc/host re-generation at every start"))
     gen_resolvconf = BooleanField(_("Enable resolv.conf Generation"), help=_(

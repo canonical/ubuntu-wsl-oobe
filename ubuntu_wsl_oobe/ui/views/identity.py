@@ -24,7 +24,7 @@ import os
 import re
 
 from urwid import (
-    connect_signal,
+    connect_signal
 )
 
 from subiquitycore.ui.form import (
