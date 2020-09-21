@@ -8,181 +8,214 @@ msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-14 23:45+0800\n"
-"PO-Revision-Date: 2020-08-10 21:08+0800\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Asturian <ast@li.org>\n"
-"Language: ast\n"
+"PO-Revision-Date: 2020-09-18 11:44-0400\n"
+"Language-Team: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: ../subiquitycore/controllers/network.py:297
+#, fuzzy
 msgid "autoconfiguration failed"
-msgstr ""
+msgstr "自動設定失敗"
 
 #: ../subiquitycore/ui/utils.py:340
 msgid "Close"
-msgstr ""
+msgstr "閉じる"
 
 #: ../subiquitycore/ui/form.py:365
+#, fuzzy
 msgid ", or "
-msgstr ""
+msgstr "または"
 
 #: ../subiquitycore/ui/form.py:367
 msgid " or "
-msgstr ""
+msgstr " 或 "
 
 #: ../subiquitycore/ui/form.py:371
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "This field must be a {schemes} URL."
-msgstr ""
+msgstr "このフィールドは{schemes}でなければなりません。URLを表示します。"
 
 #: ../subiquitycore/ui/form.py:451
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:100
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:50
 msgid "Done"
-msgstr ""
+msgstr "完了"
 
 #: ../subiquitycore/ui/form.py:452
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "Yes"
-msgstr ""
+msgstr "はい"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "No"
-msgstr ""
+msgstr "いいえ"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:91
+#, fuzzy
 msgid "Ubuntu WSL - Already Completed"
-msgstr ""
+msgstr "Ubuntu WSL - すでに完了"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
+#, fuzzy
 msgid "You have already completed setup. Aborted."
-msgstr ""
+msgstr "すでにセットアップは完了しています。中止されました。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:53
+#, fuzzy
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
-msgstr ""
+msgstr "このフィールドで使用できる文字は、a-z、0-9、_、-のみです。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:76
+#, fuzzy
 msgid "Pick a username:"
-msgstr ""
+msgstr "ユーザー名を選択します。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:76
+#, fuzzy
 msgid "The username does not need to match your Windows username"
-msgstr ""
+msgstr "ユーザー名は Windows のユーザー名と一致する必要はありません。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
 msgid "Choose a password:"
-msgstr ""
+msgstr "パスワードを選択してください："
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:78
+#, fuzzy
 msgid "Confirm your password:"
-msgstr ""
+msgstr "パスワードを確認します。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:83
+#, fuzzy
 msgid "Username missing"
-msgstr ""
+msgstr "ユーザー名が見つかりません"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:87
 #, python-brace-format
 msgid "Username too long, must be less than {limit}"
-msgstr ""
+msgstr "ユーザー名は以下でなければなりません {limit}"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:91
+#, fuzzy
 msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
-msgstr ""
+msgstr "ユーザ名は NAME_REGEX と一致しなければなりません。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:95
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
-msgstr ""
+msgstr "ユーザ名\"{username}\"は、システムが使用するために予約されています。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:100
+#, fuzzy
 msgid "Password must be set"
-msgstr ""
+msgstr "パスワードを設定する必要があります。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:104
 msgid "Passwords do not match"
-msgstr ""
+msgstr "パスワードが一致しません"
 
 #. desc is "passwords" or "passphrases"
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:113
 #, python-brace-format
 msgid "{desc} do not match"
-msgstr ""
+msgstr "{desc} は一致しません。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:122
+#, fuzzy
 msgid "Ubuntu WSL - Profile Setup"
-msgstr ""
+msgstr "Ubuntu WSL - プロファイルの設定"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:123
+#, fuzzy
 msgid ""
 "Please create a default UNIX user account. For more information visit: "
 "https://aka.ms/wslusers"
 msgstr ""
+"デフォルトのUNIXユーザーアカウントを作成してください。詳細はこちらをご覧くだ"
+"さい: https://aka.ms/wslusers"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:156
+#, fuzzy
 msgid "passwords"
-msgstr ""
+msgstr "パスワード"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
+#, fuzzy
 msgid "Mount Location"
-msgstr ""
+msgstr "マウント位置"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
+#, fuzzy
 msgid "Location for the automount"
-msgstr ""
+msgstr "オートマウントの位置"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
+#, fuzzy
 msgid "Mount Option"
-msgstr ""
+msgstr "マウントオプション"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
+#, fuzzy
 msgid "mount option passed for the automount"
-msgstr ""
+msgstr "オートマウントに渡されたマウントオプション"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
+#, fuzzy
 msgid "Enable Host Generation"
-msgstr ""
+msgstr "ホスト生成を有効にする"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:64
 msgid "Selecting enables /etc/host re-generation at every start"
-msgstr ""
+msgstr "選択すると起動時に /etc/hosts の再生成が可能になります。"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:65
+#, fuzzy
 msgid "Enable resolv.conf Generation"
-msgstr ""
+msgstr "resolv.confの生成を有効にする"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:66
+#, fuzzy
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
 msgstr ""
+"これを選択すると、起動時に /etc/resolv.conf を再生成することができます。"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:67
+#, fuzzy
 msgid "GUI Integration"
-msgstr ""
+msgstr "GUIの統合"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:68
+#, fuzzy
 msgid ""
 "Selecting enables automatic DISPLAY environment set-up. Third-party X server "
 "required."
 msgstr ""
+"選択すると DISPLAY 環境の自動設定が可能になります。サードパーティのXサーバー"
+"が必要です。"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:72
+#, fuzzy
 msgid "Ubuntu WSL - Tweaks"
-msgstr ""
+msgstr "Ubuntu WSL - ツイークス"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:73
+#, fuzzy
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
 msgstr ""
+"このページでは、Ubuntu WSLを自分のニーズに合わせていじることができます。\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:32
+#, fuzzy
 msgid "Ubuntu WSL - Setup Complete"
-msgstr ""
+msgstr "Ubuntu WSL - セットアップ完了"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:39
 #, python-brace-format
@@ -200,20 +233,40 @@ msgid ""
 "\n"
 "* All settings will take effect after first restart of Ubuntu."
 msgstr ""
+"こんにちは{username}。\n"
+"セットアップが完了しました\n"
+"\n"
+"以下のコマンドを実行して、ウブントゥを最新版にアップデートすることをお勧めし"
+"ます。\n"
+"\n"
+"\n"
+"  $ sudo apt update\n"
+"  sudo apt アップグレード\n"
+"\n"
+"\n"
+"* すべての設定はUbuntuの初回再起動後に有効になります。"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:32
+#, fuzzy
 msgid ""
 "\n"
 "Select the language to use for the installer and to be configured in the\n"
 "installed system.\n"
 msgstr ""
+"\n"
+"インストーラに使用する言語を選択して\n"
+"インストールされたシステム。\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:52
+#, fuzzy
 msgid "Use UP, DOWN and ENTER keys to select your language."
-msgstr ""
+msgstr "UP、DOWN、ENTER キーを使用して言語を選択します。"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:54
+#, fuzzy
 msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
 msgstr ""
+"あなたは古いWindowsコンソールホストを使用しており、フォールバックモードに入っ"
+"ています。Windowsターミナルを使用して、より多くの言語オプションを取得します。"

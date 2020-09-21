@@ -1,4 +1,4 @@
-# French translation for ubuntu-wsl-oobe
+# English (US) translation for ubuntu-wsl-oobe
 # Copyright (c) Canonical Ltd 2020.
 # This file is distributed under the same license as the subiquity package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
@@ -8,134 +8,135 @@ msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-14 23:45+0800\n"
-"PO-Revision-Date: 2020-09-18 11:41-0400\n"
+"PO-Revision-Date: 2020-09-18 11:53-0400\n"
 "Language-Team: \n"
-"Language: fr\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Last-Translator: \n"
 "X-Generator: Poedit 2.4.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../subiquitycore/controllers/network.py:297
 #, fuzzy
 msgid "autoconfiguration failed"
-msgstr "l'autoconfiguration a échoué"
+msgstr "autoconfigurazione fallita"
 
 #: ../subiquitycore/ui/utils.py:340
 msgid "Close"
-msgstr "Fermer"
+msgstr "Chiudi"
 
 #: ../subiquitycore/ui/form.py:365
 #, fuzzy
 msgid ", or "
-msgstr "ou"
+msgstr "oppure"
 
 #: ../subiquitycore/ui/form.py:367
 msgid " or "
-msgstr " ou "
+msgstr " o "
 
 #: ../subiquitycore/ui/form.py:371
 #, fuzzy, python-brace-format
 msgid "This field must be a {schemes} URL."
-msgstr "Ce champ doit être un {schéma} URL."
+msgstr "Questo campo deve essere un {schemi} URL."
 
 #: ../subiquitycore/ui/form.py:451
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:100
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:50
 msgid "Done"
-msgstr "Terminé"
+msgstr "Fatto"
 
 #: ../subiquitycore/ui/form.py:452
 msgid "Cancel"
-msgstr "Annuler"
+msgstr "Annulla"
 
 #: ../subiquitycore/ui/interactive.py:109
+#, fuzzy
 msgid "Yes"
-msgstr "Oui"
+msgstr "Si"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "No"
-msgstr "Non"
+msgstr "No"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:91
 #, fuzzy
 msgid "Ubuntu WSL - Already Completed"
-msgstr "Ubuntu WSL - Déjà terminé"
+msgstr "Ubuntu WSL - Già completato"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
 #, fuzzy
 msgid "You have already completed setup. Aborted."
-msgstr "Vous avez déjà terminé l'installation. Avortée."
+msgstr "Avete già completato l'installazione. Abortito."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:53
 #, fuzzy
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
-msgstr "Les seuls caractères autorisés dans ce champ sont a-z, 0-9, _ et -"
+msgstr "Gli unici caratteri ammessi in questo campo sono a-z, 0-9, _ e -"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:76
 #, fuzzy
 msgid "Pick a username:"
-msgstr "Choisissez un nom d'utilisateur :"
+msgstr "Scegli un nome utente:"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:76
 #, fuzzy
 msgid "The username does not need to match your Windows username"
 msgstr ""
-"Le nom d'utilisateur ne doit pas nécessairement correspondre à votre nom "
-"d'utilisateur Windows"
+"Il nome utente non deve necessariamente corrispondere al nome utente di "
+"Windows"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
 #, fuzzy
 msgid "Choose a password:"
-msgstr "Choisissez un mot de passe :"
+msgstr "Scegliere una password:"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:78
 #, fuzzy
 msgid "Confirm your password:"
-msgstr "Confirmez votre mot de passe :"
+msgstr "Conferma la tua password:"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:83
+#, fuzzy
 msgid "Username missing"
-msgstr "Nom d'utilisateur manquant"
+msgstr "Nome utente mancante"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:87
 #, fuzzy, python-brace-format
 msgid "Username too long, must be less than {limit}"
-msgstr "Nom d'utilisateur trop long, doit être inférieur à {limite}"
+msgstr "Nome utente troppo lungo, deve essere inferiore a {limite}"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:91
 #, fuzzy
 msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
-msgstr ""
-"Le nom d'utilisateur doit correspondre à NAME_REGEX, c'est-à-dire [a-z_][a-"
-"z0-9_-]*"
+msgstr "Il nome utente deve corrispondere a NAME_REGEX, cioè [a-z_][a-z0-9_-]*"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:95
 #, fuzzy, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
-msgstr "Le nom d'utilisateur \"{username}\" est réservé à l'usage du système."
+msgstr ""
+"Il nome utente \"{username}\" è riservato all'uso da parte del sistema."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:100
 #, fuzzy
 msgid "Password must be set"
-msgstr "Le mot de passe doit être défini"
+msgstr "La password deve essere impostata"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:104
 msgid "Passwords do not match"
-msgstr "Les mots de passe ne correspondent pas"
+msgstr "Le password non corrispondono"
 
 #. desc is "passwords" or "passphrases"
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:113
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "{desc} do not match"
-msgstr "{desc} ne correspondent pas"
+msgstr "{desc} non corrispondono"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:122
 #, fuzzy
 msgid "Ubuntu WSL - Profile Setup"
-msgstr "Ubuntu WSL - Configuration du profil"
+msgstr "Ubuntu WSL - Configurazione del profilo"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:123
 #, fuzzy
@@ -143,57 +144,58 @@ msgid ""
 "Please create a default UNIX user account. For more information visit: "
 "https://aka.ms/wslusers"
 msgstr ""
-"Veuillez créer un compte d'utilisateur UNIX par défaut. Pour plus "
-"d'informations, visitez le site : https://aka.ms/wslusers"
+"Si prega di creare un account utente UNIX predefinito. Per ulteriori "
+"informazioni visitare: https://aka.ms/wslusers"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:156
-#, fuzzy
 msgid "passwords"
-msgstr "mots de passe"
+msgstr "password"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 #, fuzzy
 msgid "Mount Location"
-msgstr "Lieu de montage"
+msgstr "Posizione di montaggio"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 #, fuzzy
 msgid "Location for the automount"
-msgstr "Localisation de l'automount"
+msgstr "Posizione per il montaggio dell'auto"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 #, fuzzy
 msgid "Mount Option"
-msgstr "Option de montage"
+msgstr "Opzione di montaggio"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 #, fuzzy
 msgid "mount option passed for the automount"
-msgstr "option de montage passée pour l'automount"
+msgstr "opzione di montaggio passata per l'automount"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
 #, fuzzy
 msgid "Enable Host Generation"
-msgstr "Activer la génération d'hôtes"
+msgstr "Attivare la Generazione Host"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:64
 msgid "Selecting enables /etc/host re-generation at every start"
-msgstr "La sélection permet de relancer /etc/hosts à chaque démarrage"
+msgstr "La selezione abilita la rigenerazione /etc/hosts ad ogni avvio"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:65
 #, fuzzy
 msgid "Enable resolv.conf Generation"
-msgstr "Activer la génération de resolv.conf"
+msgstr "Abilita la generazione di resolv.conf"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:66
 #, fuzzy
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
-msgstr "La sélection permet de relancer /etc/resolv.conf à chaque démarrage"
+msgstr ""
+"Selezionando /etc/resolv.conf si abilita la rigenerazione di /etc/resolv."
+"conf ad ogni avvio"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:67
 #, fuzzy
 msgid "GUI Integration"
-msgstr "Intégration de l'interface graphique"
+msgstr "Integrazione GUI"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:68
 #, fuzzy
@@ -201,26 +203,28 @@ msgid ""
 "Selecting enables automatic DISPLAY environment set-up. Third-party X server "
 "required."
 msgstr ""
-"La sélection permet de configurer automatiquement l'environnement "
-"d'affichage. Un serveur X tiers est nécessaire."
+"La selezione abilita l'impostazione automatica dell'ambiente DISPLAY. È "
+"richiesto un server X di terze parti."
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:72
 #, fuzzy
 msgid "Ubuntu WSL - Tweaks"
-msgstr "Ubuntu WSL - Les ajustements"
+msgstr "Ubuntu WSL - Tweaks"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:73
 #, fuzzy
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
-msgstr "Dans cette page, vous pouvez adapter Ubuntu WSL à vos besoins\n"
+msgstr ""
+"In questa pagina, è possibile modificare Ubuntu WSL in base alle proprie "
+"esigenze\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:32
 #, fuzzy
 msgid "Ubuntu WSL - Setup Complete"
-msgstr "Ubuntu WSL - Installation terminée"
+msgstr "Ubuntu WSL - Configurazione completa"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:39
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Hi {username},\n"
 "You have complete the setup!\n"
@@ -235,18 +239,18 @@ msgid ""
 "\n"
 "* All settings will take effect after first restart of Ubuntu."
 msgstr ""
-"Salut {username},\n"
-"Vous avez terminé la mise en place !\n"
+"Ciao {username},\n"
+"Avete completato l'installazione!\n"
 "\n"
-"Il est suggéré d'exécuter la commande suivante pour mettre à jour votre "
-"Ubuntuto à la dernière version :\n"
-"\n"
-"\n"
-"  $ sudo apt update\n"
-"  $ sudo apt upgrade\n"
+"Si consiglia di eseguire il seguente comando per aggiornare la vostra "
+"Ubuntuto all'ultima versione:\n"
 "\n"
 "\n"
-"* Tous les réglages prendront effet après le premier redémarrage d'Ubuntu."
+"  $ sudo apt aggiornamento\n"
+"  $ sudo apt aggiornamento\n"
+"\n"
+"\n"
+"* Tutte le impostazioni avranno effetto dopo il primo riavvio di Ubuntu."
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:32
 #, fuzzy
@@ -256,15 +260,14 @@ msgid ""
 "installed system.\n"
 msgstr ""
 "\n"
-"Sélectionnez la langue à utiliser pour l'installateur et à configurer dans "
-"le\n"
-"système installé.\n"
+"Selezionare la lingua da utilizzare per l'installatore e da configurare nel "
+"file\n"
+"sistema installato.\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:52
 #, fuzzy
 msgid "Use UP, DOWN and ENTER keys to select your language."
-msgstr ""
-"Utilisez les touches HAUT, BAS et ENTRÉE pour sélectionner votre langue."
+msgstr "Utilizzare i tasti UP, DOWN e ENTER per selezionare la lingua."
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:54
 #, fuzzy
@@ -272,5 +275,5 @@ msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
 msgstr ""
-"Vous utilisez l'ancien Windows Console Host, entrant en mode de repli. "
-"Utilisez le terminal Windows pour obtenir plus d'options de langue."
+"Si sta utilizzando il vecchio Windows Console Host, Entrando in modalità "
+"fallback. Utilizzare Windows Terminal per ottenere più opzioni di lingua."
