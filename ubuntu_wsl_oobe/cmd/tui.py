@@ -65,7 +65,7 @@ def main():
     opts.run_on_serial = False
     setup_logger(dir=LOGDIR)
     logger = logging.getLogger('ubuntu_wsl_oobe')
-    logger.info("Starting ubuntu_wsl_oobe v{}".format("0.04"))
+    logger.info("Starting ubuntu_wsl_oobe v{}".format("0.1.1"))
     logger.info("Arguments passed: {}".format(sys.argv))
 
     interface = UbuntuWslOobe(opts)
