@@ -80,7 +80,7 @@ msgstr "The username does not need to match your Windows username"
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
 #, fuzzy
 msgid "Choose a password:"
-msgstr "Wprowadź hasło"
+msgstr "Choose a password:"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:78
 #, fuzzy
@@ -215,7 +215,7 @@ msgid ""
 "Hi {username},\n"
 "You have complete the setup!\n"
 "\n"
-"It is suggested to run the following command to update your Ubuntuto the "
+"It is suggested to run the following command to update your Ubuntu the "
 "latest version:\n"
 "\n"
 "\n"
@@ -228,7 +228,7 @@ msgstr ""
 "Hi {username},\n"
 "You have complete the setup!\n"
 "\n"
-"It is suggested to run the following command to update your Ubuntuto the "
+"It is suggested to run the following command to update your Ubuntu the "
 "latest version:\n"
 "\n"
 "\n"
