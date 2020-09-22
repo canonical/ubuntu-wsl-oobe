@@ -63,7 +63,7 @@ msgstr "Ubuntu WSL - 已经完成"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
 msgid "You have already completed setup. Aborted."
-msgstr "你已经完成了设置。终止。"
+msgstr "你已经完成了设置。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:53
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
@@ -119,14 +119,14 @@ msgstr "{desc}不匹配"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:122
 msgid "Ubuntu WSL - Profile Setup"
-msgstr "Ubuntu WSL - 配置文件设置"
+msgstr "Ubuntu WSL - 用户配置"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:123
 msgid ""
 "Please create a default UNIX user account. For more information visit: "
 "https://aka.ms/wslusers"
 msgstr ""
-"请创建一个默认的UNIX用户账户。欲了解更多信息，请访问：https://aka.ms/wslusers"
+"请创建一个默认的UNIX账户。欲了解更多信息，请访问：https://aka.ms/wslusers"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:156
 msgid "passwords"
@@ -134,27 +134,27 @@ msgstr "密码"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 msgid "Mount Location"
-msgstr "安装位置"
+msgstr "挂载位置"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 msgid "Location for the automount"
-msgstr "自动支架的位置"
+msgstr "自动挂载位置"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 msgid "Mount Option"
-msgstr "安装选项"
+msgstr "挂载选项"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 msgid "mount option passed for the automount"
-msgstr "自动挂载时通过的挂载选项"
+msgstr "自动挂载选项"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
 msgid "Enable Host Generation"
-msgstr "启用主机生成"
+msgstr "启用 hosts 生成"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:64
 msgid "Selecting enables /etc/host re-generation at every start"
-msgstr "选择该选项，可以在每次启动时重新生成/etc/hosts。"
+msgstr "选择该选项，可以在每次启动时重新生成 /etc/hosts 。"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:65
 msgid "Enable resolv.conf Generation"
@@ -162,7 +162,7 @@ msgstr "启用 resolv.conf 生成"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:66
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
-msgstr "选择该选项可以在每次启动时重新生成/etc/resolv.conf。"
+msgstr "选择该选项可以在每次启动时重新生成 /etc/resolv.conf。"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:67
 msgid "GUI Integration"
@@ -172,15 +172,15 @@ msgstr "GUI集成"
 msgid ""
 "Selecting enables automatic DISPLAY environment set-up. Third-party X server "
 "required."
-msgstr "选择后可以自动设置DISPLAY环境。需要第三方X服务器。"
+msgstr "选择后可以自动设置 DISPLAY 环境。需要第三方 X 服务器。"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:72
 msgid "Ubuntu WSL - Tweaks"
-msgstr "Ubuntu WSL - 调整"
+msgstr "Ubuntu WSL - 配置"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:73
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
-msgstr "在这个页面中，你可以根据自己的需要调整Ubuntu WSL。\n"
+msgstr "在这个页面中，你可以根据自己的需要调整 Ubuntu WSL。\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:32
 msgid "Ubuntu WSL - Setup Complete"
@@ -202,17 +202,17 @@ msgid ""
 "\n"
 "* All settings will take effect after first restart of Ubuntu."
 msgstr ""
-"你好{用户名}。\n"
+"{用户名}你好：\n"
 "你已经完成了设置！\n"
 "\n"
-"建议运行以下命令将Ubuntuto更新到最新版本。\n"
+"建议运行以下命令将 Ubuntu 更新到最新版本。\n"
 "\n"
 "\n"
 "  $ sudo apt update\n"
 "  $ sudo apt upgrade\n"
 "\n"
 "\n"
-"* 所有设置将在Ubuntu首次重启后生效。"
+"* 所有设置将在 Ubuntu 首次重启后生效。"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:32
 msgid ""
@@ -221,8 +221,8 @@ msgid ""
 "installed system.\n"
 msgstr ""
 "\n"
-"选择安装程序要使用的语言，并在\n"
-"安装的系统。\n"
+"选择安装程序和系统要使用的语言。\n"
+"\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:52
 msgid "Use UP, DOWN and ENTER keys to select your language."
@@ -233,8 +233,8 @@ msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
 msgstr ""
-"您使用的是旧版Windows控制台主机，进入回退模式。使用Windows终端获得更多语言选"
-"项。"
+"您使用的是旧版 Windows 控制台，进入模式。使用 Windows Terminal 获得"
+"更多语言选项。"
 
 #~ msgid "Back"
 #~ msgstr "返回"

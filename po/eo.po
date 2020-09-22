@@ -192,18 +192,18 @@ msgid ""
 "Selecting enables automatic DISPLAY environment set-up. Third-party X server "
 "required."
 msgstr ""
-"Elektado ebligas aŭtomatan EKPLIKAN median agordon. Tria partia X-servilo "
+"Elektado ebligas aŭtomatan DISPLAY median agordon. Tria partia X-servilo "
 "necesas."
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:72
 #, fuzzy
 msgid "Ubuntu WSL - Tweaks"
-msgstr "Ubuntu WSL - Agordi Profilo"
+msgstr "Ubuntu WSL - Agordoj"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:73
 #, fuzzy
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
-msgstr "En ĉi tiu paĝo vi povas adapti Ubuntu WSL al viaj bezonoj."
+msgstr "En ĉi tiu paĝo, vi povas adapti Ubuntu WSL kiel viaj bezonoj."
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:32
 #, fuzzy
@@ -229,12 +229,12 @@ msgstr ""
 "Saluton {uzantnomo},\n"
 "Vi kompletigis la aranĝon!\n"
 "\n"
-"Oni sugestas lanĉi la jenan komandon por ĝisdatigi vian Ubuntuton la plej "
+"Oni sugestas lanĉi la jenan komandon por ĝisdatigi Ubuntu la plej "
 "novan version:\n"
 "\n"
 "\n"
-"  $ sudo apt ĝisdatigo\n"
-"  $ sudo apt ĝisdatigo\n"
+"  $ sudo apt update\n"
+"  $ sudo apt upgrade\n"
 "\n"
 "\n"
 "* Ĉiuj agordoj ekvalidos post la unua rekomenco de Ubuntu."
@@ -246,13 +246,13 @@ msgid ""
 "Select the language to use for the installer and to be configured in the\n"
 "installed system.\n"
 msgstr ""
-"Elektu la lingvon uzotan por la instalilo kaj agordotan en la\n"
-"instalita sistemo."
+"Elektu la lingvon por la instalilo kaj agordotan en la\n"
+"instalita sistemo.\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:52
 #, fuzzy
 msgid "Use UP, DOWN and ENTER keys to select your language."
-msgstr "Uzu SUPREN, MALSupran kaj ENIRAN klavojn por elekti vian lingvon."
+msgstr "Uzu SUPREN, MALSUPREN kaj ENIRAN klavojn por elekti vian lingvon."
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:54
 #, fuzzy
@@ -260,8 +260,8 @@ msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
 msgstr ""
-"Vi uzas malnovan Vindozan Konzolan Gastiganton, Enirantan rezervan reĝimon. "
-"Uzu Vindozan Terminalon por akiri pli da lingvaj opcioj."
+"Vi uzas malnovan Vindozan Konzolan Gastiganton, Eniru rezervan reĝimon. "
+"Uzu Vindozan Terminalon (Windows Terminal) por akiri pli da lingvaj opcioj."
 
 #~ msgid "Back"
 #~ msgstr "Reiri"
