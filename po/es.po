@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-21 20:56+0800\n"
+"POT-Creation-Date: 2020-09-22 16:16+0800\n"
 "PO-Revision-Date: 2020-09-18 11:36-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -66,7 +66,7 @@ msgstr "Ubuntu WSL - Ya completado"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
 #, fuzzy
-msgid "You have already completed setup. Aborted."
+msgid "You already completed setup. Aborted."
 msgstr "Ya has completado la configuración. Abortado."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:53
@@ -169,7 +169,7 @@ msgstr "Opción de montaje"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 #, fuzzy
-msgid "mount option passed for the automount"
+msgid "Mount option passed for the automount"
 msgstr "la opción de montaje aprobada para el montaje del automóvil"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63

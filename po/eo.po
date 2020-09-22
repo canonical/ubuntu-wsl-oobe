@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-21 20:56+0800\n"
+"POT-Creation-Date: 2020-09-22 16:16+0800\n"
 "PO-Revision-Date: 2020-09-18 10:55-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -65,7 +65,7 @@ msgstr "Ubuntu WSL - Agordi Profilo"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
 #, fuzzy
-msgid "You have already completed setup. Aborted."
+msgid "You already completed setup. Aborted."
 msgstr "Vi jam kompletigis instaladon. Abortigita."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:53
@@ -159,7 +159,7 @@ msgstr "Monta Elekto"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 #, fuzzy
-msgid "mount option passed for the automount"
+msgid "Mount option passed for the automount"
 msgstr "monta opcio pasis por la aŭtomonta monto"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
@@ -229,8 +229,8 @@ msgstr ""
 "Saluton {uzantnomo},\n"
 "Vi kompletigis la aranĝon!\n"
 "\n"
-"Oni sugestas lanĉi la jenan komandon por ĝisdatigi Ubuntu la plej "
-"novan version:\n"
+"Oni sugestas lanĉi la jenan komandon por ĝisdatigi Ubuntu la plej novan "
+"version:\n"
 "\n"
 "\n"
 "  $ sudo apt update\n"
@@ -260,8 +260,8 @@ msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
 msgstr ""
-"Vi uzas malnovan Vindozan Konzolan Gastiganton, Eniru rezervan reĝimon. "
-"Uzu Vindozan Terminalon (Windows Terminal) por akiri pli da lingvaj opcioj."
+"Vi uzas malnovan Vindozan Konzolan Gastiganton, Eniru rezervan reĝimon. Uzu "
+"Vindozan Terminalon (Windows Terminal) por akiri pli da lingvaj opcioj."
 
 #~ msgid "Back"
 #~ msgstr "Reiri"

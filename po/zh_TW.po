@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-21 20:56+0800\n"
+"POT-Creation-Date: 2020-09-22 16:16+0800\n"
 "PO-Revision-Date: 2020-09-18 11:12-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -64,7 +64,8 @@ msgid "Ubuntu WSL - Already Completed"
 msgstr "Ubuntu WSL - 已經配置"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
-msgid "You have already completed setup. Aborted."
+#, fuzzy
+msgid "You already completed setup. Aborted."
 msgstr "您已經完成設置。程式中止。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:53
@@ -147,7 +148,8 @@ msgid "Mount Option"
 msgstr "掛載選項"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
-msgid "mount option passed for the automount"
+#, fuzzy
+msgid "Mount option passed for the automount"
 msgstr "自動掛載選項"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63

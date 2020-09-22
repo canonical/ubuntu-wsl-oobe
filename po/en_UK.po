@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-21 20:56+0800\n"
+"POT-Creation-Date: 2020-09-22 16:16+0800\n"
 "PO-Revision-Date: 2020-09-18 10:50-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -62,7 +62,8 @@ msgid "Ubuntu WSL - Already Completed"
 msgstr "Ubuntu WSL - Already Completed"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
-msgid "You have already completed setup. Aborted."
+#, fuzzy
+msgid "You already completed setup. Aborted."
 msgstr "You have already completed setup. Aborted."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:53
@@ -158,7 +159,7 @@ msgstr "Mount Option"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 #, fuzzy
-msgid "mount option passed for the automount"
+msgid "Mount option passed for the automount"
 msgstr "mount option passed for the automount"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
@@ -215,7 +216,7 @@ msgid ""
 "Hi {username},\n"
 "You have complete the setup!\n"
 "\n"
-"It is suggested to run the following command to update your Ubuntu the "
+"It is suggested to run the following command to update your Ubuntuto the "
 "latest version:\n"
 "\n"
 "\n"
