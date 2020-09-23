@@ -46,17 +46,15 @@ class build_i18n(distutils.cmd.Command):
                         continue
                     out_fp.write('../' + line)
 
-        os.chdir('po')
         distutils.spawn.spawn([
             'xgettext',
-            '--directory=.',
+            '--directory=po',
             '--add-comments',
             '--from-code=UTF-8',
             '--keyword=pgettext:1c,2',
-            '--output=ubuntu_wsl_oobe.pot',
-            '--files-from=POTFILES.in.tmp',
+            '--output=po/ubuntu_wsl_oobe.pot',
+            '--files-from=po/POTFILES.in.tmp',
             ])
-        os.chdir('..')
         os.unlink('po/POTFILES.in.tmp')
 
         for po_file in glob.glob("po/*.po"):
