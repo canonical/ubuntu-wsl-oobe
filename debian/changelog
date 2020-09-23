@@ -1,3 +1,9 @@
+ubuntu-wsl-oobe (0.1.2) groovy; urgency=medium
+
+  * translation rebuilt.
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Wed, 23 Sep 2020 18:08:15 +0800
+
 ubuntu-wsl-oobe (0.1.1) groovy; urgency=medium
 
   * First set of translation.
