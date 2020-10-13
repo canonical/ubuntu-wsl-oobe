@@ -2,4 +2,5 @@ debian/tmp/usr/bin/ubuntu-wsl-oobe-tui  usr/share/ubuntu-wsl-oobe
 reserved-usernames usr/share/ubuntu-wsl-oobe/
 languagelist usr/share/ubuntu-wsl-oobe/
 usergroups usr/share/ubuntu-wsl-oobe/
+usr/share/locale
 usr/share/ubuntu-wsl-oobe/ubuntu_wsl_oobe
