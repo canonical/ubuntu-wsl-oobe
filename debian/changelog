@@ -1,3 +1,10 @@
+ubuntu-wsl-oobe (0.1.3) groovy; urgency=medium
+
+  * add missing files;
+  * proper translation build system.
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Tue, 13 Oct 2020 09:22:25 +0800
+
 ubuntu-wsl-oobe (0.1.2) groovy; urgency=medium
 
   * translation rebuilt.
