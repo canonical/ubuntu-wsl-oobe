@@ -1,4 +1,6 @@
-# Copyright 2015 Canonical, Ltd.
+# Copyright 2020 Canonical, Ltd.
+#
+# This is a reimplemented version of core.py specifically for Ubuntu WSL OOBE Experience.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -12,9 +14,6 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-
-# This is a reimplemented version of core.py specifically for Ubuntu on WSL.
 
 import platform
 import re
@@ -645,7 +644,10 @@ class Application:
         if self.is_linux_tty:
             # Perhaps we ought to return a screen subclass that does this
             # ioctl-ing in .start() and undoes it in .stop() but well.
-            if self.is_wsl != 1:
+            if self.is_wsl == 1:
+                # TODO: Handling thew case when GIO_CMAP and PIO_CMAP syscall do not exist
+                pass
+            else:
                 curpal = bytearray(16*3)
                 fcntl.ioctl(sys.stdout.fileno(), GIO_CMAP, curpal)
                 for i in range(8):
