@@ -38,7 +38,7 @@ class OverviewView(BaseView):
             user_name = f.read()
         complete_text = _("Hi {username},\n"
                           "You have complete the setup!\n\n"
-                          "It is suggested to run the following command to update your Ubuntu"
+                          "It is suggested to run the following command to update your Ubuntu "
                           "to the latest version:\n\n\n"
                           "  $ sudo apt update\n  $ sudo apt upgrade\n\n\n"
                           "* All settings will take effect after first restart of Ubuntu.").format(username=user_name)

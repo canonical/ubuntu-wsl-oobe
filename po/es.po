@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-23 12:38+0800\n"
+"POT-Creation-Date: 2020-12-11 17:57+0800\n"
 "PO-Revision-Date: 2020-09-18 11:36-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -222,12 +222,12 @@ msgid "Ubuntu WSL - Setup Complete"
 msgstr "Ubuntu WSL - Configuración completa"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:39
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Hi {username},\n"
 "You have complete the setup!\n"
 "\n"
-"It is suggested to run the following command to update your Ubuntuto the "
+"It is suggested to run the following command to update your Ubuntu to the "
 "latest version:\n"
 "\n"
 "\n"
