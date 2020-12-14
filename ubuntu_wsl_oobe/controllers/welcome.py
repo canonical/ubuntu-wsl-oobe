@@ -91,7 +91,7 @@ class AlreadyCreatedView(BaseView):
     title = _("Ubuntu WSL - Already Completed")
 
     def __init__(self):
-        complete_text = _("You already completed setup. Aborted.")
+        complete_text = _("You have already completed setup. Aborted.")
 
         super().__init__(
             screen(

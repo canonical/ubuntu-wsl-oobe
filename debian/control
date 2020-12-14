@@ -17,7 +17,7 @@ Vcs-Browser: https://github.com/canonical/ubuntu-wsl-oobe
 Vcs-Git: https://github.com/canonical/ubuntu-wsl-oobe.git
 
 Package: subiquitycore-wsl
-Architecture: all
+Architecture: amd64 arm64
 Depends: probert-network,
          python3-urwid (>= 1.2.1),
          python3-attr,
@@ -42,7 +42,7 @@ Description: Ubuntu Server Installer - core libraries (For WSL Onboarding Experi
 
 
 Package: ubuntu-wsl-oobe
-Architecture: all
+Architecture: amd64 arm64
 Depends: python3, subiquitycore-wsl, ubuntu-wsl-integration, ${misc:Depends}, ${python3:Depends}
 Description: Ubuntu WSL Onboarding Experience
  `ubuntu-wsl-oobe` is a WSL Ubuntu Out-of-box configurer to

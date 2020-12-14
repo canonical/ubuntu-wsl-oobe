@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-11 17:57+0800\n"
+"POT-Creation-Date: 2020-12-14 15:04+0800\n"
 "PO-Revision-Date: 2020-09-18 10:55-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -65,71 +65,75 @@ msgstr "Ubuntu WSL - Agordi Profilo"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
 #, fuzzy
-msgid "You already completed setup. Aborted."
+msgid "You have already completed setup. Aborted."
 msgstr "Vi jam kompletigis instaladon. Abortigita."
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:53
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:55
 #, fuzzy
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
 msgstr "La solaj signoj permesitaj en ĉi tiu kampo estas a-z, 0-9, _ kaj -"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:76
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:78
 msgid "Pick a username:"
 msgstr "Starigi uzantnomon:"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:76
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:78
 msgid "The username does not need to match your Windows username"
 msgstr "La uzantnomo ne bezonas kongrui via Vindoza pasvorton"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:77
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:79
 msgid "Choose a password:"
 msgstr "Starigi pasvorton:"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:78
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:80
 msgid "Confirm your password:"
 msgstr "Konfirmi pasvorton:"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:83
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:81
+msgid "Show Advanced Options Next Page"
+msgstr ""
+
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:86
 #, fuzzy
 msgid "Username missing"
 msgstr "Uzantnomo mankas"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:87
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:90
 #, fuzzy, python-brace-format
 msgid "Username too long, must be less than {limit}"
 msgstr "Uzantnomo tro longa, devas esti malpli ol {limit}"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:91
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:94
 #, fuzzy
 msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
 msgstr "Uzantnomo devas egali NAME_REGEX, t.e. [a-z _] [a-z0-9 _-] *"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:95
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:98
 #, fuzzy, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
 msgstr "La salutnomo \"{uzantnomo}\" estas rezervita por uzo de la sistemo."
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:100
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:103
 #, fuzzy
 msgid "Password must be set"
 msgstr "Pasvorto devas esti agordita"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:104
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:107
 #, fuzzy
 msgid "Passwords do not match"
 msgstr "pasvortoj ne egalas"
 
 #. desc is "passwords" or "passphrases"
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:113
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:116
 #, fuzzy, python-brace-format
 msgid "{desc} do not match"
 msgstr "{desc} ne kongruas"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:122
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:125
 msgid "Ubuntu WSL - Profile Setup"
 msgstr "Ubuntu WSL - Agordi Profilo"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:123
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:126
 msgid ""
 "Please create a default UNIX user account. For more information visit: "
 "https://aka.ms/wslusers"
@@ -137,7 +141,7 @@ msgstr ""
 "Kreu defaltan Uniksan uzantokonton. Por pli informoj, vizitu: https://aka.ms/"
 "wslusers"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:156
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:159
 #, fuzzy
 msgid "passwords"
 msgstr "pasvortoj"

@@ -24,13 +24,15 @@ import os
 import re
 
 from urwid import (
-    connect_signal
+    connect_signal, emit_signal
 )
 
+from subiquitycore.ui.buttons import done_btn
 from subiquitycore.ui.form import (
     Form,
     simple_field,
     WantsToKnowFormField,
+    BooleanField, Toggleable
 )
 from subiquitycore.ui.interactive import (
     PasswordEditor,
@@ -76,6 +78,7 @@ class IdentityForm(Form):
     username = UsernameField(_("Pick a username:"), help=_("The username does not need to match your Windows username"))
     password = PasswordField(_("Choose a password:"))
     confirm_password = PasswordField(_("Confirm your password:"))
+    show_advanced = BooleanField(_("Show Advanced Options Next Page"))
 
     def validate_username(self):
         username = self.username.value
@@ -102,6 +105,9 @@ class IdentityForm(Form):
     def validate_confirm_password(self):
         if self.password.value != self.confirm_password.value:
             return _("Passwords do not match")
+
+    def validate_show_advanced(self):
+        pass
 
 
 def setup_password_validation(form, desc):
@@ -167,4 +173,4 @@ class IdentityView(BaseView):
             "username": self.form.username.value,
             "password": self.model.encrypt_password(self.form.password.value),
         }
-        self.controller.done(result)
+        self.controller.done(result, self.form.show_advanced.value)

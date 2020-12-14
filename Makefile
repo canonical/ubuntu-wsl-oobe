@@ -1,5 +1,5 @@
 #
-# Makefile for subiquity
+# Makefile for
 #
 NAME=ubuntu_wsl_oobe
 PYTHONSRC=$(NAME)

@@ -33,12 +33,15 @@ class IdentityController(BaseController):
     def cancel(self):
         pass
 
-    def done(self, user_spec):
+    def done(self, user_spec, show_advanced):
         safe_spec = user_spec.copy()
         safe_spec['password'] = '<REDACTED>'
         log.debug(
             "IdentityController.done next_screen user_spec=%s",
             safe_spec)
         self.model.add_user(user_spec, is_dry_run=self.opts.dry_run)
-        self.app.next_screen()
+        if show_advanced:
+            self.app.next_screen()
+        else:
+            self.app.fast_forward_screen()
 

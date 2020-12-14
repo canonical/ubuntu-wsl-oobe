@@ -310,20 +310,6 @@ class ControllerSet:
 
 class Application:
 
-    # A concrete subclass must set project and controllers attributes, e.g.:
-    #
-    # project = "subiquity"
-    # controllers = [
-    #         "Welcome",
-    #         "Network",
-    #         "Filesystem",
-    #         "Identity",
-    #         "InstallProgress",
-    # ]
-    # The 'next_screen' and 'prev_screen' methods move through the list of
-    # controllers in order, calling the start_ui method on the controller
-    # instance.
-
     make_ui = SubiquityCoreUI
 
     def __init__(self, opts):
@@ -474,6 +460,9 @@ class Application:
                 continue
             else:
                 return
+
+    def fast_forward_screen(self, *args):
+        self._move_screen(2)
 
     def next_screen(self, *args):
         self._move_screen(1)
