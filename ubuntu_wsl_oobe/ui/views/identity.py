@@ -23,11 +23,7 @@ import logging
 import os
 import re
 
-from urwid import (
-    connect_signal, emit_signal
-)
-
-from subiquitycore.ui.buttons import done_btn
+from urwid import connect_signal
 from subiquitycore.ui.form import (
     Form,
     simple_field,

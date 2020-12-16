@@ -41,6 +41,8 @@ class OverviewView(BaseView):
                           "It is suggested to run the following command to update your Ubuntu "
                           "to the latest version:\n\n\n"
                           "  $ sudo apt update\n  $ sudo apt upgrade\n\n\n"
+                          "You can use the builtin `ubuntuwsl` command to manage your WSL settings:\n\n\n"
+                          "  $ sudo ubuntuwsl ...\n\n\n"
                           "* All settings will take effect after first restart of Ubuntu.").format(username=user_name)
 
         super().__init__(
