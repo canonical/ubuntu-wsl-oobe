@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-16 16:23+0800\n"
-"PO-Revision-Date: 2020-09-18 10:49-0400\n"
+"PO-Revision-Date: 2021-01-05 14:21-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../subiquitycore/controllers/network.py:297
@@ -62,9 +62,8 @@ msgid "Ubuntu WSL - Already Completed"
 msgstr "Ubuntu WSL - Already Completed"
 
 #: ../ubuntu_wsl_oobe/controllers/welcome.py:94
-#, fuzzy
 msgid "You have already completed setup. Aborted."
-msgstr "You have already completed setup. Aborted."
+msgstr "You have already completed setup. Aborting."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:51
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
@@ -88,7 +87,7 @@ msgstr "Confirm your password:"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
 msgid "Show Advanced Options Next Page"
-msgstr ""
+msgstr "Show advanced options on the next page"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:82
 msgid "Username missing"
@@ -151,13 +150,12 @@ msgid "Mount Option"
 msgstr "Mount Option"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
-#, fuzzy
 msgid "Mount option passed for the automount"
-msgstr "mount option passed for the automount"
+msgstr "Mount options to be passed to the automount"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
 msgid "Enable Host Generation"
-msgstr "Enable Host Generation"
+msgstr "Enable hosts file Generation"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:64
 msgid "Selecting enables /etc/host re-generation at every start"
@@ -173,7 +171,7 @@ msgstr "Selecting enables /etc/resolv.conf re-generation at every start"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:67
 msgid "GUI Integration"
-msgstr "GUI Integration"
+msgstr "Enable X server integration"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:68
 msgid ""
@@ -185,7 +183,7 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:72
 msgid "Ubuntu WSL - Tweaks"
-msgstr "Ubuntu WSL - Tweaks"
+msgstr "Ubuntu WSL - Advanced Setup"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:73
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
@@ -196,7 +194,7 @@ msgid "Ubuntu WSL - Setup Complete"
 msgstr "Ubuntu WSL - Setup Complete"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:39
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid ""
 "Hi {username},\n"
 "You have complete the setup!\n"
@@ -220,8 +218,8 @@ msgstr ""
 "Hi {username},\n"
 "You have completed the setup!\n"
 "\n"
-"It is suggested to run the following command to update your Ubuntu the "
-"latest version:\n"
+"We suggest running the following command to update your Ubuntu packages to "
+"the latest versions:\n"
 "\n"
 "\n"
 "  $ sudo apt update\n"
