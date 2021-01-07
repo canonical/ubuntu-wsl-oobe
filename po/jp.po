@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-16 16:23+0800\n"
-"PO-Revision-Date: 2020-09-18 11:44-0400\n"
+"PO-Revision-Date: 2021-01-05 14:24-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: ../subiquitycore/controllers/network.py:297
 #, fuzzy
@@ -94,8 +94,9 @@ msgid "Confirm your password:"
 msgstr "パスワードを確認します。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
+#, fuzzy
 msgid "Show Advanced Options Next Page"
-msgstr ""
+msgstr "高度なオプションを表示する 次のページ"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:82
 #, fuzzy
