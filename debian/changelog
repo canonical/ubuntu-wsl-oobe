@@ -1,3 +1,9 @@
+ubuntu-wsl-oobe (0.1.7) groovy; urgency=medium
+
+  * Updated translations
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Thu, 07 Jan 2021 20:39:25 +0800
+
 ubuntu-wsl-oobe (0.1.6) groovy; urgency=medium
 
   * allow optional integration settings

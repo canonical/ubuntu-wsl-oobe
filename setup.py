@@ -80,7 +80,7 @@ if sys.argv[-1] == 'clean':
     sys.exit()
 
 setup(name='ubuntu_wsl_oobe',
-      version='0.1.2',
+      version='0.1.7',
       description="Ubuntu WSL Onboarding Experience",
       long_description=__doc__,
       author='Patrick Wu',
