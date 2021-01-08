@@ -245,7 +245,7 @@ msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
 msgstr ""
-"您使用的是旧版 Windows 控制台，进入模式。使用 Windows Terminal 获得更多语言选"
+"您使用的是旧版 Windows 控制台，进入 Fback 模式。使用 Windows Terminal 获得更多语言选"
 "项。"
 
 #~ msgid "Back"

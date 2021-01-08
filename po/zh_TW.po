@@ -233,8 +233,9 @@ msgid ""
 "Select the language to use for the installer and to be configured in the\n"
 "installed system.\n"
 msgstr ""
-"選擇安裝程序要使用的語言，並在\n"
-"已安裝的系統。\n"
+"\n"
+"選擇安裝程序已安裝的系統要使用的語言。\n"
+"\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:52
 msgid "Use UP, DOWN and ENTER keys to select your language."

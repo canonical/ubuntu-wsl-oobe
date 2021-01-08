@@ -1,3 +1,9 @@
+ubuntu-wsl-oobe (0.1.8) groovy; urgency=medium
+
+  * Fix a build issue due to bad translation
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Fri, 08 Jan 2021 11:19:21 +0800
+
 ubuntu-wsl-oobe (0.1.7) groovy; urgency=medium
 
   * Updated translations
