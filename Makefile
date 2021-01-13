@@ -44,7 +44,7 @@ unit:
 check: unit
 
 submcheck:
-	if [ ! -d "$(CMD)/external/probert" ] || [ ! -d "$(CMD)/external/subiquity" ]; then \
+	if [ ! -d "$(CMD)/external/subiquity" ]; then \
 	echo "The git submodules are not available. Please run \`git submodule update --init --recursive\`"; \
 	fi
 
