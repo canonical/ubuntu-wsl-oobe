@@ -38,7 +38,6 @@ from subiquitycore.controller import (
     Skip,
     )
 from subiquitycore.signals import Signal
-from subiquitycore.prober import Prober
 from subiquitycore.ui.frame import SubiquityCoreUI
 from subiquitycore.utils import arun_command
 
@@ -325,8 +324,6 @@ class Application:
             #    subiquity/controllers/installprogress.py
             self.debug_flags = os.environ.get('SUBIQUITY_DEBUG', '').split(',')
 
-        prober = Prober(opts.machine_config, self.debug_flags)
-
         self.ui = self.make_ui()
         self.opts = opts
         opts.project = self.project
@@ -361,7 +358,6 @@ class Application:
             os.environ.get('SUBIQUITY_REPLAY_TIMESCALE', "1"))
         self.updated = os.path.exists(self.state_path('updating'))
         self.signal = Signal()
-        self.prober = prober
         self.new_event_loop()
         self.urwid_loop = None
         self.controllers = ControllerSet(self, self.controllers)

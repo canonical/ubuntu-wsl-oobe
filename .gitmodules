@@ -1,6 +1,3 @@
 [submodule "external/subiquity"]
 	path = external/subiquity
 	url = https://github.com/canonicalLtd/subiquity.git
-[submodule "external/probert"]
-	path = external/probert
-	url = https://github.com/CanonicalLtd/probert

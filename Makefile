@@ -25,7 +25,7 @@ i18n:
 	$(PYTHON) setup.py build_i18n
 	cd po; intltool-update -r -g ubuntu_wsl_oobe
 
-dryrun: probert i18n
+dryrun: i18n
 	$(MAKE) ui-view DRYRUN="--dry-run"
 
 ui-view:
@@ -47,11 +47,6 @@ submcheck:
 	if [ ! -d "$(CMD)/external/probert" ] || [ ! -d "$(CMD)/external/subiquity" ]; then \
 	echo "The git submodules are not available. Please run \`git submodule update --init --recursive\`"; \
 	fi
-
-probert:
-	@if [ ! -d "$(PROBERTDIR)" ]; then \
-		(cd external/probert && $(PYTHON) setup.py build_ext -i); \
-    fi
 
 clean:
 	./debian/rules clean
