@@ -1,5 +1,6 @@
 tar-ignore = .git*
 tar-ignore = .subiquity
+tar-ignore = .ubuntu_wsl_oobe
 tar-ignore = stage
 tar-ignore = parts
 tar-ignore = prime
