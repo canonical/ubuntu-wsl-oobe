@@ -40,7 +40,6 @@ from subiquitycore.controller import (
 from subiquitycore.signals import Signal
 from subiquitycore.ui.frame import SubiquityCoreUI
 from subiquitycore.utils import arun_command
-from subiquitycore.core import is_linux_tty
 
 log = logging.getLogger('subiquitycore.core')
 
@@ -66,6 +65,16 @@ KDSKBMODE = 0x4B45  # sets current keyboard mode
 def is_wsl():
     # return true if it is WSL, otherwise return false
     return pathlib.Path("/proc/sys/fs/binfmt_misc/WSLInterop").is_file()
+
+
+def is_linux_tty():
+    try:
+        r = fcntl.ioctl(sys.stdout.fileno(), KDGKBTYPE, ' ')
+    except IOError as e:
+        log.debug("KDGKBTYPE failed %r", e)
+        return False
+    log.debug("KDGKBTYPE returned %r, is_linux_tty %s", r, r == b'\x02')
+    return r == b'\x02'
 
 
 class WSLScreen(urwid.raw_display.Screen):
