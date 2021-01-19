@@ -40,6 +40,7 @@ from subiquitycore.controller import (
 from subiquitycore.signals import Signal
 from subiquitycore.ui.frame import SubiquityCoreUI
 from subiquitycore.utils import arun_command
+from subiquitycore.core import is_linux_tty
 
 log = logging.getLogger('subiquitycore.core')
 
@@ -72,7 +73,17 @@ def is_wsl():
     return 0
 
 
-class TwentyFourBitScreen(urwid.raw_display.Screen):
+class WSLScreen(urwid.raw_display.Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def write(self, data):
+        if is_wsl() != 0:
+            data = re.sub("[\x0e\x0f]", "", data)
+        super().write(data)
+
+
+class TwentyFourBitScreen(WSLScreen):
 
     def __init__(self, _urwid_name_to_rgb, **kwargs):
         self._urwid_name_to_rgb = _urwid_name_to_rgb
@@ -102,21 +113,6 @@ class TwentyFourBitScreen(urwid.raw_display.Screen):
         return '\x1b[0;3{};4{}m'.format(
             self._cc(a.foreground),
             self._cc(a.background))
-
-    def write(self, data):
-        if is_wsl() != 0:
-            data = re.sub("[\x0e\x0f]", "", data)
-        super().write(data)
-
-
-def is_linux_tty():
-    try:
-        r = fcntl.ioctl(sys.stdout.fileno(), KDGKBTYPE, ' ')
-    except IOError as e:
-        log.debug("KDGKBTYPE failed %r", e)
-        return False
-    log.debug("KDGKBTYPE returned %r, is_linux_tty %s", r, r == b'\x02')
-    return r == b'\x02'
 
 
 urwid_8_names = (
@@ -639,9 +635,9 @@ class Application:
                     for j in range(3):
                         curpal[i*3+j] = self.COLORS[i][1][j]
                 fcntl.ioctl(sys.stdout.fileno(), PIO_CMAP, curpal)
-            return urwid.raw_display.Screen(input=inputf, output=outputf)
+            return WSLScreen(input=inputf, output=outputf)
         elif self.opts.ascii:
-            return urwid.raw_display.Screen(input=inputf, output=outputf)
+            return WSLScreen(input=inputf, output=outputf)
         else:
             _urwid_name_to_rgb = {}
             for i, n in enumerate(urwid_8_names):
