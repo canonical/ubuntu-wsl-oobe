@@ -103,7 +103,7 @@ class AlreadyCreatedView(BaseView):
             )
         )
 
-    def confirm(self):
+    def confirm(self, wah):
         self.done()
 
     def done(self):
