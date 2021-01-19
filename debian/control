@@ -16,10 +16,9 @@ Homepage: https://github.com/canonical/ubuntu-wsl-oobe
 Vcs-Browser: https://github.com/canonical/ubuntu-wsl-oobe
 Vcs-Git: https://github.com/canonical/ubuntu-wsl-oobe.git
 
-Package: subiquitycore-wsl
+Package: ubuntu-wsl-subiquitycore
 Architecture: amd64 arm64
-Depends: probert-network,
-         python3-urwid (>= 1.2.1),
+Depends: python3-urwid (>= 1.2.1),
          python3-attr,
          python3-yaml,
          ${misc:Depends},

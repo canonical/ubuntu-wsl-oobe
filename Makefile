@@ -3,7 +3,7 @@
 #
 NAME=ubuntu_wsl_oobe
 PYTHONSRC=$(NAME)
-PYTHONPATH=$(shell pwd):$(shell pwd)/external/probert
+PYTHONPATH=$(shell pwd)
 export PYTHONPATH
 CWD := $(shell pwd)
 
