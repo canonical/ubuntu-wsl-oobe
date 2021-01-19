@@ -1,4 +1,4 @@
-ubuntu-wsl-oobe (0.1.9) groovy; urgency=medium
+ubuntu-wsl-oobe (0.1.9ppa2) groovy; urgency=medium
 
   * Actually fix the bug related to old Windows console;
   * Experimental Color Palette Fix;

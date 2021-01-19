@@ -76,6 +76,9 @@ class WelcomeController(BaseController):
         self.configured()
         self.app.next_screen()
 
+    def done_and_exit(self):
+        self.app.exit()
+
     def cancel(self):
         # Can't go back from here!
         pass
@@ -104,8 +107,6 @@ class AlreadyCreatedView(BaseView):
         )
 
     def confirm(self, wah):
-        self.done()
-
-    def done(self):
-        self.app.exit()
+        # wah!
+        self.controller.done_and_exit()
 
