@@ -34,6 +34,27 @@ COLORS = [
     ("fg", (0xff, 0xff, 0xff)),
 ]
 
+CODED_COLORS = [
+    # black
+    ("bg", "#000000"),
+    # dark read
+    ("danger", "#ff0000"),
+    # dark green
+    ("good", ""),
+    # brown
+    ("orange", (0xe9, 0x54, 0x20)),
+    # dark blue
+    ("neutral", (0x00, 0x7a, 0xa6)),
+    # dark magenta
+    ("brand", (0x33, 0x33, 0x33)),
+    # dark cyan
+    ("gray", (0x66, 0x66, 0x66)),
+    # light gray
+    ("fg", (0xff, 0xff, 0xff)),
+]
+
+
+
 STYLES = [
     ('frame_header_fringe', 'orange', 'bg'),
     ('frame_header', 'fg', 'orange'),

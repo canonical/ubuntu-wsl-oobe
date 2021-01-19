@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-16 16:23+0800\n"
+"POT-Creation-Date: 2021-01-13 13:49+0800\n"
 "PO-Revision-Date: 2021-01-05 14:23-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -42,7 +42,8 @@ msgstr "বা"
 msgid "This field must be a {schemes} URL."
 msgstr "এই ক্ষেত্রটি অবশ্যই একটি {schemes} URL হতে হবে।"
 
-#: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/controllers/welcome.py:100
+#: ../subiquitycore/ui/form.py:451
+#: ../ubuntu_wsl_oobe/controllers/welcome.py:100
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:52
 #, fuzzy
 msgid "Done"
@@ -113,7 +114,8 @@ msgstr "ব্যবহারকারীর নামটি খুব দীর
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:90
 #, fuzzy
 msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
-msgstr "ব্যবহারকারীর নাম অবশ্যই NAME_REGEX এর সাথে মেলে, যেমন [a-z _] [a-z0-9 _-] *"
+msgstr ""
+"ব্যবহারকারীর নাম অবশ্যই NAME_REGEX এর সাথে মেলে, যেমন [a-z _] [a-z0-9 _-] *"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:94
 #, python-brace-format
@@ -143,11 +145,11 @@ msgstr "উবুন্টু ডাব্লুএসএল - প্রোফ�
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:125
 #, fuzzy
 msgid ""
-"Please create a default UNIX user account. For more information visit: https://aka.ms/"
-"wslusers"
+"Please create a default UNIX user account. For more information visit: "
+"https://aka.ms/wslusers"
 msgstr ""
-"দয়া করে একটি ডিফল্ট ইউনিক্স ব্যবহারকারী অ্যাকাউন্ট তৈরি করুন। আরও তথ্যের জন্য দেখুন: https://"
-"aka.ms/wsluser lu"
+"দয়া করে একটি ডিফল্ট ইউনিক্স ব্যবহারকারী অ্যাকাউন্ট তৈরি করুন। আরও তথ্যের জন্য দেখুন: "
+"https://aka.ms/wsluser lu"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:158
 #, fuzzy
@@ -201,9 +203,11 @@ msgstr "জিইউআই ইন্টিগ্রেশন"
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:68
 #, fuzzy
 msgid ""
-"Selecting enables automatic DISPLAY environment set-up. Third-party X server required."
+"Selecting enables automatic DISPLAY environment set-up. Third-party X server "
+"required."
 msgstr ""
-"নির্বাচন করা স্বয়ংক্রিয় DISPLAY পরিবেশ সেটআপ সক্ষম করে। তৃতীয় পক্ষের এক্স সার্ভারের প্রয়োজন।"
+"নির্বাচন করা স্বয়ংক্রিয় DISPLAY পরিবেশ সেটআপ সক্ষম করে। তৃতীয় পক্ষের এক্স সার্ভারের "
+"প্রয়োজন।"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:72
 #, fuzzy
@@ -226,8 +230,8 @@ msgid ""
 "Hi {username},\n"
 "You have complete the setup!\n"
 "\n"
-"It is suggested to run the following command to update your Ubuntu to the latest "
-"version:\n"
+"It is suggested to run the following command to update your Ubuntu to the "
+"latest version:\n"
 "\n"
 "\n"
 "  $ sudo apt update\n"
@@ -245,8 +249,8 @@ msgstr ""
 "হাই {username},\n"
 "আপনি সেটআপ সম্পূর্ণ করেছেন!\n"
 "\n"
-"আপনার উবুনটোকে সর্বশেষ সংস্করণ আপডেট করার জন্য নিম্নলিখিত কমান্ডটি চালনার পরামর্শ দেওয়া "
-"হয়েছে:\n"
+"আপনার উবুনটোকে সর্বশেষ সংস্করণ আপডেট করার জন্য নিম্নলিখিত কমান্ডটি চালনার পরামর্শ "
+"দেওয়া হয়েছে:\n"
 "\n"
 "\n"
 "  $ sudo অপ্ট আপডেট\n"
@@ -273,8 +277,8 @@ msgstr "আপনার ভাষা নির্বাচন করতে UP, D
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:54
 #, fuzzy
 msgid ""
-"You are using old Windows Console Host, Entering fallback mode. Use Windows Terminal "
-"to get more language options."
+"You are using old Windows Console Host, Entering fallback mode. Use Windows "
+"Terminal to get more language options."
 msgstr ""
-"আপনি পুরানো উইন্ডোজ কনসোল হোস্ট ব্যবহার করছেন, ফ্যালব্যাক মোড প্রবেশ করছেন। আরও ভাষার বিকল্প "
-"পেতে উইন্ডোজ টার্মিনাল ব্যবহার করুন।"
+"আপনি পুরানো উইন্ডোজ কনসোল হোস্ট ব্যবহার করছেন, ফ্যালব্যাক মোড প্রবেশ করছেন। আরও "
+"ভাষার বিকল্প পেতে উইন্ডোজ টার্মিনাল ব্যবহার করুন।"

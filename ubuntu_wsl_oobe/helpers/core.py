@@ -64,13 +64,8 @@ KDSKBMODE = 0x4B45  # sets current keyboard mode
 
 
 def is_wsl():
-    # return 0 if not WSL, return 1 if WSL 1, return 2 if WSL 2
-    if pathlib.Path("/proc/sys/fs/binfmt_misc/WSLInterop").is_file():
-        if re.match(r'Linux-\d\.\d{1,2}\.\d{1,3}-\d{5}-Microsoft', platform.platform()):
-            return 1
-        else:
-            return 2
-    return 0
+    # return true if it is WSL, otherwise return false
+    return pathlib.Path("/proc/sys/fs/binfmt_misc/WSLInterop").is_file()
 
 
 class WSLScreen(urwid.raw_display.Screen):
@@ -625,9 +620,12 @@ class Application:
         if self.is_linux_tty:
             # Perhaps we ought to return a screen subclass that does this
             # ioctl-ing in .start() and undoes it in .stop() but well.
-            if self.is_wsl == 1:
-                # TODO: Handling thew case when GIO_CMAP and PIO_CMAP syscall do not exist
-                pass
+            if self.is_wsl:
+                _urwid_name_to_rgb = {}
+                for i, n in enumerate(urwid_8_names):
+                    _urwid_name_to_rgb[n] = self.COLORS[i][1]
+                return TwentyFourBitScreen(_urwid_name_to_rgb,
+                                           input=inputf, output=outputf)
             else:
                 curpal = bytearray(16*3)
                 fcntl.ioctl(sys.stdout.fileno(), GIO_CMAP, curpal)
@@ -635,7 +633,7 @@ class Application:
                     for j in range(3):
                         curpal[i*3+j] = self.COLORS[i][1][j]
                 fcntl.ioctl(sys.stdout.fileno(), PIO_CMAP, curpal)
-            return WSLScreen(input=inputf, output=outputf)
+                return WSLScreen(input=inputf, output=outputf)
         elif self.opts.ascii:
             return WSLScreen(input=inputf, output=outputf)
         else:
@@ -648,6 +646,7 @@ class Application:
     def run(self, input=None, output=None):
         log.debug("Application.run")
         screen = self.make_screen(input, output)
+        #screen.set_terminal_properties(2**24)
 
         self.urwid_loop = urwid.MainLoop(
             self.ui, palette=self.color_palette, screen=screen,
