@@ -1,11 +1,11 @@
-ubuntu-wsl-oobe (0.1.9ppa2) groovy; urgency=medium
+ubuntu-wsl-oobe (0.1.9ppa3) groovy; urgency=medium
 
   * Actually fix the bug related to old Windows console;
   * Experimental Color Palette Fix;
   * Fix a AlreadyCreatedView Bug;
   * Remove a unnecessary dependency and update subiquitycore-wsl package name.
 
- -- Patrick Wu <patrick.wu@canonical.com>  Tue, 19 Jan 2021 15:17:48 +0800
+ -- Patrick Wu <patrick.wu@canonical.com>  Wed, 20 Jan 2021 13:21:44 +0800
 
 ubuntu-wsl-oobe (0.1.8) groovy; urgency=medium
 
