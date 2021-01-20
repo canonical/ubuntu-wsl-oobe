@@ -21,7 +21,7 @@ from subiquitycore.ui.buttons import done_btn
 from subiquitycore.ui.utils import button_pile, screen
 from subiquitycore.utils import run_command
 from subiquitycore.view import BaseView
-from ubuntu_wsl_oobe.ui.views import WelcomeView
+from ubuntu_wsl_oobe.ui.views import WelcomeView, AlreadyCreatedView
 
 log = logging.getLogger('ubuntu_wsl_oobe.controllers.welcome')
 
@@ -76,9 +76,6 @@ class WelcomeController(BaseController):
         self.configured()
         self.app.next_screen()
 
-    def done_and_exit(self):
-        self.app.exit()
-
     def cancel(self):
         # Can't go back from here!
         pass
@@ -90,23 +87,19 @@ class WelcomeController(BaseController):
         self.model.switch_language(data)
 
 
-class AlreadyCreatedView(BaseView):
-    title = _("Ubuntu WSL - Already Completed")
+class AlreadyCreatedController(BaseController):
 
-    def __init__(self):
-        complete_text = _("You have already completed setup. Aborted.")
+    def __init__(self, app):
+        super().__init__(app)
 
-        super().__init__(
-            screen(
-                rows=[],
-                buttons=button_pile(
-                    [done_btn(_("Done"), on_press=self.confirm), ]),
-                focus_buttons=True,
-                excerpt=complete_text,
-            )
-        )
+    def start_ui(self):
+        pass
 
-    def confirm(self, wah):
-        # wah!
-        self.controller.done_and_exit()
+    def cancel(self):
+        pass
+
+    def done(self):
+        self.app.exit()
+
+
 

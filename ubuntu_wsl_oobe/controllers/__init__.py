@@ -18,11 +18,12 @@
 from .identity import IdentityController
 from .integration import IntegrationController
 from .overview import OverviewController
-from .welcome import WelcomeController
+from .welcome import WelcomeController, AlreadyCreatedController
 
 __all__ = [
     'IntegrationController',
     'IdentityController',
     'WelcomeController',
-    'OverviewController'
+    'OverviewController',
+    'AlreadyCreatedController'
 ]

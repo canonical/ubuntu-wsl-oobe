@@ -655,7 +655,6 @@ class Application:
     def run(self, input=None, output=None):
         log.debug("Application.run")
         screen = self.make_screen(input, output)
-        #screen.set_terminal_properties(2**24)
 
         self.urwid_loop = urwid.MainLoop(
             self.ui, palette=self.color_palette, screen=screen,
