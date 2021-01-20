@@ -89,8 +89,10 @@ class WelcomeView(BaseView):
 class AlreadyCreatedView(BaseView):
     title = _("Ubuntu WSL - Already Completed")
 
-    def __init__(self):
+    def __init__(self, controller):
         complete_text = _("You have already completed setup. Aborted.")
+
+        self.controller = controller
 
         super().__init__(
             screen(
@@ -104,4 +106,4 @@ class AlreadyCreatedView(BaseView):
 
     def confirm(self, wah):
         # wah!
-        self.controller.done()
+        self.controller.done_and_exit()

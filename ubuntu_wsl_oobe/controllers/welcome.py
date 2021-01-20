@@ -51,7 +51,7 @@ class WelcomeController(BaseController):
             run_command(["/usr/bin/rm", "-rf", "/tmp/ubuntu-wsl-oobe/created_account"])
         view = WelcomeView(self.model, self)
         if os.path.exists("/tmp/ubuntu-wsl-oobe/created_account"):
-            view = AlreadyCreatedView()
+            view = AlreadyCreatedView(self)
         self.ui.set_body(view)
 
     def interactive(self):
@@ -76,6 +76,9 @@ class WelcomeController(BaseController):
         self.configured()
         self.app.next_screen()
 
+    def done_and_exit(self):
+        self.app.exit()
+
     def cancel(self):
         # Can't go back from here!
         pass
@@ -98,8 +101,7 @@ class AlreadyCreatedController(BaseController):
     def cancel(self):
         pass
 
-    def done(self):
-        self.app.exit()
+
 
 
 
