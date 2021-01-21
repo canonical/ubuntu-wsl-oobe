@@ -15,9 +15,6 @@
 
 import logging
 
-import attr
-
-from subiquitycore.context import with_context
 from subiquitycore.controller import BaseController
 from ubuntu_wsl_oobe.ui.views import IdentityView
 

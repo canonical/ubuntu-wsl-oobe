@@ -17,10 +17,7 @@ import logging
 import os
 
 from subiquitycore.controller import BaseController
-from subiquitycore.ui.buttons import done_btn
-from subiquitycore.ui.utils import button_pile, screen
 from subiquitycore.utils import run_command
-from subiquitycore.view import BaseView
 from ubuntu_wsl_oobe.ui.views import WelcomeView, AlreadyCreatedView
 
 log = logging.getLogger('ubuntu_wsl_oobe.controllers.welcome')
