@@ -1,4 +1,10 @@
-ubuntu-wsl-oobe (0.1.9ppa3) groovy; urgency=medium
+ubuntu-wsl-oobe (0.1.10) hirsute; urgency=medium
+
+  * Code cleanup and translation update.
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Mon, 25 Jan 2021 14:46:54 +0800
+
+ubuntu-wsl-oobe (0.1.9) groovy; urgency=medium
 
   * Actually fix the bug related to old Windows console;
   * Experimental Color Palette Fix;
