@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-13 13:49+0800\n"
+"POT-Creation-Date: 2021-01-21 20:32+0800\n"
 "PO-Revision-Date: 2021-01-05 14:21-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -39,9 +39,8 @@ msgstr " or "
 msgid "This field must be a {schemes} URL."
 msgstr "This field must be a {schemes} URL."
 
-#: ../subiquitycore/ui/form.py:451
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:100
-#: ../ubuntu_wsl_oobe/ui/views/overview.py:52
+#: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:52
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:101
 msgid "Done"
 msgstr "Done"
 
@@ -56,14 +55,6 @@ msgstr "Yes"
 #: ../subiquitycore/ui/interactive.py:109
 msgid "No"
 msgstr "No"
-
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:91
-msgid "Ubuntu WSL - Already Completed"
-msgstr "Ubuntu WSL - Already Completed"
-
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:94
-msgid "You have already completed setup. Aborted."
-msgstr "You have already completed setup. Aborting."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:51
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
@@ -249,3 +240,11 @@ msgid ""
 msgstr ""
 "You are using the legacy Windows Console Host, entering fallback mode. Use "
 "Windows Terminal to get more language options."
+
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:90
+msgid "Ubuntu WSL - Already Completed"
+msgstr "Ubuntu WSL - Already Completed"
+
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
+msgid "You have already completed setup. Aborted."
+msgstr "You have already completed setup. Aborting."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-13 13:49+0800\n"
+"POT-Creation-Date: 2021-01-21 20:32+0800\n"
 "PO-Revision-Date: 2020-09-18 11:41-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -41,9 +41,8 @@ msgstr " ou "
 msgid "This field must be a {schemes} URL."
 msgstr "Ce champ doit être un {schéma} URL."
 
-#: ../subiquitycore/ui/form.py:451
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:100
-#: ../ubuntu_wsl_oobe/ui/views/overview.py:52
+#: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:52
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:101
 msgid "Done"
 msgstr "Terminé"
 
@@ -58,16 +57,6 @@ msgstr "Oui"
 #: ../subiquitycore/ui/interactive.py:109
 msgid "No"
 msgstr "Non"
-
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:91
-#, fuzzy
-msgid "Ubuntu WSL - Already Completed"
-msgstr "Ubuntu WSL - Déjà terminé"
-
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:94
-#, fuzzy
-msgid "You have already completed setup. Aborted."
-msgstr "Vous avez déjà terminé l'installation. Avortée."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:51
 #, fuzzy
@@ -284,3 +273,13 @@ msgid ""
 msgstr ""
 "Vous utilisez l'ancien Windows Console Host, entrant en mode de repli. "
 "Utilisez le terminal Windows pour obtenir plus d'options de langue."
+
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:90
+#, fuzzy
+msgid "Ubuntu WSL - Already Completed"
+msgstr "Ubuntu WSL - Déjà terminé"
+
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
+#, fuzzy
+msgid "You have already completed setup. Aborted."
+msgstr "Vous avez déjà terminé l'installation. Avortée."

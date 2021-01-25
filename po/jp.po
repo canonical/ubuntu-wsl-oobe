@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-13 13:49+0800\n"
+"POT-Creation-Date: 2021-01-21 20:32+0800\n"
 "PO-Revision-Date: 2021-01-05 14:24-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -41,9 +41,8 @@ msgstr " 或 "
 msgid "This field must be a {schemes} URL."
 msgstr "このフィールドは{schemes}でなければなりません。URLを表示します。"
 
-#: ../subiquitycore/ui/form.py:451
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:100
-#: ../ubuntu_wsl_oobe/ui/views/overview.py:52
+#: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:52
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:101
 msgid "Done"
 msgstr "完了"
 
@@ -58,16 +57,6 @@ msgstr "はい"
 #: ../subiquitycore/ui/interactive.py:109
 msgid "No"
 msgstr "いいえ"
-
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:91
-#, fuzzy
-msgid "Ubuntu WSL - Already Completed"
-msgstr "Ubuntu WSL - すでに完了"
-
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:94
-#, fuzzy
-msgid "You have already completed setup. Aborted."
-msgstr "すでにセットアップは完了しています。中止されました。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:51
 #, fuzzy
@@ -281,3 +270,13 @@ msgid ""
 msgstr ""
 "あなたは古いWindowsコンソールホストを使用しており、フォールバックモードに入っ"
 "ています。Windowsターミナルを使用して、より多くの言語オプションを取得します。"
+
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:90
+#, fuzzy
+msgid "Ubuntu WSL - Already Completed"
+msgstr "Ubuntu WSL - すでに完了"
+
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
+#, fuzzy
+msgid "You have already completed setup. Aborted."
+msgstr "すでにセットアップは完了しています。中止されました。"

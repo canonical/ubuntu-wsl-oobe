@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-13 13:49+0800\n"
+"POT-Creation-Date: 2021-01-21 20:32+0800\n"
 "PO-Revision-Date: 2021-01-05 14:23-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -42,9 +42,8 @@ msgstr "বা"
 msgid "This field must be a {schemes} URL."
 msgstr "এই ক্ষেত্রটি অবশ্যই একটি {schemes} URL হতে হবে।"
 
-#: ../subiquitycore/ui/form.py:451
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:100
-#: ../ubuntu_wsl_oobe/ui/views/overview.py:52
+#: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:52
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:101
 #, fuzzy
 msgid "Done"
 msgstr "সম্পন্ন"
@@ -60,16 +59,6 @@ msgstr "হ্যাঁ"
 #: ../subiquitycore/ui/interactive.py:109
 msgid "No"
 msgstr "না"
-
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:91
-#, fuzzy
-msgid "Ubuntu WSL - Already Completed"
-msgstr "উবুন্টু ডাব্লুএসএল - ইতিমধ্যে সম্পূর্ণ"
-
-#: ../ubuntu_wsl_oobe/controllers/welcome.py:94
-#, fuzzy
-msgid "You have already completed setup. Aborted."
-msgstr "আপনি ইতিমধ্যে সেটআপ সম্পন্ন করেছেন। বাতিল।"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:51
 #, fuzzy
@@ -282,3 +271,13 @@ msgid ""
 msgstr ""
 "আপনি পুরানো উইন্ডোজ কনসোল হোস্ট ব্যবহার করছেন, ফ্যালব্যাক মোড প্রবেশ করছেন। আরও "
 "ভাষার বিকল্প পেতে উইন্ডোজ টার্মিনাল ব্যবহার করুন।"
+
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:90
+#, fuzzy
+msgid "Ubuntu WSL - Already Completed"
+msgstr "উবুন্টু ডাব্লুএসএল - ইতিমধ্যে সম্পূর্ণ"
+
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
+#, fuzzy
+msgid "You have already completed setup. Aborted."
+msgstr "আপনি ইতিমধ্যে সেটআপ সম্পন্ন করেছেন। বাতিল।"
