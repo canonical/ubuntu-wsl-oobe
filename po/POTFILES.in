@@ -47,9 +47,11 @@ ubuntu_wsl_oobe/cmd/__init__.py
 ubuntu_wsl_oobe/cmd/tui.py
 ubuntu_wsl_oobe/models/identity.py
 ubuntu_wsl_oobe/models/locale.py
-ubuntu_wsl_oobe/models/systems.py
 ubuntu_wsl_oobe/models/ubuntu_wsl_oobe.py
 ubuntu_wsl_oobe/models/__init__.py
+ubuntu_wsl_oobe/helpers/core.py
+ubuntu_wsl_oobe/helpers/i18n.py
+ubuntu_wsl_oobe/helpers/__init__.py
 ubuntu_wsl_oobe/core.py
 ubuntu_wsl_oobe/__init__.py
 ubuntu_wsl_oobe/ui/views/identity.py
