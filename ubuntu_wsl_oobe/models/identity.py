@@ -60,8 +60,7 @@ class IdentityModel(object):
             run_command(["/usr/sbin/useradd", "-m", "-s", "/bin/bash", "-p", result['password'], result['username']])
             run_command(["/usr/sbin/usermod", "-a", "-G", oneline_usergroups, result['username']])
         # creating location for UWP to read from
-        run_command(["/usr/bin/mkdir", "-p", "/tmp/ubuntu-wsl-oobe/"])
-        with open('/tmp/ubuntu-wsl-oobe/created_account', 'w') as configfile:
+        with open('/usr/share/ubuntu-wsl-oobe/assigned_account', 'w') as configfile:
             configfile.write(result['username'])
 
     @property

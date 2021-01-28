@@ -45,9 +45,9 @@ class WelcomeController(BaseController):
     def start_ui(self):
         # clean up old account setup if exist (although there is possibly none)
         if self.opts.dry_run:
-            run_command(["/usr/bin/rm", "-rf", "/tmp/ubuntu-wsl-oobe/created_account"])
+            run_command(["/usr/bin/rm", "-rf", "/usr/share/ubuntu-wsl-oobe/assigned_account"])
         view = WelcomeView(self.model, self)
-        if os.path.exists("/tmp/ubuntu-wsl-oobe/created_account"):
+        if os.path.exists("/usr/share/ubuntu-wsl-oobe/assigned_account"):
             view = AlreadyCreatedView(self)
         self.ui.set_body(view)
 
