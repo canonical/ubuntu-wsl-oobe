@@ -1,7 +1,5 @@
 # Copyright 2020 Canonical, Ltd.
 #
-# This is a reimplemented version of core.py specifically for Ubuntu WSL OOBE Experience.
-#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
 # published by the Free Software Foundation, either version 3 of the
@@ -14,6 +12,10 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+###################################################
+# This is a reimplementation for subiquitycore.core
+# due to the issue that it is made for subiquity
+###################################################
 
 import platform
 import re
