@@ -67,6 +67,28 @@ class IntegrationForm(Form):
     gui_integration = BooleanField(_("GUI Integration"), help=_(
         "Selecting enables automatic DISPLAY environment set-up. Third-party X server required."))
 
+    def validate_custom_path(self):
+        p = self.custom_path.value
+        if p != "" and (re.fullmatch(r"(/[^/ ]*)+/?", p) is None):
+            return _("This is a invalid UNIX Path.")
+
+    def validate_custom_mount_opt(self):
+        o = self.custom_mount_opt.value
+        if o != "":
+            p = o.split(',')
+            x = True
+            for i in p:
+                if i == "":
+                    x = x and False
+                elif re.fullmatch(r"(metadata|(u|g)id=\d+|(u|f|d)mask=(4|2|1|0)?[0-7]{3})", i) is not None:
+                    x = x and True
+                else:
+                    x = x and False
+            if not x:
+                return _("Input is not a valid set of DrvFS mount options. Please check "
+                         "https://docs.microsoft.com/en-us/windows/wsl/wsl-config#mount-options "
+                         "for correct valid input")
+
 
 class IntegrationView(BaseView):
     title = _("Ubuntu WSL - Tweaks")
