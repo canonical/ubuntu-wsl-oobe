@@ -30,7 +30,7 @@ class LocaleModel(object):
     selected_language = None
 
     def get_languages(self, is_old_console):
-        lang_path = '/usr/share/ubuntu-wsl-oobe/anguagelist'
+        lang_path = '/usr/share/ubuntu-wsl-oobe/languagelist'
         build_lang_path = os.path.realpath(__file__ + '/../../../languagelist')
         if os.path.isfile(build_lang_path):
             lang_path = build_lang_path
