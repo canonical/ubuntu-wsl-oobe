@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-21 20:32+0800\n"
+"POT-Creation-Date: 2021-02-03 16:57+0800\n"
 "PO-Revision-Date: 2021-01-05 14:25-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -189,12 +189,23 @@ msgstr ""
 "Elektado ebligas aŭtomatan DISPLAY median agordon. Tria partia X-servilo "
 "necesas."
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:72
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:73
+msgid "Mount location must be a absolute UNIX path without space."
+msgstr ""
+
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:88
+msgid ""
+"Input is not a valid set of DrvFs mount options. Please check https://docs."
+"microsoft.com/en-us/windows/wsl/wsl-config#mount-options for correct valid "
+"input"
+msgstr ""
+
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:94
 #, fuzzy
 msgid "Ubuntu WSL - Tweaks"
 msgstr "Ubuntu WSL - Agordoj"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:73
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:95
 #, fuzzy
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
 msgstr "En ĉi tiu paĝo, vi povas adapti Ubuntu WSL kiel viaj bezonoj."
