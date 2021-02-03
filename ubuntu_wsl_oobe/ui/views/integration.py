@@ -70,7 +70,7 @@ class IntegrationForm(Form):
     def validate_custom_path(self):
         p = self.custom_path.value
         if p != "" and (re.fullmatch(r"(/[^/ ]*)+/?", p) is None):
-            return _("This is a invalid UNIX Path.")
+            return _("Mount location must be a absolute UNIX path without space.")
 
     def validate_custom_mount_opt(self):
         o = self.custom_mount_opt.value
@@ -85,7 +85,7 @@ class IntegrationForm(Form):
                 else:
                     x = x and False
             if not x:
-                return _("Input is not a valid set of DrvFS mount options. Please check "
+                return _("Input is not a valid set of DrvFs mount options. Please check "
                          "https://docs.microsoft.com/en-us/windows/wsl/wsl-config#mount-options "
                          "for correct valid input")
 
