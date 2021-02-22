@@ -34,7 +34,7 @@ class OverviewView(BaseView):
     def __init__(self, controller):
         self.controller = controller
         user_name = ""
-        with open('/tmp/ubuntu-wsl-oobe/created_account', 'r') as f:
+        with open('/var/lib/ubuntu-wsl/assigned_account', 'r') as f:
             user_name = f.read()
         complete_text = _("Hi {username},\n"
                           "You have complete the setup!\n\n"
