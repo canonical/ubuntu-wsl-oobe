@@ -1,3 +1,9 @@
+ubuntu-wsl-oobe (0.1.12) hirsute; urgency=medium
+
+  * fix an issue that the account file cannot be found.
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Mon, 22 Feb 2021 15:06:32 +0800
+
 ubuntu-wsl-oobe (0.1.11) hirsute; urgency=medium
 
   * Code cleanup and translation update.
