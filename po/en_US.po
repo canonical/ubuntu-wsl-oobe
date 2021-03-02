@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-03 16:57+0800\n"
+"POT-Creation-Date: 2021-03-02 14:07+0800\n"
 "PO-Revision-Date: 2021-01-05 14:21-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -78,7 +78,7 @@ msgstr "Confirm your password:"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
 msgid "Show Advanced Options Next Page"
-msgstr "Show advanced options on the next page"
+msgstr "Show Advanced Options Next Page"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:82
 msgid "Username missing"
@@ -142,11 +142,11 @@ msgstr "Mount Option"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 msgid "Mount option passed for the automount"
-msgstr "Mount options to be passed to the automount"
+msgstr "Mount option passed for the automount"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
 msgid "Enable Host Generation"
-msgstr "Enable hosts file Generation"
+msgstr "Enable Host Generation"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:64
 msgid "Selecting enables /etc/host re-generation at every start"
@@ -162,7 +162,7 @@ msgstr "Selecting enables /etc/resolv.conf re-generation at every start"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:67
 msgid "GUI Integration"
-msgstr "Enable X server integration"
+msgstr "GUI Integration"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:68
 msgid ""
@@ -174,20 +174,29 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:73
 msgid "Mount location must be a absolute UNIX path without space."
-msgstr ""
+msgstr "Mount location must be a absolute UNIX path without space."
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:88
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:92
+msgid "an empty entry detected; "
+msgstr "an empty entry detected; "
+
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:97
+msgid "{} is not a valid mount option; "
+msgstr "{} is not a valid mount option; "
+
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:100
 msgid ""
-"Input is not a valid set of DrvFs mount options. Please check https://docs."
-"microsoft.com/en-us/windows/wsl/wsl-config#mount-options for correct valid "
-"input"
+"Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
+"wsl-config#mount-options for correct valid input"
 msgstr ""
+"Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
+"wsl-config#mount-options for correct valid input"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:94
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:106
 msgid "Ubuntu WSL - Tweaks"
 msgstr "Ubuntu WSL - Advanced Setup"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:95
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:107
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
 msgstr "In this page, you can tweak Ubuntu WSL to your needs. \n"
 
@@ -218,17 +227,23 @@ msgid ""
 "* All settings will take effect after first restart of Ubuntu."
 msgstr ""
 "Hi {username},\n"
-"You have completed the setup!\n"
+"You have complete the setup!\n"
 "\n"
-"We suggest running the following command to update your Ubuntu packages to "
-"the latest versions:\n"
+"It is suggested to run the following command to update your Ubuntu to the "
+"latest version:\n"
 "\n"
 "\n"
 "  $ sudo apt update\n"
 "  $ sudo apt upgrade\n"
 "\n"
 "\n"
-"* All settings will take effect after the first restart of Ubuntu."
+"You can use the builtin `ubuntuwsl` command to manage your WSL settings:\n"
+"\n"
+"\n"
+"  $ sudo ubuntuwsl ...\n"
+"\n"
+"\n"
+"* All settings will take effect after first restart of Ubuntu."
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:32
 msgid ""
@@ -249,8 +264,8 @@ msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
 msgstr ""
-"You are using the legacy Windows Console Host, entering fallback mode. Use "
-"Windows Terminal to get more language options."
+"You are using old Windows Console Host, Entering fallback mode. Use Windows "
+"Terminal to get more language options."
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:90
 msgid "Ubuntu WSL - Already Completed"
