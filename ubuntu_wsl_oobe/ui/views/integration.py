@@ -74,20 +74,32 @@ class IntegrationForm(Form):
 
     def validate_custom_mount_opt(self):
         o = self.custom_mount_opt.value
+        # filesystem independent mount option
+        fsimo = [r"async", r"(no)?atime", r"(no)?auto", r"(fs|def|root)?context=\w+", r"(no)?dev", r"(no)?diratime",
+                 r"dirsync", r"(no)?exec", r"group", r"(no)?iversion", r"(no)?mand", r"_netdev", r"nofail",
+                 r"(no)?relatime", r"(no)?strictatime", r"(no)?suid", r"owner", r"remount", r"ro", r"rw",
+                 r"_rnetdev", r"sync", r"(no)?user", r"users"]
+        # DrvFs filesystem mount option
+        drvfsmo = r"case=(dir|force|off)|metadata|(u|g)id=\d+|(u|f|d)mask=\d+|"
+        fso = "{0}{1}".format(drvfsmo, '|'.join(fsimo))
+
         if o != "":
+            e_t = ""
             p = o.split(',')
             x = True
             for i in p:
                 if i == "":
+                    e_t += _("an empty entry detected; ")
                     x = x and False
-                elif re.fullmatch(r"(metadata|(u|g)id=\d+|(u|f|d)mask=(4|2|1|0)?[0-7]{3})", i) is not None:
+                elif re.fullmatch(fso, i) is not None:
                     x = x and True
                 else:
+                    e_t += _("{} is not a valid mount option; ").format(i)
                     x = x and False
             if not x:
-                return _("Input is not a valid set of DrvFs mount options. Please check "
-                         "https://docs.microsoft.com/en-us/windows/wsl/wsl-config#mount-options "
-                         "for correct valid input")
+                return _("Invalid Input: {}Please check "
+                    "https://docs.microsoft.com/en-us/windows/wsl/wsl-config#mount-options "
+                    "for correct valid input").format(e_t)
 
 
 class IntegrationView(BaseView):
