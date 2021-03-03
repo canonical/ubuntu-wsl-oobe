@@ -8,6 +8,10 @@
 
 Please report bugs to here: <https://bugs.launchpad.net/ubuntu-wsl-oobe>
 
+## Translations
+
+Please do not submit translations directly here; Please translate at launchpad: <https://translations.launchpad.net/ubuntu-wsl-oobe>
+
 ## License
 
 AGPL v3
