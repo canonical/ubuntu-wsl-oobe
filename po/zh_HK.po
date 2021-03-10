@@ -1,17 +1,17 @@
-# English (US) translation for ubuntu-wsl-oobe
-# Copyright (c) Canonical Ltd 2020.
-# This file is distributed under the same license as the subiquity package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+# Chinese (Hong Kong) translation for ubuntu-wsl-oobe
+# Copyright (c) 2021 Rosetta Contributors and Canonical Ltd 2021
+# This file is distributed under the same license as the ubuntu-wsl-oobe package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-10 14:02+0800\n"
-"PO-Revision-Date: 2021-03-03 02:39+0000\n"
+"PO-Revision-Date: 2021-03-03 02:44+0000\n"
 "Last-Translator: Patrick Wu <Unknown>\n"
-"Language-Team: \n"
-"Language: ar\n"
+"Language-Team: Chinese (Hong Kong) <zh_HK@li.org>\n"
+"Language: zh_HK\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,15 +24,15 @@ msgstr ""
 
 #: ../subiquitycore/ui/utils.py:340
 msgid "Close"
-msgstr "إغلاق"
+msgstr "關閉"
 
 #: ../subiquitycore/ui/form.py:365
 msgid ", or "
-msgstr ""
+msgstr "，或 "
 
 #: ../subiquitycore/ui/form.py:367
 msgid " or "
-msgstr " أو "
+msgstr " 或 "
 
 #: ../subiquitycore/ui/form.py:371
 #, python-brace-format
@@ -42,19 +42,19 @@ msgstr ""
 #: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:52
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:101
 msgid "Done"
-msgstr "تم"
+msgstr "完成"
 
 #: ../subiquitycore/ui/form.py:452
 msgid "Cancel"
-msgstr "إلغاء"
+msgstr "取消"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "Yes"
-msgstr "نعم"
+msgstr "是"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "No"
-msgstr "لا"
+msgstr "否"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:51
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
@@ -104,7 +104,7 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:103
 msgid "Passwords do not match"
-msgstr "كلمات المرور غير متطابقة"
+msgstr ""
 
 #. desc is "passwords" or "passphrases"
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:115
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:64
 msgid "Selecting enables /etc/host re-generation at every start"
-msgstr "يتيح التحديد إعادة إنشاء /etc/hosts في كل بداية"
+msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:65
 msgid "Enable resolv.conf Generation"

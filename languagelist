@@ -1,9 +1,14 @@
 console:en_US:English
 console:en_GB:English (UK)
 new_console_only:zh_CN:中文(简体)
+new_console_only:zh_HK:中文(香港)
 new_console_only:zh_TW:中文(繁體)
-new_console_only:jp:日本語
+new_console_only:ja:日本語
 console:fr:Français
+console:de:Deutsch
 console:es:Español
+console:it:Italiano
+console:nl:Nederlands
 console:eo:Esperanto
 new_console_only:bn:বাংলা
+new_console_only:ar:اَلْعَرَبِيَّةُ

@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-02 14:07+0800\n"
-"PO-Revision-Date: 2021-01-05 14:24-0500\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2021-03-10 14:02+0800\n"
+"PO-Revision-Date: 2021-03-03 02:42+0000\n"
+"Last-Translator: Patrick Wu <Unknown>\n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Launchpad-Export-Date: 2021-03-10 04:04+0000\n"
+"X-Generator: Launchpad (build 7100fef41f9a5d5fd53de99e6c59312f81a744cf)\n"
 
 #: ../subiquitycore/controllers/network.py:297
 msgid "autoconfiguration failed"
@@ -28,11 +28,11 @@ msgstr "关闭"
 
 #: ../subiquitycore/ui/form.py:365
 msgid ", or "
-msgstr "或"
+msgstr "或 "
 
 #: ../subiquitycore/ui/form.py:367
 msgid " or "
-msgstr "或"
+msgstr " 或 "
 
 #: ../subiquitycore/ui/form.py:371
 #, python-brace-format
@@ -77,9 +77,8 @@ msgid "Confirm your password:"
 msgstr "确认密码："
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
-#, fuzzy
 msgid "Show Advanced Options Next Page"
-msgstr "显示高级选项 下一页"
+msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:82
 msgid "Username missing"
@@ -141,9 +140,8 @@ msgid "Mount Option"
 msgstr "挂载选项"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
-#, fuzzy
 msgid "Mount option passed for the automount"
-msgstr "自动挂载时通过的挂载选项"
+msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
 msgid "Enable Host Generation"
@@ -195,14 +193,14 @@ msgstr "Ubuntu WSL - 配置"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:107
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
-msgstr "在这个页面中，你可以根据自己的需要调整 Ubuntu WSL。\n"
+msgstr "在这个页面中，你可以根据自己的需要调整 Ubuntu WSL。 \n"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:32
 msgid "Ubuntu WSL - Setup Complete"
 msgstr "Ubuntu WSL - 设置完成"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:39
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid ""
 "Hi {username},\n"
 "You have complete the setup!\n"
@@ -223,17 +221,6 @@ msgid ""
 "\n"
 "* All settings will take effect after first restart of Ubuntu."
 msgstr ""
-"{用户名}你好：\n"
-"你已经完成了设置！\n"
-"\n"
-"建议运行以下命令将 Ubuntu 更新到最新版本。\n"
-"\n"
-"\n"
-"  $ sudo apt update\n"
-"  $ sudo apt upgrade\n"
-"\n"
-"\n"
-"* 所有设置将在 Ubuntu 首次重启后生效。"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:32
 msgid ""
@@ -243,7 +230,6 @@ msgid ""
 msgstr ""
 "\n"
 "选择安装程序和系统要使用的语言。\n"
-"\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:52
 msgid "Use UP, DOWN and ENTER keys to select your language."
@@ -264,6 +250,3 @@ msgstr "Ubuntu WSL - 已经完成"
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
 msgid "You have already completed setup. Aborted."
 msgstr "你已经完成了设置。终止。"
-
-#~ msgid "Back"
-#~ msgstr "返回"
