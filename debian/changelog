@@ -1,3 +1,11 @@
+ubuntu-wsl-oobe (0.1.13) hirsute; urgency=medium
+
+  * Add Chinese (Hong Kong), Arabic, Dutch, German,
+    Italian, and Ukrainian
+  * Improve mount option detection
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Tue, 16 Mar 2021 15:24:36 +0800
+
 ubuntu-wsl-oobe (0.1.12ppa2) hirsute; urgency=medium
 
   * fix an issue that the account file cannot be found.
