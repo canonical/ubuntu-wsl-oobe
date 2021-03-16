@@ -7,20 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-10 14:02+0800\n"
-"PO-Revision-Date: 2021-03-03 10:17+0000\n"
-"Last-Translator: Winael <vinzjobard@gmail.com>\n"
+"POT-Creation-Date: 2021-03-16 13:55+0800\n"
+"PO-Revision-Date: 2021-03-11 18:38+0000\n"
+"Last-Translator: Jean-Marc <Unknown>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-03-10 04:04+0000\n"
-"X-Generator: Launchpad (build 7100fef41f9a5d5fd53de99e6c59312f81a744cf)\n"
+"X-Launchpad-Export-Date: 2021-03-16 05:20+0000\n"
+"X-Generator: Launchpad (build d4fcb062545ed29d3cd7773e52e43615e042623f)\n"
 
 #: ../subiquitycore/controllers/network.py:297
 msgid "autoconfiguration failed"
-msgstr ""
+msgstr "Échec de la configuration automatique"
 
 #: ../subiquitycore/ui/utils.py:340
 msgid "Close"
@@ -37,7 +37,7 @@ msgstr " ou "
 #: ../subiquitycore/ui/form.py:371
 #, python-brace-format
 msgid "This field must be a {schemes} URL."
-msgstr ""
+msgstr "Ce champ doit être une URL de type {schemes}."
 
 #: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:52
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:101
@@ -58,7 +58,7 @@ msgstr "Non"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:51
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
-msgstr ""
+msgstr "Les seuls caractères autorisés pour ce champs sont a-z, 0-9, _ et -"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:74
 msgid "Pick a username:"
@@ -67,6 +67,8 @@ msgstr "Choisissez un nom d’utilisateur :"
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:74
 msgid "The username does not need to match your Windows username"
 msgstr ""
+"Le nom d'utilisateur ne doit pas nécessairement correspondre à votre nom "
+"d'utilisateur Windows"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:75
 msgid "Choose a password:"
@@ -78,7 +80,7 @@ msgstr "Confirmez votre mot de passe :"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
 msgid "Show Advanced Options Next Page"
-msgstr ""
+msgstr "Afficher les options avancées page suivante"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:82
 msgid "Username missing"
@@ -98,7 +100,7 @@ msgstr ""
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:94
 #, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
-msgstr ""
+msgstr "Le nom d'utilisateur « {username} » est réservé à l'usage du système."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:99
 msgid "Password must be set"
@@ -116,13 +118,15 @@ msgstr "{desc} ne correspondent pas"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:124
 msgid "Ubuntu WSL - Profile Setup"
-msgstr ""
+msgstr "Ubuntu WSL - Configuration du profil"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:125
 msgid ""
 "Please create a default UNIX user account. For more information visit: "
 "https://aka.ms/wslusers"
 msgstr ""
+"Veuillez créer un compte d'utilisateur UNIX par défaut. Pour plus "
+"d'informations, rendez-vous sur : https://aka.ms/wslusers"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:158
 msgid "passwords"
@@ -134,7 +138,7 @@ msgstr "Point de montage"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 msgid "Location for the automount"
-msgstr ""
+msgstr "Localisation du montage automatique"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 msgid "Mount Option"
@@ -146,7 +150,7 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
 msgid "Enable Host Generation"
-msgstr ""
+msgstr "Activer la génération d'hôtes"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:64
 msgid "Selecting enables /etc/host re-generation at every start"
@@ -154,11 +158,11 @@ msgstr "La sélection permet de relancer /etc/hosts à chaque démarrage"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:65
 msgid "Enable resolv.conf Generation"
-msgstr ""
+msgstr "Activer la génération de resolv.conf"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:66
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
-msgstr ""
+msgstr "La sélection permet de relancer /etc/resolv.conf à chaque démarrage"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:67
 msgid "GUI Integration"
@@ -176,11 +180,11 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:92
 msgid "an empty entry detected; "
-msgstr ""
+msgstr "une entrée vide détectée ; "
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:97
 msgid "{} is not a valid mount option; "
-msgstr ""
+msgstr "{} n'est pas une option de montage valide ; "
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:100
 msgid ""
@@ -190,7 +194,7 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:106
 msgid "Ubuntu WSL - Tweaks"
-msgstr ""
+msgstr "Ubuntu WSL - Ajustements"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:107
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"

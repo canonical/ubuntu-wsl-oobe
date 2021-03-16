@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-10 14:02+0800\n"
-"PO-Revision-Date: 2021-03-08 02:59+0000\n"
-"Last-Translator: Daniel Fernau <Unknown>\n"
+"POT-Creation-Date: 2021-03-16 13:55+0800\n"
+"PO-Revision-Date: 2021-03-12 12:51+0000\n"
+"Last-Translator: Dennis Baudys <Unknown>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-03-10 04:04+0000\n"
-"X-Generator: Launchpad (build 7100fef41f9a5d5fd53de99e6c59312f81a744cf)\n"
+"X-Launchpad-Export-Date: 2021-03-16 05:20+0000\n"
+"X-Generator: Launchpad (build d4fcb062545ed29d3cd7773e52e43615e042623f)\n"
 
 #: ../subiquitycore/controllers/network.py:297
 msgid "autoconfiguration failed"
@@ -24,7 +24,7 @@ msgstr "automatische Konfiguration fehlgeschlagen"
 
 #: ../subiquitycore/ui/utils.py:340
 msgid "Close"
-msgstr "schließen"
+msgstr "Schließen"
 
 #: ../subiquitycore/ui/form.py:365
 msgid ", or "
@@ -37,7 +37,7 @@ msgstr " oder "
 #: ../subiquitycore/ui/form.py:371
 #, python-brace-format
 msgid "This field must be a {schemes} URL."
-msgstr "Dieses Feld muss eine {schemes} URL sein."
+msgstr "In diesem Feld muss ein {schemes}-URL stehen."
 
 #: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:52
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:101
@@ -58,7 +58,7 @@ msgstr "Nein"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:51
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
-msgstr "Die einzigen erlaubten Zeichen in diesem Feld sind a-z. 0-9, _ und -"
+msgstr "In diesem Feld sind nur folgende Zeichen erlaubt: a-z, 0-9, _ und -"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:74
 msgid "Pick a username:"
@@ -67,7 +67,7 @@ msgstr "Wählen Sie einen Benutzernamen:"
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:74
 msgid "The username does not need to match your Windows username"
 msgstr ""
-"Der Benutzername muss nicht mit Ihrem Windows Benutzernamen übereinstimmen"
+"Der Benutzername braucht nicht mit Ihrem Windows-Benutzernamen übereinstimmen"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:75
 msgid "Choose a password:"
@@ -88,7 +88,7 @@ msgstr "Benutzername fehlt"
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:86
 #, python-brace-format
 msgid "Username too long, must be less than {limit}"
-msgstr "Benutzername ist zu lang, muss kürzer als {limit} sein."
+msgstr "Benutzername ist zu lang, er muss kürzer als {limit} sein"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:90
 msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
@@ -98,9 +98,7 @@ msgstr ""
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:94
 #, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
-msgstr ""
-"Der Benutzername \"{username}\" ist für die Nutzung durch das System "
-"reserviert."
+msgstr "Der Benutzername »{username}« ist für das System reserviert."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:99
 msgid "Password must be set"
@@ -125,8 +123,8 @@ msgid ""
 "Please create a default UNIX user account. For more information visit: "
 "https://aka.ms/wslusers"
 msgstr ""
-"Bitte erstellen Sie einen Standard UNIX Benutzeraccount. Für weitere "
-"Informationen besuchen Sie: https://aka.ms/wslusers"
+"Bitte erstellen Sie ein Standard-UNIX-Benutzerkonto. Weitere Informationen "
+"erhalten Sie unter: https://aka.ms/wslusers"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:158
 msgid "passwords"
@@ -134,11 +132,11 @@ msgstr "Passwörter"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 msgid "Mount Location"
-msgstr "Einhängungsort"
+msgstr "Einhängepunkt"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 msgid "Location for the automount"
-msgstr "Ort für die automatische Einhängung"
+msgstr "Ort für das automatische Einhängen"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 msgid "Mount Option"
@@ -146,26 +144,27 @@ msgstr "Einhängeoptionen"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 msgid "Mount option passed for the automount"
-msgstr "Einhängeoption, die an die automatische Einhängung weitergegeben wird"
+msgstr "Einhängeoption, die für das automatische Einhängen verwendet wird"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
 msgid "Enable Host Generation"
-msgstr "Generierung von hosts aktivieren"
+msgstr "Erstellen von hosts aktivieren"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:64
 msgid "Selecting enables /etc/host re-generation at every start"
 msgstr ""
-"Auswählen aktiviert eine erneute Generierung von /etc/hosts bei jedem Start"
+"Wenn ausgewählt, wird ein erneutes Erstellen von /etc/hosts bei jedem Start "
+"aktiviert"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:65
 msgid "Enable resolv.conf Generation"
-msgstr "Generierung von resolv.conf aktivieren"
+msgstr "Erstellen von resolv.conf aktivieren"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:66
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
 msgstr ""
-"Auswählen aktiviert eine erneute Generierung von /etc/resolv.conf bei jedem "
-"Start"
+"Wenn ausgewählt, wird ein erneutes Erstellen von /etc/resolv.conf bei jedem "
+"Start aktiviert"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:67
 msgid "GUI Integration"
@@ -176,12 +175,12 @@ msgid ""
 "Selecting enables automatic DISPLAY environment set-up. Third-party X server "
 "required."
 msgstr ""
-"Auswählen aktiviert automatisches Einrichten der DISPLAY-Umgebung. Erfordert "
-"X server eines Drittanbieters."
+"Wenn ausgewählt, wird die Umgebungsvariable DISPLAY automatisch festgelegt. "
+"X-Server eines Drittanbieters erforderlich."
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:73
 msgid "Mount location must be a absolute UNIX path without space."
-msgstr "Einhängepfad muss ein absoluter UNIX-Pfad ohne Leerzeichen sein."
+msgstr "Einhängepunkt muss ein absoluter UNIX-Pfad ohne Leerzeichen sein."
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:92
 msgid "an empty entry detected; "
@@ -201,7 +200,7 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:106
 msgid "Ubuntu WSL - Tweaks"
-msgstr "Ubuntu WSL - Anpassungen"
+msgstr "Ubuntu WSL – Optimierungen"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:107
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
@@ -210,7 +209,7 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:32
 msgid "Ubuntu WSL - Setup Complete"
-msgstr "Ubuntu WSL - Einrichtung abgeschlossen"
+msgstr "Ubuntu WSL – Einrichtung abgeschlossen"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:39
 #, python-brace-format
@@ -237,7 +236,7 @@ msgstr ""
 "Hallo {username},\n"
 "Sie haben die Einrichtung abgeschlossen!\n"
 "\n"
-"Es ist empfohlen, die folgenden Befehle auszuführen, um Ihr Ubuntu auf die "
+"Es wird empfohlen, die folgenden Befehle auszuführen, um Ihr Ubuntu auf die "
 "neuste Version zu aktualisieren:\n"
 "\n"
 "\n"
@@ -245,11 +244,11 @@ msgstr ""
 "  $ sudo apt upgrade\n"
 "\n"
 "\n"
-"Sie können den integrierten `ubuntuwsl`-Befehl nutzen, um Ihre WSL-"
+"Sie können den integrierten Befehl »ubuntuwsl« verwenden, um Ihre WSL-"
 "Einstellungen zu verwalten:\n"
 "\n"
 "\n"
-"  $ sudo ubuntuwsl ...\n"
+"  $ sudo ubuntuwsl …\n"
 "\n"
 "\n"
 "* Alle Einstellungen werden nach dem ersten Neustart von Ubuntu wirksam."
@@ -267,19 +266,22 @@ msgstr ""
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:52
 msgid "Use UP, DOWN and ENTER keys to select your language."
-msgstr "Nutzen sie HOCH, RUNTER und ENTER um Ihre Sprache festzulegen."
+msgstr ""
+"Verwenden Sie die Tasten HOCH, RUNTER und EINGABE, um Ihre Sprache "
+"auszuwählen."
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:54
 msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
 msgstr ""
-"Sie verwenden einen alten Windows Console Host, wechsele in den Fallback-"
-"Modus. Nutzen Sie Windows Terminal, um weitere Sprachoptionen zu erhalten."
+"Sie verwenden einen alten Windows Console Host. Es wird nun in den Fallback-"
+"Modus gewechselt. Nutzen Sie Windows Terminal, um weitere Sprachoptionen zu "
+"erhalten."
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:90
 msgid "Ubuntu WSL - Already Completed"
-msgstr "Ubuntu WSL - Bereits abgeschlossen"
+msgstr "Ubuntu WSL – Bereits abgeschlossen"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
 msgid "You have already completed setup. Aborted."
