@@ -1,3 +1,9 @@
+ubuntu-wsl-oobe (0.1.14) hirsute; urgency=medium
+
+  * Remove Legacy GUI Integration.
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Tue, 16 Mar 2021 15:24:36 +0800
+
 ubuntu-wsl-oobe (0.1.13) hirsute; urgency=medium
 
   * Add Chinese (Hong Kong), Arabic, Dutch, German,
