@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 13:55+0800\n"
+"POT-Creation-Date: 2021-05-03 10:44+0800\n"
 "PO-Revision-Date: 2021-03-03 11:53+0000\n"
 "Last-Translator: Alan Pope 🍺🐧🐱 🦄 <alan@popey.com>\n"
 "Language-Team: \n"
@@ -160,31 +160,19 @@ msgstr "Enable resolv.conf Generation"
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
 msgstr "Selecting enables /etc/resolv.conf re-generation at every start"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:67
-msgid "GUI Integration"
-msgstr "Enable X server integration"
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:68
-msgid ""
-"Selecting enables automatic DISPLAY environment set-up. Third-party X server "
-"required."
-msgstr ""
-"Selecting enables automatic DISPLAY environment set-up. Third-party X server "
-"required."
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:73
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:71
 msgid "Mount location must be a absolute UNIX path without space."
 msgstr "Mount location must be a absolute UNIX path without spaces."
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:92
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:90
 msgid "an empty entry detected; "
 msgstr "an empty entry detected; "
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:97
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:95
 msgid "{} is not a valid mount option; "
 msgstr "{} is not a valid mount option; "
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:100
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:98
 msgid ""
 "Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
 "wsl-config#mount-options for correct valid input"
@@ -192,11 +180,11 @@ msgstr ""
 "Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
 "wsl-config#mount-options for correct valid input"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:106
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:104
 msgid "Ubuntu WSL - Tweaks"
 msgstr "Ubuntu WSL - Advanced Setup"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:107
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:105
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
 msgstr "In this page, you can tweak Ubuntu WSL to your needs. \n"
 
@@ -268,3 +256,13 @@ msgstr "Ubuntu WSL - Already Completed"
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
 msgid "You have already completed setup. Aborted."
 msgstr "You have already completed setup. Aborting."
+
+#~ msgid "GUI Integration"
+#~ msgstr "Enable X server integration"
+
+#~ msgid ""
+#~ "Selecting enables automatic DISPLAY environment set-up. Third-party X "
+#~ "server required."
+#~ msgstr ""
+#~ "Selecting enables automatic DISPLAY environment set-up. Third-party X "
+#~ "server required."

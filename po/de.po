@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 13:55+0800\n"
+"POT-Creation-Date: 2021-05-03 10:44+0800\n"
 "PO-Revision-Date: 2021-03-12 12:51+0000\n"
 "Last-Translator: Dennis Baudys <Unknown>\n"
 "Language-Team: \n"
@@ -166,31 +166,19 @@ msgstr ""
 "Wenn ausgewählt, wird ein erneutes Erstellen von /etc/resolv.conf bei jedem "
 "Start aktiviert"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:67
-msgid "GUI Integration"
-msgstr "GUI-Integration"
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:68
-msgid ""
-"Selecting enables automatic DISPLAY environment set-up. Third-party X server "
-"required."
-msgstr ""
-"Wenn ausgewählt, wird die Umgebungsvariable DISPLAY automatisch festgelegt. "
-"X-Server eines Drittanbieters erforderlich."
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:73
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:71
 msgid "Mount location must be a absolute UNIX path without space."
 msgstr "Einhängepunkt muss ein absoluter UNIX-Pfad ohne Leerzeichen sein."
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:92
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:90
 msgid "an empty entry detected; "
 msgstr "ein leerer Eintrag erkannt; "
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:97
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:95
 msgid "{} is not a valid mount option; "
 msgstr "{} ist keine gültige Einhängeoption; "
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:100
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:98
 msgid ""
 "Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
 "wsl-config#mount-options for correct valid input"
@@ -198,11 +186,11 @@ msgstr ""
 "Ungültige Eingabe: {} Siehe https://docs.microsoft.com/en-us/windows/wsl/wsl-"
 "config#mount-options für korrekte, gültige Eingaben"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:106
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:104
 msgid "Ubuntu WSL - Tweaks"
 msgstr "Ubuntu WSL – Optimierungen"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:107
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:105
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
 msgstr ""
 "Auf dieser Seite können Sie Ubuntu WSL an Ihre Bedürfnisse anpassen. \n"
@@ -286,3 +274,13 @@ msgstr "Ubuntu WSL – Bereits abgeschlossen"
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
 msgid "You have already completed setup. Aborted."
 msgstr "Sie haben die Einrichtung bereits abgeschlossen. Abbruch."
+
+#~ msgid "GUI Integration"
+#~ msgstr "GUI-Integration"
+
+#~ msgid ""
+#~ "Selecting enables automatic DISPLAY environment set-up. Third-party X "
+#~ "server required."
+#~ msgstr ""
+#~ "Wenn ausgewählt, wird die Umgebungsvariable DISPLAY automatisch "
+#~ "festgelegt. X-Server eines Drittanbieters erforderlich."

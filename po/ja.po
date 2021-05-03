@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 13:55+0800\n"
+"POT-Creation-Date: 2021-05-03 10:44+0800\n"
 "PO-Revision-Date: 2021-03-08 11:30+0000\n"
 "Last-Translator: Kentaro Inomata <Unknown>\n"
 "Language-Team: \n"
@@ -162,31 +162,19 @@ msgstr "resolv.conf を生成する"
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
 msgstr "選択すると起動時に /etc/resolv.conf の再生成が有効になります。"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:67
-msgid "GUI Integration"
-msgstr "GUIの統合"
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:68
-msgid ""
-"Selecting enables automatic DISPLAY environment set-up. Third-party X server "
-"required."
-msgstr ""
-"選択すると起動時に DISPLAY 環境変数を自動設定します。サードパーティのXサー"
-"バーが必要です。"
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:73
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:71
 msgid "Mount location must be a absolute UNIX path without space."
 msgstr "マウント場所は空白を含まないUNIX絶対パスでなくてはいけません。"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:92
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:90
 msgid "an empty entry detected; "
 msgstr "エントリーが空です。 "
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:97
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:95
 msgid "{} is not a valid mount option; "
 msgstr "{} は有効なマウントオプションではありません。 "
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:100
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:98
 msgid ""
 "Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
 "wsl-config#mount-options for correct valid input"
@@ -194,11 +182,11 @@ msgstr ""
 "不正な入力値：{}有効な入力値に修正するには https://docs.microsoft.com/en-us/"
 "windows/wsl/wsl-config#mount-options をチェックしてください。"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:106
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:104
 msgid "Ubuntu WSL - Tweaks"
 msgstr "Ubuntu WSL - 微調整"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:107
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:105
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
 msgstr "この画面では、必要に応じてUbuntu WSLを微調整できます。 \n"
 
@@ -276,3 +264,13 @@ msgstr "Ubuntu WSL - 完了済み"
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
 msgid "You have already completed setup. Aborted."
 msgstr "セットアップはすでに完了しています。起動を中止しました。"
+
+#~ msgid "GUI Integration"
+#~ msgstr "GUIの統合"
+
+#~ msgid ""
+#~ "Selecting enables automatic DISPLAY environment set-up. Third-party X "
+#~ "server required."
+#~ msgstr ""
+#~ "選択すると起動時に DISPLAY 環境変数を自動設定します。サードパーティのXサー"
+#~ "バーが必要です。"

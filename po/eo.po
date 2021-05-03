@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 13:55+0800\n"
+"POT-Creation-Date: 2021-05-03 10:44+0800\n"
 "PO-Revision-Date: 2021-03-08 03:00+0000\n"
 "Last-Translator: Patrick Wu <Unknown>\n"
 "Language-Team: \n"
@@ -160,39 +160,29 @@ msgstr ""
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:67
-msgid "GUI Integration"
-msgstr ""
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:68
-msgid ""
-"Selecting enables automatic DISPLAY environment set-up. Third-party X server "
-"required."
-msgstr ""
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:73
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:71
 msgid "Mount location must be a absolute UNIX path without space."
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:92
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:90
 msgid "an empty entry detected; "
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:97
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:95
 msgid "{} is not a valid mount option; "
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:100
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:98
 msgid ""
 "Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
 "wsl-config#mount-options for correct valid input"
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:106
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:104
 msgid "Ubuntu WSL - Tweaks"
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:107
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:105
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 13:55+0800\n"
+"POT-Creation-Date: 2021-05-03 10:44+0800\n"
 "PO-Revision-Date: 2021-03-11 09:49+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -164,31 +164,19 @@ msgid "Selecting enables /etc/resolv.conf re-generation at every start"
 msgstr ""
 "Позначення вмикає повторне створення /etc/resolv.conf під час кожного запуску"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:67
-msgid "GUI Integration"
-msgstr "Інтеграція до графічного інтерфейсу"
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:68
-msgid ""
-"Selecting enables automatic DISPLAY environment set-up. Third-party X server "
-"required."
-msgstr ""
-"Позначення вмикає автоматичне налаштовування середовища DISPLAY. Потрібен "
-"сторонній графічний сервер X."
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:73
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:71
 msgid "Mount location must be a absolute UNIX path without space."
 msgstr "Місце монтування має бути абсолютним шляхом UNIX без пробілів."
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:92
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:90
 msgid "an empty entry detected; "
 msgstr "виявлено порожній запис; "
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:97
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:95
 msgid "{} is not a valid mount option; "
 msgstr "{} не є коректним параметром монтування; "
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:100
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:98
 msgid ""
 "Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
 "wsl-config#mount-options for correct valid input"
@@ -197,11 +185,11 @@ msgstr ""
 "com/en-us/windows/wsl/wsl-config#mount-options , щоб дізнатися більше про "
 "коректні вхідні дані"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:106
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:104
 msgid "Ubuntu WSL - Tweaks"
 msgstr "Ubuntu WSL – коригування"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:107
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:105
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
 msgstr ""
 "За допомогою цієї сторінки ви зможете скоригувати поведінку Ubuntu WSL так, "
@@ -283,3 +271,13 @@ msgstr "Ubuntu WSL – вже завершено"
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
 msgid "You have already completed setup. Aborted."
 msgstr "Ви вже завершили налаштовування. Обробку перервано."
+
+#~ msgid "GUI Integration"
+#~ msgstr "Інтеграція до графічного інтерфейсу"
+
+#~ msgid ""
+#~ "Selecting enables automatic DISPLAY environment set-up. Third-party X "
+#~ "server required."
+#~ msgstr ""
+#~ "Позначення вмикає автоматичне налаштовування середовища DISPLAY. Потрібен "
+#~ "сторонній графічний сервер X."

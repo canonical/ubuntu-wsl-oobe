@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 13:55+0800\n"
+"POT-Creation-Date: 2021-05-03 10:44+0800\n"
 "PO-Revision-Date: 2021-03-03 02:42+0000\n"
 "Last-Translator: Patrick Wu <Unknown>\n"
 "Language-Team: \n"
@@ -159,39 +159,29 @@ msgstr "启用 resolv.conf 生成"
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
 msgstr "选择该选项可以在每次启动时重新生成 /etc/resolv.conf。"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:67
-msgid "GUI Integration"
-msgstr "GUI集成"
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:68
-msgid ""
-"Selecting enables automatic DISPLAY environment set-up. Third-party X server "
-"required."
-msgstr "选择后可以自动设置 DISPLAY 环境。需要第三方 X 服务器。"
-
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:73
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:71
 msgid "Mount location must be a absolute UNIX path without space."
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:92
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:90
 msgid "an empty entry detected; "
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:97
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:95
 msgid "{} is not a valid mount option; "
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:100
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:98
 msgid ""
 "Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
 "wsl-config#mount-options for correct valid input"
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:106
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:104
 msgid "Ubuntu WSL - Tweaks"
 msgstr "Ubuntu WSL - 配置"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:107
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:105
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
 msgstr "在这个页面中，你可以根据自己的需要调整 Ubuntu WSL。 \n"
 
@@ -250,3 +240,11 @@ msgstr "Ubuntu WSL - 已经完成"
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
 msgid "You have already completed setup. Aborted."
 msgstr "你已经完成了设置。终止。"
+
+#~ msgid "GUI Integration"
+#~ msgstr "GUI集成"
+
+#~ msgid ""
+#~ "Selecting enables automatic DISPLAY environment set-up. Third-party X "
+#~ "server required."
+#~ msgstr "选择后可以自动设置 DISPLAY 环境。需要第三方 X 服务器。"
