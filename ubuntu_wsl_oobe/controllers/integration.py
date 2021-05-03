@@ -36,8 +36,6 @@ class IntegrationController(BaseController):
             # reset to keep everything as refreshed as new
             run_command(["/usr/bin/ubuntuwsl", "reset", "-y"], stdout=subprocess.DEVNULL)
             # set the settings
-            run_command(["/usr/bin/ubuntuwsl", "update", "Ubuntu.Interop.guiintegration", user_settings['gui_integration']],
-                        stdout=subprocess.DEVNULL)
             run_command(["/usr/bin/ubuntuwsl", "update", "WSL.automount.root", user_settings['custom_path']],
                         stdout=subprocess.DEVNULL)
             run_command(["/usr/bin/ubuntuwsl", "update", "WSL.automount.options", user_settings['custom_mount_opt']],

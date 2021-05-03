@@ -64,8 +64,6 @@ class IntegrationForm(Form):
         "Selecting enables /etc/host re-generation at every start"))
     gen_resolvconf = BooleanField(_("Enable resolv.conf Generation"), help=_(
         "Selecting enables /etc/resolv.conf re-generation at every start"))
-    gui_integration = BooleanField(_("GUI Integration"), help=_(
-        "Selecting enables automatic DISPLAY environment set-up. Third-party X server required."))
 
     def validate_custom_path(self):
         p = self.custom_path.value
@@ -112,8 +110,7 @@ class IntegrationView(BaseView):
             'custom_path': "/mnt/",
             'custom_mount_opt': "",
             'gen_host': True,
-            'gen_resolvconf': True,
-            'gui_integration': False
+            'gen_resolvconf': True
         }
         self.form = IntegrationForm(initial=initial)
         self.controller = controller
@@ -134,7 +131,6 @@ class IntegrationView(BaseView):
             'custom_path': self.form.custom_path.value,
             'custom_mount_opt': self.form.custom_mount_opt.value,
             'gen_host': yes_no_converter(self.form.gen_host.value),
-            'gen_resolvconf': yes_no_converter(self.form.gen_resolvconf.value),
-            'gui_integration': yes_no_converter(self.form.gui_integration.value)
+            'gen_resolvconf': yes_no_converter(self.form.gen_resolvconf.value)
         }
         self.controller.done(result)
