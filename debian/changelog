@@ -1,3 +1,9 @@
+ubuntu-wsl-oobe (0.1.15) impish; urgency=medium
+
+  * Add Swedish, Polish, and Occitan
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Fri, 14 May 2021 16:09:44 +0800
+
 ubuntu-wsl-oobe (0.1.14) hirsute; urgency=medium
 
   * Remove Legacy GUI Integration.
