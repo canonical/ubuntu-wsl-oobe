@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-03 10:44+0800\n"
-"PO-Revision-Date: 2021-03-12 00:51+0000\n"
-"Last-Translator: Patrick Wu <Unknown>\n"
+"POT-Creation-Date: 2021-05-12 17:27+0800\n"
+"PO-Revision-Date: 2021-04-07 09:30+0000\n"
+"Last-Translator: Po-Hsu Lin <po-hsu.lin@canonical.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2021-03-16 05:20+0000\n"
-"X-Generator: Launchpad (build d4fcb062545ed29d3cd7773e52e43615e042623f)\n"
+"X-Launchpad-Export-Date: 2021-05-12 08:40+0000\n"
+"X-Generator: Launchpad (build 37ef8bff8cdf61b994f9b61bc9239663cb29cec9)\n"
 
 #: ../subiquitycore/controllers/network.py:297
 msgid "autoconfiguration failed"
@@ -37,7 +37,7 @@ msgstr " 或 "
 #: ../subiquitycore/ui/form.py:371
 #, python-brace-format
 msgid "This field must be a {schemes} URL."
-msgstr "此字段必須是{schemes} URL。"
+msgstr "此欄位必須是 {schemes} URL。"
 
 #: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:52
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:101
@@ -58,7 +58,7 @@ msgstr "否"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:51
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
-msgstr "該字段中唯一允許使用的字符是a-z，0-9，_和-"
+msgstr "此欄位僅允許使用的字元為 a-z、0-9、_ 和 -"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:74
 msgid "Pick a username:"
@@ -91,12 +91,12 @@ msgstr "使用者名稱太長，必須小於 {limit}"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:90
 msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
-msgstr "用戶名必須與NAME_REGEX相匹配，即[a-z _] [a-z0-9 _-] *"
+msgstr "使用者名稱必須符合 NAME_REGEX，即 [a-z_][a-z0-9_-]*"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:94
 #, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
-msgstr "用戶名“ {username}”保留供系統使用。"
+msgstr "使用者名稱「{username}」保留供系統使用。"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:99
 msgid "Password must be set"
@@ -216,7 +216,7 @@ msgid ""
 msgstr ""
 "{username} 您好，\n"
 "\n"
-"你已經安裝完成。\n"
+"您已經安裝完成。\n"
 "\n"
 "建議您執行下列指令來更新您的 Ubuntu 到最新的版本：\n"
 "\n"
@@ -262,7 +262,7 @@ msgid "You have already completed setup. Aborted."
 msgstr "您已經完成設置。中止了。"
 
 #~ msgid "GUI Integration"
-#~ msgstr "GUI整合"
+#~ msgstr "GUI 整合"
 
 #~ msgid ""
 #~ "Selecting enables automatic DISPLAY environment set-up. Third-party X "

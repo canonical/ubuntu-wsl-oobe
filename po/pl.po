@@ -1,4 +1,4 @@
-# Dutch translation for ubuntu-wsl-oobe
+# Polish translation for ubuntu-wsl-oobe
 # Copyright (c) 2021 Rosetta Contributors and Canonical Ltd 2021
 # This file is distributed under the same license as the ubuntu-wsl-oobe package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-12 17:27+0800\n"
-"PO-Revision-Date: 2021-03-04 00:35+0000\n"
-"Last-Translator: alex <Unknown>\n"
-"Language-Team: Dutch <nl@li.org>\n"
-"Language: nl\n"
+"PO-Revision-Date: 2021-03-16 12:41+0000\n"
+"Last-Translator: Marek Adamski <Unknown>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,183 +20,184 @@ msgstr ""
 
 #: ../subiquitycore/controllers/network.py:297
 msgid "autoconfiguration failed"
-msgstr "Automatische configuratie mislukt"
+msgstr "autokonfiguracja nie powiodła się"
 
 #: ../subiquitycore/ui/utils.py:340
 msgid "Close"
-msgstr "Afsluiten"
+msgstr "Zamknij"
 
 #: ../subiquitycore/ui/form.py:365
 msgid ", or "
-msgstr ", of "
+msgstr ", lub "
 
 #: ../subiquitycore/ui/form.py:367
 msgid " or "
-msgstr " of "
+msgstr " lub "
 
 #: ../subiquitycore/ui/form.py:371
 #, python-brace-format
 msgid "This field must be a {schemes} URL."
-msgstr ""
+msgstr "To pole musi być adresem URL {schemes}."
 
 #: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:52
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:101
 msgid "Done"
-msgstr "Voltooid"
+msgstr "Zakończono"
 
 #: ../subiquitycore/ui/form.py:452
 msgid "Cancel"
-msgstr "Annuleren"
+msgstr "Anuluj"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "Yes"
-msgstr "Ja"
+msgstr "Tak"
 
 #: ../subiquitycore/ui/interactive.py:109
 msgid "No"
-msgstr "Nee"
+msgstr "Nie"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:51
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
-msgstr "De enige toegestane tekens in dit veld zijn a-z, 0-9, _ en -"
+msgstr "Jedyne znaki dozwolone w tym polu to a-z, 0-9, _ oraz -"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:74
 msgid "Pick a username:"
-msgstr "Kies een gebruikersnaam:"
+msgstr "Wybierz nazwę użytkownika:"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:74
 msgid "The username does not need to match your Windows username"
 msgstr ""
-"De gebruikersnaam hoeft niet overeen te komen met uw Windows gebruikersnaam"
+"Nazwa użytkownika nie musi odpowiadać nazwie użytkownika systemu Windows"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:75
 msgid "Choose a password:"
-msgstr "Kies een wachtwoord:"
+msgstr "Wybierz hasło:"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:76
 msgid "Confirm your password:"
-msgstr "Bevestig uw wachtwoord:"
+msgstr "Potwierdź hasło:"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:77
 msgid "Show Advanced Options Next Page"
-msgstr "Toon geavanceerde opties volgende pagina"
+msgstr "Pokaż opcje zaawansowane na następnej stronie"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:82
 msgid "Username missing"
-msgstr "Gebruikersnaam ontbreekt"
+msgstr "Brak nazwy użytkownika"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:86
 #, python-brace-format
 msgid "Username too long, must be less than {limit}"
-msgstr "Gebruikersnaam te lang, moet kleiner zijn dan {limit}"
+msgstr "Nazwa użytkownika jest za długa, musi być mniejsza niż {limit}"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:90
 msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
-msgstr ""
-"De gebruikersnaam moet overeenkomen met NAME_REGEX, d.w.z. [a-z _] [a-z0-9 "
-"_-] *"
+msgstr "Nazwa użytkownika może zawierać NAME_REGEX, np. [a-z_][a-z0-9_-]*"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:94
 #, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
 msgstr ""
+"Nazwa użytkownika \"{username}\" jest zarezerwowana do użytku przez system."
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:99
 msgid "Password must be set"
-msgstr "Wachtwoord moet worden ingesteld"
+msgstr "Hasło musi być ustawione"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:103
 msgid "Passwords do not match"
-msgstr "Wachtwoorden komen niet overeen"
+msgstr "Hasła nie zgadzają się"
 
 #. desc is "passwords" or "passphrases"
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:115
 #, python-brace-format
 msgid "{desc} do not match"
-msgstr "{desc} komt niet overeen"
+msgstr "{desc} nie zgadzają się"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:124
 msgid "Ubuntu WSL - Profile Setup"
-msgstr "Ubuntu WSL - Profiel Instellingen"
+msgstr "Ubuntu WSL - Instalacja profilu"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:125
 msgid ""
 "Please create a default UNIX user account. For more information visit: "
 "https://aka.ms/wslusers"
 msgstr ""
-"Maak een standaard UNIX-gebruikersaccount aan. Ga voor meer informatie naar: "
-"https://aka.ms/wslusers"
+"Utwórz domyślne konto użytkownika UNIX. Więcej informacji można znaleźć pod "
+"adresem: https://aka.ms/wslusers"
 
 #: ../ubuntu_wsl_oobe/ui/views/identity.py:158
 msgid "passwords"
-msgstr "wachtwoorden"
+msgstr "hasła"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 msgid "Mount Location"
-msgstr "Mount Locatie"
+msgstr "Miejsce montowania"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:61
 msgid "Location for the automount"
-msgstr "Locatie voor automount"
+msgstr "Miejsce do automatycznego montowania"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 msgid "Mount Option"
-msgstr "Mount Opties"
+msgstr "Opcja montowania"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:62
 msgid "Mount option passed for the automount"
-msgstr "Mount optie doorgegeven voor de automount"
+msgstr "Opcja montowania przekazana do automatycznego montowania"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:63
 msgid "Enable Host Generation"
-msgstr "Schakel Host Generation in"
+msgstr "Włącz generowanie hostów"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:64
 msgid "Selecting enables /etc/host re-generation at every start"
 msgstr ""
-"Selecteren aktiveert re-generatie van /etc/host  bij elke start opnieuw"
+"Wybranie tej opcji włącza ponowne generowanie /etc/host przy każdym "
+"uruchomieniu"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:65
 msgid "Enable resolv.conf Generation"
-msgstr "Schakel resolv.conf Generatie in"
+msgstr "Włącz generowanie resolv.conf"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:66
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
 msgstr ""
-"Selecteren aktiveert re-generatie van /etc/resolv.conf  bij elke start "
-"opnieuw"
+"Wybranie tej opcji włącza ponowne generowanie /etc/resolv.conf przy każdym "
+"uruchomieniu"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:71
 msgid "Mount location must be a absolute UNIX path without space."
-msgstr "De koppelingslocatie moet een absoluut UNIX-pad zonder spatie zijn."
+msgstr ""
+"Miejsce montowania musi być bezwzględną ścieżką systemu UNIX bez spacji."
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:90
 msgid "an empty entry detected; "
-msgstr "een lege vermelding gedetecteerd; "
+msgstr "wykryto pusty wpis; "
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:95
 msgid "{} is not a valid mount option; "
-msgstr "{} is geen geldige mount-optie; "
+msgstr "{} nie jest prawidłową opcją montowania; "
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:98
 msgid ""
 "Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
 "wsl-config#mount-options for correct valid input"
 msgstr ""
-"Ongeldige invoer: {} controleer https://docs.microsoft.com/en-us/windows/wsl/"
-"wsl-config#mount-options voor correcte geldige invoer"
+"Nieprawidłowe dane wejściowe: {}Sprawdź https://docs.microsoft.com/en-us/"
+"windows/wsl/wsl-config#mount-options, aby uzyskać prawidłowe dane wejściowe"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:104
 msgid "Ubuntu WSL - Tweaks"
-msgstr "Ubuntu WSL - Aanpassen"
+msgstr "Ubuntu WSL - Dostrajanie"
 
 #: ../ubuntu_wsl_oobe/ui/views/integration.py:105
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
-msgstr "Op deze pagina kunt u Ubuntu WSL aanpassen aan uw behoeften. \n"
+msgstr "Na tej stronie możesz dostosować Ubuntu WSL do swoich potrzeb. \n"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:32
 msgid "Ubuntu WSL - Setup Complete"
-msgstr "Ubuntu WSL - Installatie voltooid"
+msgstr "Ubuntu WSL - Instalacja zakończona"
 
 #: ../ubuntu_wsl_oobe/ui/views/overview.py:39
 #, python-brace-format
@@ -220,6 +221,26 @@ msgid ""
 "\n"
 "* All settings will take effect after first restart of Ubuntu."
 msgstr ""
+"Witaj {username},\n"
+"Instalacja została zakończona!\n"
+"\n"
+"Zaleca się uruchomienie następującego polecenia, aby zaktualizować system "
+"Ubuntu do najnowszej wersji:\n"
+"\n"
+"\n"
+"   $ sudo apt update\n"
+"   $ sudo apt upgrade\n"
+"\n"
+"\n"
+"Możesz użyć wbudowanego polecenia `ubuntuwsl` do zarządzania ustawieniami "
+"WSL:\n"
+"\n"
+"\n"
+"   $ sudo ubuntuwsl ...\n"
+"\n"
+"\n"
+"* Wszystkie ustawienia zaczną obowiązywać po pierwszym ponownym uruchomieniu "
+"Ubuntu."
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:32
 msgid ""
@@ -228,36 +249,36 @@ msgid ""
 "installed system.\n"
 msgstr ""
 "\n"
-"Selecteer de taal die u wilt gebruiken voor het installatieprogramma en die "
-"u wilt configureren in het\n"
-"geïnstalleerd systeem.\n"
+"Wybierz język, który ma być używany przez instalator i który ma zostać "
+"skonfigurowany\n"
+"w zainstalowany system.\n"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:52
 msgid "Use UP, DOWN and ENTER keys to select your language."
-msgstr "Gebruik de UP-, DOWN- en ENTER-toetsen om uw taal te selecteren."
+msgstr "Użyj klawiszy GÓRA, DÓŁ oraz ENTER, aby wybrać język."
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:54
 msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
 msgstr ""
-"U gebruikt een oude Windows Console Host in de terugvalmodus. Gebruik "
-"Windows Terminal om meer taalopties te krijgen."
+"Używasz starego hosta konsoli Windows, przechodzenie do trybu awaryjnego. "
+"Użyj terminala Windows, aby uzyskać więcej opcji językowych."
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:90
 msgid "Ubuntu WSL - Already Completed"
-msgstr "Ubuntu WSL - Al voltooid"
+msgstr "Ubuntu WSL - Już ukończono"
 
 #: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
 msgid "You have already completed setup. Aborted."
-msgstr "Je hebt de installatie al voltooid. Afgebroken."
+msgstr "Już zakończono instalację. Przerwano."
 
 #~ msgid "GUI Integration"
-#~ msgstr "GUI integratie"
+#~ msgstr "Integracja z GUI"
 
 #~ msgid ""
 #~ "Selecting enables automatic DISPLAY environment set-up. Third-party X "
 #~ "server required."
 #~ msgstr ""
-#~ "Door te selecteren wordt de automatische instelling van de DISPLAY-"
-#~ "omgeving ingeschakeld. X-server van derden vereist."
+#~ "Wybranie tej opcji włącza automatyczną konfigurację środowiska DISPLAY. "
+#~ "Wymagany serwer X innego dostawcy."
