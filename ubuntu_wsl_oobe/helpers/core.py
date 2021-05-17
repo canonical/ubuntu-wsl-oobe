@@ -32,6 +32,7 @@ import tty
 import urwid
 import yaml
 
+from subiquitycore.prober import Prober
 from subiquitycore.async_helpers import schedule_task
 from subiquitycore.context import (
     Context,
@@ -326,6 +327,8 @@ class Application:
             #    subiquity/controllers/installprogress.py
             self.debug_flags = os.environ.get('SUBIQUITY_DEBUG', '').split(',')
 
+        prober = Prober(opts.machine_config, self.debug_flags)
+
         self.ui = self.make_ui()
         self.opts = opts
         opts.project = self.project
@@ -361,6 +364,7 @@ class Application:
         self.updated = os.path.exists(self.state_path('updating'))
         self.signal = Signal()
         self.new_event_loop()
+        self.prober = prober
         self.urwid_loop = None
         self.controllers = ControllerSet(self, self.controllers)
         self.context = Context.new(self)

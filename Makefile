@@ -3,7 +3,7 @@
 #
 NAME=ubuntu_wsl_oobe
 PYTHONSRC=$(NAME)
-PYTHONPATH=$(shell pwd)
+PYTHONPATH=$(shell pwd):$(shell pwd)/external/probert
 export PYTHONPATH
 CWD := $(shell pwd)
 
@@ -44,7 +44,7 @@ unit:
 check: unit
 
 submcheck:
-	if [ ! -d "$(CMD)/external/subiquity" ]; then \
+	if [ ! -d "$(CMD)/external/subiquity" ] || [ ! -d "$(CMD)/external/probert" ]; then \
 	echo "The git submodules are not available. Please run \`git submodule update --init --recursive\`"; \
 	fi
 
