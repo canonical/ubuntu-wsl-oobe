@@ -18,8 +18,8 @@ Vcs-Git: https://github.com/canonical/ubuntu-wsl-oobe.git
 
 Package: ubuntu-wsl-oobe-subiquitycore
 Architecture: amd64 arm64
-Depends: python3-urwid (>= 1.2.1),
-         python3-attr,
+Depends: python3-attr,
+         python3-urwid (>= 1.2.1),
          python3-yaml,
          ${misc:Depends},
          ${python3:Depends}
@@ -39,10 +39,13 @@ Description: Ubuntu Server Installer - core libraries (For WSL Onboarding Experi
  .
  This package is used for providing WSL Onboarding Experience.
 
-
 Package: ubuntu-wsl-oobe
 Architecture: amd64 arm64
-Depends: python3, ubuntu-wsl-oobe-subiquitycore, ubuntu-wsl-integration, ${misc:Depends}, ${python3:Depends}
+Depends: python3,
+         ubuntu-wsl-integration,
+         ubuntu-wsl-oobe-subiquitycore,
+         ${misc:Depends},
+         ${python3:Depends}
 Description: Ubuntu WSL Onboarding Experience
  `ubuntu-wsl-oobe` is a WSL Ubuntu Out-of-box configurer to
  provide a more friendly first-start experience. This is a
