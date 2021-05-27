@@ -3,7 +3,7 @@ Upstream-Name: ubuntu-wsl-oobe
 Source: https://github.com/canonical/ubuntu-wsl-oobe
 
 Files: *
-Copyright: Copyright 2015-2020, Canonical Ltd.
+Copyright: Copyright 2015-2021, Canonical Ltd.
 License: AGPL-3.0
 
 Files: external/subiquity/*
