@@ -75,7 +75,7 @@ setup(name='ubuntu_wsl_oobe',
       packages=find_packages(exclude=["tests"]),
       entry_points={
           'console_scripts': [
-               'ubuntu-wsl-oobe-tui = ubuntu_wsl_oobe.cmd.tui:main',
+               'ubuntu-wsl-oobe = ubuntu_wsl_oobe.cmd.tui:main',
           ],
       },
       data_files=[],

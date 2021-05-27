@@ -1,4 +1,5 @@
 #!/usr/bin/make -f
+#export DH_VERBOSE = 1
 
 export PYBUILD_DISABLE_python2=1
 export PYBUILD_INSTALL_DIR=usr/share/ubuntu-wsl-oobe/
@@ -17,7 +18,7 @@ override_dh_auto_clean:
 	dh_auto_clean
 
 override_dh_python3:
-	dh_python3 --ignore-shebangs usr/share/ubuntu-wsl-oobe/  
+	dh_python3 --ignore-shebangs usr/share/ubuntu-wsl-oobe/
 
 override_dh_auto_test:
-	@echo "No tests."
+	@echo "Skipping subiquity tests"
