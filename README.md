@@ -14,4 +14,5 @@ Please do not submit translations directly here; Please translate at launchpad: 
 
 ## License
 
+Copyright 2015-2021 (c) Canonical Ltd.
 AGPL v3
