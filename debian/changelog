@@ -1,3 +1,10 @@
+ubuntu-wsl-oobe (0.1.17) impish; urgency=medium
+
+  * debian/rules:
+    - fails the build if subiquity code submodule has not been checked out
+
+ -- Patrick Wu <patrick.wu@canonical.com>  Thu, 27 May 2021 15:57:01 +0200
+
 ubuntu-wsl-oobe (0.1.16) impish; urgency=medium
 
   * debian/source/format:
