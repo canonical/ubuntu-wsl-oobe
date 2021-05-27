@@ -12,7 +12,18 @@ export PYBUILD_OPTION="-v"
 %:
 	dh $@ --with python3 --buildsystem=pybuild
 
-override_dh_auto_clean:
+subiquity-submodule:
+	@if [ ! -e subiquitycore ]; then \
+	  echo "############# ERROR #############"; \
+	  echo subiquity needs to be checked out; \
+	  echo Please run:; \
+	  echo $$ git submodule init ; \
+	  echo $$ git submodule update ; \
+	  echo "#################################"; \
+	  exit 1; \
+	fi
+
+override_dh_auto_clean: subiquity-submodule
 	rm -f .subiquity/subiquity-debug.log installer/geninstaller.log
 	rm -rf probert/
 	dh_auto_clean
