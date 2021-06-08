@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ubuntu-wsl-oobe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-12 17:27+0800\n"
+"POT-Creation-Date: 2021-06-08 13:54+0800\n"
 "PO-Revision-Date: 2021-03-03 02:42+0000\n"
 "Last-Translator: Patrick Wu <Unknown>\n"
 "Language-Team: \n"
@@ -39,8 +39,8 @@ msgstr " 或 "
 msgid "This field must be a {schemes} URL."
 msgstr "该字段必须是{schemes}。URL："
 
-#: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:52
-#: ../ubuntu_wsl_oobe/ui/views/welcome.py:101
+#: ../subiquitycore/ui/form.py:451 ../ubuntu_wsl_oobe/ui/views/overview.py:37
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:86
 msgid "Done"
 msgstr "完成"
 
@@ -56,140 +56,140 @@ msgstr "是"
 msgid "No"
 msgstr "否"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:51
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:36
 msgid "The only characters permitted in this field are a-z, 0-9, _ and -"
 msgstr "该字段只允许使用a-z、0-9、_和-等字符。"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:74
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:59
 msgid "Pick a username:"
 msgstr "选择用户名："
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:74
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:59
 msgid "The username does not need to match your Windows username"
 msgstr "用户名不需要与你的 Windows 用户名相同"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:75
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:60
 msgid "Choose a password:"
 msgstr "选择密码："
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:76
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:61
 msgid "Confirm your password:"
 msgstr "确认密码："
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:77
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:62
 msgid "Show Advanced Options Next Page"
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:82
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:67
 msgid "Username missing"
 msgstr "用户名丢失"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:86
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:71
 #, python-brace-format
 msgid "Username too long, must be less than {limit}"
 msgstr "用户名太长，必须小于{limit}。"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:90
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:75
 msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
 msgstr "用户名必须与NAME_REGEX匹配，即[a-z_][a-z0-9_-]*。"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:94
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:79
 #, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
 msgstr "用户名\"{username}\"为系统保留使用。"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:99
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:84
 msgid "Password must be set"
 msgstr "必须设置密码"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:103
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:88
 msgid "Passwords do not match"
 msgstr "密码不匹配"
 
 #. desc is "passwords" or "passphrases"
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:115
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:100
 #, python-brace-format
 msgid "{desc} do not match"
 msgstr "{desc}不匹配"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:124
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:109
 msgid "Ubuntu WSL - Profile Setup"
 msgstr "Ubuntu WSL - 用户配置"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:125
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:110
 msgid ""
 "Please create a default UNIX user account. For more information visit: "
 "https://aka.ms/wslusers"
 msgstr ""
 "请创建一个默认的UNIX账户。欲了解更多信息，请访问：https://aka.ms/wslusers"
 
-#: ../ubuntu_wsl_oobe/ui/views/identity.py:158
+#: ../ubuntu_wsl_oobe/ui/views/identity.py:143
 msgid "passwords"
 msgstr "密码"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:61
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:46
 msgid "Mount Location"
 msgstr "挂载位置"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:61
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:46
 msgid "Location for the automount"
 msgstr "自动挂载位置"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:62
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:47
 msgid "Mount Option"
 msgstr "挂载选项"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:62
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:47
 msgid "Mount option passed for the automount"
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:63
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:48
 msgid "Enable Host Generation"
 msgstr "启用 hosts 生成"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:64
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:49
 msgid "Selecting enables /etc/host re-generation at every start"
 msgstr "选择该选项，可以在每次启动时重新生成 /etc/hosts 。"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:65
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:50
 msgid "Enable resolv.conf Generation"
 msgstr "启用 resolv.conf 生成"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:66
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:51
 msgid "Selecting enables /etc/resolv.conf re-generation at every start"
 msgstr "选择该选项可以在每次启动时重新生成 /etc/resolv.conf。"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:71
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:56
 msgid "Mount location must be a absolute UNIX path without space."
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:90
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:75
 msgid "an empty entry detected; "
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:95
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:80
 msgid "{} is not a valid mount option; "
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:98
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:83
 msgid ""
 "Invalid Input: {}Please check https://docs.microsoft.com/en-us/windows/wsl/"
 "wsl-config#mount-options for correct valid input"
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:104
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:89
 msgid "Ubuntu WSL - Tweaks"
 msgstr "Ubuntu WSL - 配置"
 
-#: ../ubuntu_wsl_oobe/ui/views/integration.py:105
+#: ../ubuntu_wsl_oobe/ui/views/integration.py:90
 msgid "In this page, you can tweak Ubuntu WSL to your needs. \n"
 msgstr "在这个页面中，你可以根据自己的需要调整 Ubuntu WSL。 \n"
 
-#: ../ubuntu_wsl_oobe/ui/views/overview.py:32
+#: ../ubuntu_wsl_oobe/ui/views/overview.py:17
 msgid "Ubuntu WSL - Setup Complete"
 msgstr "Ubuntu WSL - 设置完成"
 
-#: ../ubuntu_wsl_oobe/ui/views/overview.py:39
+#: ../ubuntu_wsl_oobe/ui/views/overview.py:24
 #, python-brace-format
 msgid ""
 "Hi {username},\n"
@@ -212,7 +212,7 @@ msgid ""
 "* All settings will take effect after first restart of Ubuntu."
 msgstr ""
 
-#: ../ubuntu_wsl_oobe/ui/views/welcome.py:32
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:17
 msgid ""
 "\n"
 "Select the language to use for the installer and to be configured in the\n"
@@ -221,11 +221,11 @@ msgstr ""
 "\n"
 "选择安装程序和系统要使用的语言。\n"
 
-#: ../ubuntu_wsl_oobe/ui/views/welcome.py:52
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:37
 msgid "Use UP, DOWN and ENTER keys to select your language."
 msgstr "使用向上、向下和回车键选择语言。"
 
-#: ../ubuntu_wsl_oobe/ui/views/welcome.py:54
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:39
 msgid ""
 "You are using old Windows Console Host, Entering fallback mode. Use Windows "
 "Terminal to get more language options."
@@ -233,11 +233,11 @@ msgstr ""
 "您使用的是旧版 Windows 控制台，进入 Fback 模式。使用 Windows Terminal 获得更"
 "多语言选项。"
 
-#: ../ubuntu_wsl_oobe/ui/views/welcome.py:90
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:75
 msgid "Ubuntu WSL - Already Completed"
 msgstr "Ubuntu WSL - 已经完成"
 
-#: ../ubuntu_wsl_oobe/ui/views/welcome.py:93
+#: ../ubuntu_wsl_oobe/ui/views/welcome.py:78
 msgid "You have already completed setup. Aborted."
 msgstr "你已经完成了设置。终止。"
 
