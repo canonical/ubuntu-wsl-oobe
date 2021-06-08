@@ -90,7 +90,7 @@ class IntegrationView(BaseView):
     excerpt = _("In this page, you can tweak Ubuntu WSL to your needs. \n"
     )
 
-    def __init__(self, controller):
+    def __init__(self, mode, controller):
         initial = {
             'custom_path': "/mnt/",
             'custom_mount_opt': "",

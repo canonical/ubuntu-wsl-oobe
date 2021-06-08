@@ -5,12 +5,14 @@ import logging
 
 from .identity import IdentityModel
 from .locale import LocaleModel
+from .integration import IntegrationModel
 
 log = logging.getLogger('ubuntu_wsl_oobe.models.ubuntu_wsl_oobe')
 
 ALL_MODEL_NAMES = [
     "identity",
-    "locale"
+    "locale",
+    "integration"
 ]
 
 
@@ -20,6 +22,7 @@ class OOBEModel:
     def __init__(self):
         self.identity = IdentityModel()
         self.locale = LocaleModel()
+        self.integration = IntegrationModel()
 
         self._events = {
             name: asyncio.Event() for name in ALL_MODEL_NAMES
