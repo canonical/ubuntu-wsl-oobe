@@ -324,7 +324,8 @@ class Application:
 
         self.answers = {}
         if opts.answers is not None:
-            self.answers = yaml.safe_load(opts.answers.read())
+            with open(opts.answers, "r") as stream:
+                self.answers = yaml.safe_load(stream)
             log.debug("Loaded answers %s", self.answers)
             if not opts.dry_run:
                 open('/run/casper-no-prompt', 'w').close()
